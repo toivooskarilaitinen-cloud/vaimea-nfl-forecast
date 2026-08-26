@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a0d0c">
+  <meta name="description" content="VAIMEA NFL — läpinäkyvät ottelu- ja kausiennusteet.">
+  <meta property="og:title" content="VAIMEA NFL">
+  <meta property="og:description" content="Todennäköisyydet ilman melua.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://toivooskarilaitinen-cloud.github.io/vaimea-nfl-forecast/">
+  <meta property="og:image" content="https://toivooskarilaitinen-cloud.github.io/vaimea-nfl-forecast/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VAIMEA NFL">
+  <meta name="twitter:description" content="Todennäköisyydet ilman melua.">
+  <meta name="twitter:image" content="https://toivooskarilaitinen-cloud.github.io/vaimea-nfl-forecast/og.png">
+  <title>VAIMEA NFL — Sports Forecast</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="wordmark" href="#alku" aria-label="VAIMEA NFL, etusivu">
+      <span class="signal"></span>VAIMEA <b>NFL</b>
+    </a>
+    <nav aria-label="Päänavigaatio">
+      <a href="#ennusteet">Ennusteet</a>
+      <a href="#menetelma">Menetelmä</a>
+      <a href="#ohjeet">Käyttö</a>
+    </nav>
+  </header>
+
+  <main id="alku">
+    <section class="hero">
+      <div class="eyebrow"><span>KAUSI 2026</span><span class="live-dot"></span><span id="statusLabel">VALMISTELUSSA</span></div>
+      <h1>Todennäköisyydet<br><em>ilman melua.</em></h1>
+      <p class="lede">NFL-ennuste, joka näyttää mitä malli tietää — ja mitä se ei tiedä. Jokainen julkaistu luku jää historiaan arvioitavaksi.</p>
+      <a class="primary" href="#ennusteet">Katso tilanne <span>↓</span></a>
+      <div class="hero-stats" aria-label="Mallin tila">
+        <div><strong id="forecastCount">0</strong><span>lukittua ennustetta</span></div>
+        <div><strong>v0.1</strong><span>malliversio</span></div>
+        <div><strong>20k</strong><span>kausisimulaatiota</span></div>
+      </div>
+    </section>
+
+    <section class="forecast-section" id="ennusteet">
+      <div class="section-head">
+        <div><span class="kicker">TÄMÄN HETKEN TILANNE</span><h2>Otteluennusteet</h2></div>
+        <p id="updatedAt">Seuraava julkaisu lukitaan, kun kauden aineisto ja aloittavat pelinrakentajat on tarkistettu.</p>
+      </div>
+      <div id="forecastGrid" class="forecast-grid" aria-live="polite">
+        <article class="empty-state">
+          <span class="empty-index">00</span>
+          <div>
+            <h3>Ei vielä virallisia ennusteita</h3>
+            <p>VAIMEA ei julkaise harjoituslukuja oikeina ennusteina. Ensimmäiset todennäköisyydet tulevat näkyviin automaattisesti hyväksytyn tuotantoajon jälkeen.</p>
+          </div>
+          <span class="status-pill">ODOTTAA DATAA</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="method" id="menetelma">
+      <div class="section-head light"><div><span class="kicker">MALLI LYHYESTI</span><h2>Mistä ennuste syntyy?</h2></div><p>Yksinkertainen selitys siitä, mitä konepellin alla tapahtuu.</p></div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Joukkueen nykykunto</h3><p>Hyökkäys ja puolustus arvioidaan erikseen. Tuoreilla otteluilla on enemmän painoa ja vastustajien taso huomioidaan.</p></article>
+        <article><span>02</span><h3>Pelinrakentaja</h3><p>QB-arvio yhdistää tehokkuuden ja heittotarkkuuden. Pienet otokset vedetään kohti liigan keskiarvoa.</p></article>
+        <article><span>03</span><h3>Ottelun olosuhteet</h3><p>Kotietu, lepo ja neutraali pelipaikka vaikuttavat ottelukohtaiseen todennäköisyyteen.</p></article>
+        <article><span>04</span><h3>Kausi 20 000 kertaa</h3><p>Jäljellä olevat ottelut simuloidaan uudelleen ja uudelleen. Näin syntyy arvio pudotuspelipaikan todennäköisyydestä.</p></article>
+      </div>
+      <aside class="honesty"><strong>VAIMEA-PERIAATE</strong><p>Menneitä ennusteita ei korjata jälkikäteen. Epävarmuus kerrotaan, puuttuvaa loukkaantumistietoa ei arvata ja tuloksia verrataan aina toteutuneeseen.</p></aside>
+    </section>
+
+    <section class="instructions" id="ohjeet">
+      <div><span class="kicker">KÄYTTÖOHJE</span><h2>Näin luet VAIMEA-ennustetta</h2></div>
+      <ol>
+        <li><span>1</span><div><h3>Katso voittotodennäköisyys</h3><p>Esimerkiksi 63 % tarkoittaa, että vastaavissa tilanteissa joukkue voittaisi noin 63 kertaa sadasta — ei varmaa voittoa.</p></div></li>
+        <li><span>2</span><div><h3>Tarkista päivitysaika</h3><p>Ennuste kertoo aina, millä hetkellä käytettävissä ollut tieto lukittiin. Myöhempi QB-muutos näkyy uutena versiona.</p></div></li>
+        <li><span>3</span><div><h3>Seuraa liikettä</h3><p>Muutos kertoo, kuinka monta prosenttiyksikköä arvio on siirtynyt edellisestä virallisesta julkaisusta.</p></div></li>
+        <li><span>4</span><div><h3>Pidä todennäköisyys todennäköisyytenä</h3><p>Malli voi olla hyvin kalibroitu ja silti yksittäinen suosikki voi hävitä. Luvut eivät ole vedonlyöntiohjeita.</p></div></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer><div class="wordmark"><span class="signal"></span>VAIMEA <b>NFL</b></div><p>Riippumaton todennäköisyysmalli. Ei yhteyttä NFL:ään.</p><span>© 2026 VAIMEA</span></footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
