@@ -1,5 +1,8 @@
 name: CI
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -10,4 +13,3 @@ jobs:
       - run: pip install -e ".[dev]"
       - run: ruff check src tests
       - run: pytest --cov=vaimea --cov-report=term-missing
-
