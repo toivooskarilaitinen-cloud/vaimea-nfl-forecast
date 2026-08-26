@@ -1,0 +1,14 @@
+model_version: "0.1.0"
+training_seasons: [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
+recency_half_life_games: 8.0
+opponent_adjustment_iterations: 12
+team_prior_plays: 350
+qb_prior_dropbacks: 180
+qb_epa_weight: 0.75
+qb_cpoe_weight: 0.25
+home_field_prior_points: 1.6
+rest_cap_days: 7
+logistic_c: 0.25
+simulations: 20000
+random_seed: 20260826
+
