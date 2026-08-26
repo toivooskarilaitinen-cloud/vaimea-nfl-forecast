@@ -3,9 +3,10 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 .ruff_cache/
+.coverage
+*.egg-info/
 data/raw/*
 data/clean/*
 data/features/*
 data/models/*
 !data/**/.gitkeep
-
