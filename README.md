@@ -23,9 +23,9 @@ Large raw/clean/features artifacts are intentionally gitignored. Their manifests
 
 **Quarterback.** Dropbacks only. A weighted combination of EPA/dropback (75%) and CPOE (25%, scaled to an EPA-like range) is shrunk toward league average with a 180-dropback prior. A starter can be selected from a verified depth chart or an explicit operator override. v0.1 does not scrape or infer injuries.
 
-**Game context.** Neutral-site-aware home field and capped rest differential are explicit features. The production design must calculate both strictly as of the forecast cutoff.
+**Game context.** Home field is an explicit, uncentered binary feature: `1` for a genuine home game and `0` for a neutral site. Neutral-site games remain fully available to team-strength and QB estimation; only their home-field contribution is switched off. The logistic model has no free intercept, so equal teams at a neutral site map to exactly 50%. This also ensures neutral games contribute zero gradient to the home-field coefficient. Rest differential is capped and calculated strictly as of the forecast cutoff.
 
-**Game probability.** L2-regularized logistic regression uses home-minus-away team strength, QB difference, home indicator and rest difference. Coefficients and hyperparameters are fitted using past seasons only. No betting market input is used as a feature; closing-market probability is a valuable *evaluation baseline* when a properly timestamped licensed source is later configured.
+**Game probability.** L2-regularized logistic regression uses home-minus-away team strength, QB difference, the uncentered home indicator and rest difference. Continuous difference features are scaled without mean-centering; the model has no intercept. Coefficients and hyperparameters are fitted using past seasons only. No betting market input is used as a feature; closing-market probability is a valuable *evaluation baseline* when a properly timestamped licensed source is later configured.
 
 **Validation.** `walk_forward` trains on seasons strictly before each test season. Reports include Brier score, log loss, accuracy, decile calibration and a constant-rate baseline. Add Elo and timestamped market baselines before making public skill claims. Compare paired out-of-sample predictions, not training fit.
 

@@ -9,4 +9,6 @@ data/raw/*
 data/clean/*
 data/features/*
 data/models/*
+data/backtest-cache/*
+.tmp/
 !data/**/.gitkeep

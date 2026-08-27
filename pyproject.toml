@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "vaimea-nfl-forecast"
-version = "0.1.0"
+version = "0.1.1"
 description = "Leakage-safe NFL forecasting and season simulation built on nflverse"
 readme = "README.md"
 requires-python = ">=3.11"
