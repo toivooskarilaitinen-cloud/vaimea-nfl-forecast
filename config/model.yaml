@@ -1,4 +1,4 @@
-model_version: "0.1.0"
+model_version: "0.1.1"
 training_seasons: [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
 recency_half_life_games: 8.0
 opponent_adjustment_iterations: 12
@@ -11,4 +11,3 @@ rest_cap_days: 7
 logistic_c: 0.25
 simulations: 20000
 random_seed: 20260826
-
