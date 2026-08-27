@@ -10,32 +10,37 @@ FEATURES = ["strength_diff", "qb_diff", "home_field", "rest_diff"]
 
 
 class RegularizedLogit:
-    def __init__(self, weights: np.ndarray, mean: np.ndarray, scale: np.ndarray):
-        self.weights, self.mean, self.scale = weights, mean, scale
+    def __init__(self, weights: np.ndarray, scale: np.ndarray):
+        self.weights, self.scale = weights, scale
 
     def predict_proba(self, x: pd.DataFrame) -> np.ndarray:
-        z = np.c_[np.ones(len(x)), (x.to_numpy(float) - self.mean) / self.scale] @ self.weights
+        # No intercept and no mean centering: a neutral game with otherwise equal
+        # teams is exactly 50/50, and home_field=0 contributes exactly nothing.
+        z = (x.to_numpy(float) / self.scale) @ self.weights
         p = 1 / (1 + np.exp(-np.clip(z, -35, 35)))
         return np.c_[1 - p, p]
 
 def fit(train: pd.DataFrame, c=.25):
     x = train[FEATURES].to_numpy(float)
-    mean, scale = x.mean(axis=0), x.std(axis=0)
+    scale = x.std(axis=0)
     scale[scale == 0] = 1
-    x = np.c_[np.ones(len(x)), (x - mean) / scale]
+    # Keep the binary home-field flag on its natural 0/1 scale. In particular,
+    # never center it: zero must continue to mean no home-field contribution.
+    scale[FEATURES.index("home_field")] = 1
+    x = x / scale
     y = train.home_win.to_numpy(float)
     w = np.zeros(x.shape[1])
     penalty = 1 / max(c, 1e-9)
     for _ in range(2000):
         p = 1 / (1 + np.exp(-np.clip(x @ w, -35, 35)))
         grad = x.T @ (p - y) / len(y)
-        grad[1:] += penalty * w[1:] / len(y)
+        grad += penalty * w / len(y)
         new = w - 0.2 * grad
         if np.max(np.abs(new - w)) < 1e-9:
             w = new
             break
         w = new
-    return RegularizedLogit(w, mean, scale)
+    return RegularizedLogit(w, scale)
 
 
 def _brier(y, p):

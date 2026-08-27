@@ -36,7 +36,9 @@ def game_context(schedule: pd.DataFrame) -> pd.DataFrame:
     s=schedule.sort_values("gameday").copy(); last={}; rows=[]
     for r in s.itertuples():
         d=pd.Timestamp(r.gameday); hr=(d-last.get(r.home_team,d-pd.Timedelta(days=7))).days; ar=(d-last.get(r.away_team,d-pd.Timedelta(days=7))).days
-        rows.append({"game_id":r.game_id,"home_field":0 if getattr(r,"location","Home")!="Home" else 1,"rest_diff":np.clip(hr-ar,-7,7)})
+        # Keep neutral-site games in every other feature. Only the home-field
+        # component is switched off for them.
+        location = str(getattr(r,"location","Home")).strip().lower()
+        rows.append({"game_id":r.game_id,"home_field":0 if location=="neutral" else 1,"rest_diff":np.clip(hr-ar,-7,7)})
         last[r.home_team]=last[r.away_team]=d
     return pd.DataFrame(rows)
-
