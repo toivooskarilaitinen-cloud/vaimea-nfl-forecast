@@ -29,6 +29,8 @@ Large raw/clean/features artifacts are intentionally gitignored. Their manifests
 
 **Validation.** `walk_forward` trains on seasons strictly before each test season. Reports include Brier score, log loss, accuracy, decile calibration and a constant-rate baseline. Add Elo and timestamped market baselines before making public skill claims. Compare paired out-of-sample predictions, not training fit.
 
+**Calibration.** v0.1.1 uses one-parameter, no-intercept temperature scaling. The slope is fitted only on prior-season out-of-sample predictions, then frozen before the final test season. This preserves 50/50 at a neutral site, preserves favorite ordering and can reduce overconfidence without learning arbitrary probability-bin corrections.
+
 **Season simulation.** Remaining games are Bernoulli draws from frozen game probabilities. Division champions and wild cards are selected conference-by-conference. v0.1 implements the reliably derivable core order (record, head-to-head proxy, division/conference record, point differential) but deliberately does **not** claim exact NFL tiebreaking: multi-club head-to-head sweeps, common-games eligibility, strength of victory/schedule, combined rankings and coin toss require a richer results graph. Outputs should carry `tiebreaker_mode: approximation_v0.1`. Championship odds are not fabricated until a round-by-round playoff matchup engine is implemented.
 
 ## Quick start
@@ -55,6 +57,10 @@ Configuration lives in `config/model.yaml`. Pin the environment (`pip freeze > r
 ## Automated operation
 
 `CI` runs lint and tests. `Update forecasts` is scheduled for Thursday 10:17 UTC, after typical statistical corrections, and can be run manually. The workflow currently performs ingestion, tests and publication; **it intentionally cannot create an official forecast until the operator has supplied/verified the upcoming schedule, starters and trained model artifact.** Add that orchestrated production command only after the 2026 preseason acceptance gate below. GitHub Actions permissions are limited to repository contents.
+
+### Havainnon julkaiseminen
+
+Havainnot kirjoitetaan Markdown-tiedostoina kansioon `content/havainnot`. Kopioi siellä oleva artikkeli, nimeä uusi tiedosto muodossa `VVVV-KK-PP-lyhyt-otsikko.md` ja vaihda alun otsikko-, päiväys- ja tiivistelmäkentät. GitHub Pages rakentaa uuden kortin ja oman artikkelisivun automaattisesti. Suomenkielinen pikaohje on tiedostossa `content/havainnot/_OHJE.md`.
 
 ### 2026 preseason acceptance gate
 
