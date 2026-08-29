@@ -1,39 +1,145 @@
 # SARKA SPORTS FORECAST — NFL v0.1
 
-An auditable NFL forecasting foundation built on nflverse. Every official forecast is created from an **as-of cutoff**, receives a model version, and is written once to an append-only ledger. The goal of v0.1 is not false precision: it is a forecast that can be reproduced and honestly scored after the fact.
+SARKA on nflverse-dataan perustuva NFL-ennustejärjestelmä. Se arvioi otteluiden voittotodennäköisyyksiä ja simuloi kautta 100 000 kertaa. Malli ei ennusta varmoja lopputuloksia, eikä se ole vedonlyöntiohje.
 
-> Status: engineering-ready v0.1. Before publishing 2026 probabilities, run the preseason checklist below, backfill the selected training window and review the walk-forward report. This repository does not claim that an unrun model is calibrated.
+Jokainen virallinen ennuste muodostetaan vain ennen määriteltyä katkaisuaikaa saatavilla olleesta tiedosta. Hyväksytty ennuste saa malliversion ja tallennetaan muuttumattomaan ennustehistoriaan. Malli ja v0.1.1-kalibrointi on jäädytetty ennen kautta 2026.
 
-## Architecture
+- [Julkinen SARKA-sivusto](https://toivooskarilaitinen-cloud.github.io/vaimea-nfl-forecast/)
+- [Laajempi tuotantokäytön ohje](docs/KAYTTOOHJE.md)
+- [Havaintojen kirjoitusohje](content/havainnot/_OHJE.md)
+
+## Näin järjestelmä toimii kauden aikana
+
+GitHub hakee nflverse-datan automaattisesti joka päivä klo **13.17 Suomen kesäaikaa** eli klo 10.17 UTC. Päivittäinen ajo:
+
+1. hakee uuden datan
+2. tarkistaa datan tuoreuden ja kattavuuden
+3. pysäyttää julkaisun, jos olennaista tietoa puuttuu
+4. päivittää sivuston tavalliset, uudelleen rakennettavat näkymät
+5. tarkistaa, että lukittu ennustehistoria voidaan palauttaa muuttumattomana
+
+Päivittäinen ajo ei saa yksin luoda virallista ennustetta. Virallinen ennuste syntyy vasta erillisessä hyväksyntäajossa, jossa aloittavat QB:t ja ottelulista tarkistetaan ihmisen toimesta.
+
+Automaattisten ajojen tila näkyy GitHubin [Actions-näkymässä](https://github.com/toivooskarilaitinen-cloud/vaimea-nfl-forecast/actions).
+
+## Virallisen ennusteen hyväksyminen
+
+Ennen viikon ennusteiden lukitsemista:
+
+1. Tarkista otteluohjelma ja katkaisuajat.
+2. Tarkista järjestelmän ehdottamat aloittavat QB:t.
+3. Korjaa QB tarvittaessa ja merkitse molemmat aloittajat hyväksytyiksi.
+4. Tarkista datan tuoreus, laatuvaroitukset ja neutral-site-merkinnät.
+5. Käynnistä GitHub Actionsissa **Approve official forecast**.
+6. Valitse **Run workflow** ja anna pyydetyt draft-, starter- ja hyväksyjätiedot.
+7. Hyväksy tuotantoympäristön ajo GitHubissa.
+
+Hyväksynnän jälkeen ennuste lisätään append-only-ledgeriin. Vanhaa virallista riviä ei korvata tai kirjoiteta uudelleen. Sivuston `latest.json` on vain viimeisin näkymä; `history.json` on tarkistettava ennustehistoria.
+
+## QB-aloittajan käsittely
+
+Depth chart auttaa ehdottamaan aloittajaa, mutta v0.1 ei hyväksy QB:ta automaattisesti. Ihminen vahvistaa aloittajan ennen virallista julkaisua. Jos hyväksytty pelaajatunnus ei vastaa ehdotettua tai korjattua tunnusta, julkaisu pysähtyy.
+
+Loukkantumisia ei automatisoida v0.1:ssä, koska riittävän luotettavaa, vakaata ja aikaleimattua ilmaista lähdettä ei ole lukittu järjestelmään.
+
+## Preseason-ennuste ennen kauden alkua
+
+Preseason-ennuste muodostetaan edellisen kauden tiedosta ja jäädytetystä mallista. Ennen ensimmäistä virallista ajoa:
+
+1. varmista, että tarvittavat nflverse-kaudet on ladattu
+2. tarkista edellisen kauden lopun joukkuevahvuudet
+3. käy läpi QB-aloittajat ja offseasonin olennaiset muutokset
+4. aja preseason-tarkistuslista
+5. tarkista walk-forward-backtest ja vertailutasot
+6. tee kaksi kuivaharjoitusta ilman ledgeriin kirjoittamista
+7. hyväksy vasta sen jälkeen virallinen preseason-ennuste
+
+Preseason-prosessi ei sovita mallia uudelleen. Se tarkistaa lähtötiedot ja sen, että jäädytetty malli voidaan ottaa turvallisesti käyttöön.
+
+## Hälytykset
+
+Jos päivittäinen datahaku, laatuportti, ennusteajo tai Pages-julkaisu epäonnistuu, työnkulku luo tai päivittää GitHub Issue -hälytyksen ja osoittaa sen repon omistajalle.
+
+Hälytyksen näkee:
+
+- GitHubin ilmoituskellossa
+- repon [Issues-näkymässä](https://github.com/toivooskarilaitinen-cloud/vaimea-nfl-forecast/issues)
+- sähköpostissa, jos Issues-ilmoitukset on sallittu kohdassa **GitHub Settings → Notifications**
+
+## Sivuston tekstien muokkaaminen
+
+Voit muokata näkyviä tekstejä suoraan GitHubissa:
+
+1. avaa haluamasi HTML-tiedosto
+2. paina kynäkuvaketta **Edit this file**
+3. muuta tekstiä HTML-tagien välistä
+4. paina **Commit changes**
+
+Keskeiset tiedostot:
+
+- `index.html` — etusivu
+- `ennusteet.html` — ennusteet ja tuotannon tila
+- `menetelma.html` — mallin menetelmä
+- `mallin-jalki.html` — backtest ja aito ennustehistoria
+- `joukkueet.html` — joukkueet
+- `havainnot.html` — havaintojen etusivu
+
+Älä muuta `class="..."`, `id="..."`, JavaScript-koodia tai HTML-tageja, ellet tiedä niiden tehtävää. GitHub Pages julkaisee tallennetun muutoksen yleensä muutamassa minuutissa.
+
+## Uuden Havainnon julkaiseminen
+
+Havainnot kirjoitetaan Markdown-tiedostoina kansioon `content/havainnot`.
+
+1. Kopioi olemassa oleva artikkeli.
+2. Nimeä tiedosto muodossa `VVVV-KK-PP-lyhyt-otsikko.md`.
+3. Vaihda tiedoston alusta otsikko, päiväys ja tiivistelmä.
+4. Kirjoita teksti Markdownina.
+5. Tallenna muutos `main`-haaraan.
+
+Sivusto rakentaa artikkelille automaattisesti kortin ja oman sivun. Tarkempi pikaohje löytyy tiedostosta [`content/havainnot/_OHJE.md`](content/havainnot/_OHJE.md).
+
+## Mitä malli ottaa huomioon?
+
+### Joukkuevahvuus
+
+Hyökkäys ja puolustus arvioidaan erikseen EPA/play-luvulla. Uusimmat ottelut painavat enemmän kuin vanhat. Luvut vastustajakorjataan ja vedetään pienillä otoksilla kohti liigan keskiarvoa.
+
+### QB-vahvuus
+
+QB-malli yhdistää EPA/dropbackin ja CPOE:n. Pienen otoksen suorituksia hillitään 180 dropbackin priorilla, jotta muutama poikkeuksellinen peli ei tee arviosta liian varmaa.
+
+### Ottelun olosuhteet
+
+Malli käyttää kotietua ja lepoeroa. Neutral-site-otteluissa kotietu on nolla, mutta ottelun hyökkäys-, puolustus- ja QB-data käytetään normaalisti.
+
+### Ottelutodennäköisyys
+
+Joukkuevahvuudet, QB-ero, kotietu ja lepoero yhdistetään regularisoidulla logistisella mallilla. v0.1.1 käyttää jäädytettyä yhden parametrin lämpötilakalibrointia, joka hillitsee liiallista varmuutta muuttamatta suosikkien järjestystä.
+
+### Kausisimulaatio
+
+Jäljellä oleva kausi simuloidaan 100 000 kertaa jäädytetyillä ottelutodennäköisyyksillä. Pudotuspelipaikat ratkaistaan konferensseittain. Tiebreaker-käsittely sisältää luotettavasti toteutettavan ydinosan, mutta kaikkia NFL:n monen joukkueen sääntöjä ei vielä väitetä täydellisiksi. Tulokset merkitään `tiebreaker_mode: approximation_v0.1`.
+
+## Backtest ja seuranta
+
+Walk-forward-backtest harjoittelee mallin vain testikautta edeltävillä kausilla. Kauden 2025 julkaistu testi sisältää 284 ottelua. Sivulla näytetään Brier, log loss, kalibraatio sekä yksinkertainen kotivoittoprosentin vertailutaso.
+
+Backtest ei ole sama asia kuin ennen otteluita lukittu ennustehistoria. Kauden 2026 viralliset ennusteet raportoidaan erikseen eikä mallia säädetä kesken kauden lyhyiden tulosjaksojen perusteella.
+
+## Datarakenne ja toistettavuus
 
 ```text
-nflverse release (source)
-  -> data/raw/<UTC snapshot>/       byte-for-byte source files; never overwritten
-  -> data/clean/<UTC snapshot>/     selected, typed rows + available_at
-  -> data/features/<model>/<cutoff> only information available before cutoff
-  -> data/forecast-ledger/          immutable official predictions
-  -> public/data/                   latest.json, history.json, movers.json
+nflverse
+  → data/raw/<UTC-aikaleima>/        alkuperäinen data, ei ylikirjoiteta
+  → data/clean/<UTC-aikaleima>/      tarkistetut ja tyypitetyt rivit
+  → data/features/<malli>/<cutoff>/  vain katkaisuhetkellä saatavilla ollut tieto
+  → data/forecast-ledger/            muuttumattomat viralliset ennusteet
+  → public/data/                     sivuston JSON-näkymät
 ```
 
-Large raw/clean/features artifacts are intentionally gitignored. Their manifests include source, schema, row count, creation time and SHA-256. Official compact forecasts are committed.
+Virallisesta ajosta tallennetaan vähintään malliversio, katkaisuaika, asetukset, lähtötiedostojen SHA-256-tiivisteet, ohjelmistoversio, satunnaissiemen, QB-lähde ja varoitukset. Raakadata säilytetään, koska nflverse voi tehdä tilastokorjauksia jälkikäteen.
 
-## Model
-
-**Team state.** Offensive and defensive EPA/play are separate latent ratings. Recent games receive exponentially decaying weight (default half-life eight games). Ratings are iteratively opponent-adjusted and empirical-Bayes shrunk toward league average by effective play count. Centering each iteration makes the system identifiable.
-
-**Quarterback.** Dropbacks only. A weighted combination of EPA/dropback (75%) and CPOE (25%, scaled to an EPA-like range) is shrunk toward league average with a 180-dropback prior. A starter can be selected from a verified depth chart or an explicit operator override. v0.1 does not scrape or infer injuries.
-
-**Game context.** Home field is an explicit, uncentered binary feature: `1` for a genuine home game and `0` for a neutral site. Neutral-site games remain fully available to team-strength and QB estimation; only their home-field contribution is switched off. The logistic model has no free intercept, so equal teams at a neutral site map to exactly 50%. This also ensures neutral games contribute zero gradient to the home-field coefficient. Rest differential is capped and calculated strictly as of the forecast cutoff.
-
-**Game probability.** L2-regularized logistic regression uses home-minus-away team strength, QB difference, the uncentered home indicator and rest difference. Continuous difference features are scaled without mean-centering; the model has no intercept. Coefficients and hyperparameters are fitted using past seasons only. No betting market input is used as a feature; closing-market probability is a valuable *evaluation baseline* when a properly timestamped licensed source is later configured.
-
-**Validation.** `walk_forward` trains on seasons strictly before each test season. Reports include Brier score, log loss, accuracy, decile calibration and a constant-rate baseline. Add Elo and timestamped market baselines before making public skill claims. Compare paired out-of-sample predictions, not training fit.
-
-**Calibration.** v0.1.1 uses one-parameter, no-intercept temperature scaling. The slope is fitted only on prior-season out-of-sample predictions, then frozen before the final test season. This preserves 50/50 at a neutral site, preserves favorite ordering and can reduce overconfidence without learning arbitrary probability-bin corrections.
-
-**Season simulation.** Remaining games are Bernoulli draws from frozen game probabilities. Division champions and wild cards are selected conference-by-conference. v0.1 implements the reliably derivable core order (record, head-to-head proxy, division/conference record, point differential) but deliberately does **not** claim exact NFL tiebreaking: multi-club head-to-head sweeps, common-games eligibility, strength of victory/schedule, combined rankings and coin toss require a richer results graph. Outputs should carry `tiebreaker_mode: approximation_v0.1`. Championship odds are not fabricated until a round-by-round playoff matchup engine is implemented.
-
-## Quick start
+## Kehittäjän pika-aloitus
 
 ```bash
 python -m venv .venv
@@ -44,58 +150,23 @@ vaimea download --season 2024 --season 2025
 vaimea publish
 ```
 
-Configuration lives in `config/model.yaml`. Pin the environment (`pip freeze > requirements-lock.txt`) for an official release and record Python, package, config, git commit, input hashes, cutoff and random seed in its run manifest.
+Mallin asetukset ovat tiedostossa `config/model.yaml`.
 
-## Data contracts and leakage protection
+## Datalähteet ja lisenssit
 
-- `available_at` means when a row could first have been used, not when the game occurred.
-- Feature builders must call `assert_asof` before aggregating a forecast.
-- Never use final season totals, corrected data published after cutoff, future starter information or closing lines for an earlier forecast.
-- NFL statistical corrections mean a replay may differ unless the original raw snapshot is retained. That is why raw snapshots are immutable.
-- Quality gates stop on missing keys, empty inputs, impossible offense/defense identity and extreme EPA tails. Production should additionally compare row/game counts to rolling expectations and quarantine anomalous snapshots.
+- [nflverse-data](https://github.com/nflverse/nflverse-data) — otteluohjelma, play-by-play ja johdetut kentät. Tarkista aina käytetyn julkaisun lisenssi; nflverse julkaisee suuren osan datasta CC BY 4.0 -lisenssillä.
+- NFL-joukkueiden nimet ja tunnukset kuuluvat niiden omistajille. SARKA ei ole NFL:n virallinen tuote.
+- Repon oma koodi on MIT-lisensoitu. MIT-lisenssi ei muuta kolmannen osapuolen datan lisenssiä.
 
-## Automated operation
+## Seuraavat kehitysvaiheet
 
-`CI` runs lint and tests. `Update forecasts` runs daily at 10:17 UTC and can also be started manually. It refreshes data, applies quality gates and rebuilds disposable public views; **it cannot create an official forecast until the operator has supplied and approved the schedule, starters and frozen model artifact.** Only the separate approval workflow may append to the official ledger.
+- tarkat graafipohjaiset NFL-tiebreakerit ja pudotuspelikaavio
+- aikaleimattu markkinaennuste vain vertailutasoksi
+- sää- ja matkustusdata luotettavista aikaleimatuista lähteistä
+- kauden jälkeinen ablaatiotesti mallikomponenteille
+- lisensoitu ja ihmisen tarkistama loukkantumisprosessi
+- MLB-malli omana erillisenä kokonaisuutenaan
 
-The operational layer now provides explicit QB review, preseason acceptance, data-quality gates, one-click GitHub approval, immutable ledger manifests, performance monitoring, recovery auditing and failure Issues. The model and frozen calibration are not refitted by these controls. See the Finnish [production guide](docs/KAYTTOOHJE.md). The data/recovery job runs daily at 10:17 UTC; only the separate approval workflow may append an official forecast.
+## Vastuullinen käyttö
 
-### Havainnon julkaiseminen
-
-Havainnot kirjoitetaan Markdown-tiedostoina kansioon `content/havainnot`. Kopioi siellä oleva artikkeli, nimeä uusi tiedosto muodossa `VVVV-KK-PP-lyhyt-otsikko.md` ja vaihda alun otsikko-, päiväys- ja tiivistelmäkentät. GitHub Pages rakentaa uuden kortin ja oman artikkelisivun automaattisesti. Suomenkielinen pikaohje on tiedostossa `content/havainnot/_OHJE.md`.
-
-### 2026 preseason acceptance gate
-
-1. Backfill nflverse seasons in `config/model.yaml`; archive all manifests.
-2. Build game-level as-of features after each historical week, never from end-of-season aggregates.
-3. Run walk-forward evaluation; publish season-by-season and aggregate metrics plus calibration plots.
-4. Add naïve home-rate, previous-season record/Elo and properly timestamped market baselines.
-5. Freeze the starter input contract and require a human-reviewed QB override file with timestamp/provenance.
-6. Expand simulator tiebreak tests from official NFL examples; label approximations in every JSON response.
-7. Train/freeze `model_version`, sign its manifest, dry-run two full weeks, then enable ledger creation.
-8. Verify GitHub branch protection and require passing CI for workflow changes.
-
-## Data sources and licenses
-
-- [nflverse data](https://github.com/nflverse/nflverse-data): schedules, play-by-play and derived fields. Follow the license and attribution shipped with each nflverse dataset/repository; nflverse commonly publishes data under CC BY 4.0, but verify the specific release before redistribution.
-- NFL team names and marks belong to their respective owners. This project is unaffiliated with the NFL.
-- Code in this repository is MIT licensed. The MIT license does not relicense third-party data.
-
-## Forecast JSON contract
-
-Each ledger object contains at minimum `game_id`, teams, kickoff, cutoff, `home_win_probability`, model version, input-manifest hashes, starter provenance and warnings. Files are never replaced. `latest.json` is a view; `history.json` is the audit trail; `movers.json` is the change from the prior official snapshot for the same game.
-
-## Next steps after v0.1
-
-- Exact graph-based NFL tiebreakers and playoff bracket simulation.
-- Time-aware hyperparameter selection nested inside walk-forward validation.
-- Weather and travel features only from timestamped, stable sources.
-- Bayesian hierarchical team/QB state-space model and uncertainty propagation.
-- Human-reviewed injury adjustments with a licensed provenance trail—never opaque scraping.
-- Static public site with forecast cards, calibration record, methodology and downloadable ledger.
-- Monitoring for source schema drift, stale updates, probability drift and calibration degradation.
-
-## Responsible use
-
-Probabilities are estimates, not guarantees or betting advice. Publish the complete historical ledger and failures alongside successes.
-
+Todennäköisyydet ovat arvioita, eivät lupauksia. Onnistumiset, epäonnistumiset ja kaikki viralliset ennusteet julkaistaan samassa historiassa.
