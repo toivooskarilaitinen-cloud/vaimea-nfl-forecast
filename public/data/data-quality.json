@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-08-29T15:04:13.195485+00:00",
+  "files": [
+    {
+      "epa_null_rate": 0.011517012850561706,
+      "file": "data/clean/20260829T150411Z/pbp_2024.parquet",
+      "games": 285,
+      "latest_week": 22,
+      "qb_coverage": 0.9464049195837275,
+      "rows": 49492,
+      "season": 2024,
+      "teams": 32
+    },
+    {
+      "epa_null_rate": 0.011687273174632466,
+      "file": "data/clean/20260829T150411Z/pbp_2025.parquet",
+      "games": 285,
+      "latest_week": 22,
+      "qb_coverage": 0.9449870726802643,
+      "rows": 48771,
+      "season": 2025,
+      "teams": 32
+    }
+  ],
+  "snapshot": "20260829T150411Z",
+  "status": "passed",
+  "summary": {
+    "games": 570,
+    "pbp_rows": 98263,
+    "qb_coverage": 0.9449870726802643,
+    "source_week": 22,
+    "teams": 32
+  }
+}
