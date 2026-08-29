@@ -15,3 +15,21 @@ fetch('./public/data/review.json',{cache:'no-store'}).then(r=>r.ok?r.json():Prom
 
 function renderPerformance(data){if(!document.querySelector('#brierMetric'))return;document.querySelector('#brierMetric').textContent=Number(data.model.brier).toFixed(3);document.querySelector('#logLossMetric').textContent=Number(data.model.log_loss).toFixed(3);document.querySelector('#rollingMetric').textContent=Number(data.rolling.brier).toFixed(3);document.querySelector('#scoredGames').textContent=data.model.games;}
 fetch('./public/data/performance.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(renderPerformance).catch(()=>{});
+
+function renderBacktest(data){
+  const metrics=document.querySelector('#backtestMetrics');
+  if(!metrics||!data?.metrics)return;
+  const values=[data.metrics.brier,data.metrics.log_loss,data.metrics.games,data.metrics.baseline_brier];
+  metrics.querySelectorAll('strong').forEach((node,index)=>{node.textContent=index===2?values[index]:Number(values[index]).toFixed(3)});
+  document.querySelector('#modelComparison').textContent=Number(data.metrics.brier).toFixed(3);
+  document.querySelector('#baselineComparison').textContent=Number(data.metrics.baseline_brier).toFixed(3);
+  const chart=document.querySelector('#calibrationChart');
+  const bins=Array.isArray(data.calibration)?data.calibration:[];
+  chart.innerHTML=bins.map(bin=>{
+    const predicted=Number(bin.predicted)*100;
+    const observed=Number(bin.observed)*100;
+    const label=String(bin.bin).replace(/[\[\]()]/g,'');
+    return `<div class="calibration-row"><span>${esc(label)}</span><div class="calibration-bars"><i class="predicted" style="width:${predicted}%" title="Ennustettu ${predicted.toFixed(1)} %"></i><i class="observed" style="width:${observed}%" title="Toteutunut ${observed.toFixed(1)} %"></i></div><strong>${predicted.toFixed(0)} / ${observed.toFixed(0)} %</strong><small>n=${Number(bin.n)}</small></div>`;
+  }).join('');
+}
+fetch('./public/data/backtest-2025-v011-calibrated.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(renderBacktest).catch(()=>{});
