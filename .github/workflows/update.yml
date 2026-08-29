@@ -2,8 +2,10 @@ name: Update forecasts
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 10 * * 4"
-permissions: {contents: write}
+    - cron: "17 10 * * *"
+permissions:
+  contents: write
+  issues: write
 concurrency: {group: forecast-update, cancel-in-progress: false}
 jobs:
   update:
@@ -15,7 +17,8 @@ jobs:
       - run: pip install -e ".[dev]"
       - run: pytest
       - run: vaimea download --season 2024 --season 2025
-      - run: vaimea publish
+      - run: vaimea quality-check
+      - run: vaimea recover
       - name: Commit versioned public outputs
         run: |
           git config user.name "vaimea-forecast-bot"
@@ -23,3 +26,30 @@ jobs:
           git add public/data data/forecast-ledger
           git diff --cached --quiet || git commit -m "data: weekly forecast update"
           git push
+  alert:
+    if: failure()
+    needs: update
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create or update the GitHub alert issue
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const title = "SARKA operational alert: forecast update failed";
+            const body = [
+              "The automated data, quality, recovery, or publication run failed.",
+              "",
+              `Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              `Commit: ${context.sha}`,
+              "",
+              "No official forecast was overwritten. Inspect the failed step before the next approval."
+            ].join("\n");
+            const {data: issues} = await github.rest.issues.listForRepo({...context.repo, state: "open"});
+            const existing = issues.find(issue => issue.title === title);
+            if (existing) {
+              await github.rest.issues.createComment({...context.repo, issue_number: existing.number, body});
+            } else {
+              await github.rest.issues.create({
+                ...context.repo, title, body, assignees: [context.repo.owner]
+              });
+            }

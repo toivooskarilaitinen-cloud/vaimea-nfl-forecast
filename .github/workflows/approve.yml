@@ -1,0 +1,57 @@
+name: Approve official forecast
+on:
+  workflow_dispatch:
+    inputs:
+      draft_path:
+        description: Forecast draft JSON path
+        required: true
+        default: data/drafts/latest.json
+      starters_path:
+        description: Reviewed QB approvals JSON path
+        required: true
+        default: data/operator/starter-review.json
+      reviewer:
+        description: Reviewer name
+        required: true
+permissions:
+  contents: write
+  issues: write
+concurrency:
+  group: official-forecast-approval
+  cancel-in-progress: false
+jobs:
+  approve:
+    environment: forecast-production
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.12", cache: pip}
+      - run: pip install -e ".[dev]"
+      - run: pytest
+      - name: Run quality and QB review gates
+        run: vaimea review "${{ inputs.draft_path }}" "${{ inputs.starters_path }}"
+      - name: Append approved forecast to immutable ledger
+        run: vaimea approve "${{ inputs.draft_path }}" "${{ inputs.starters_path }}" "${{ inputs.reviewer }}"
+      - run: vaimea publish
+      - name: Commit official ledger and public views
+        run: |
+          git config user.name "sarka-forecast-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/forecast-ledger public/data
+          git commit -m "forecast: approve official snapshot"
+          git push
+  alert:
+    if: failure()
+    needs: approve
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v8
+        with:
+          script: |
+            const title = "SARKA operational alert: forecast approval failed";
+            const body = `Approval run failed: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}\n\nNo official forecast was overwritten.`;
+            const {data: issues} = await github.rest.issues.listForRepo({...context.repo, state: "open"});
+            const existing = issues.find(issue => issue.title === title);
+            if (existing) await github.rest.issues.createComment({...context.repo, issue_number: existing.number, body});
+            else await github.rest.issues.create({...context.repo, title, body, assignees: [context.repo.owner]});
