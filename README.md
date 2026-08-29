@@ -1,4 +1,4 @@
-# VAIMEA SPORTS FORECAST — NFL v0.1
+# SARKA SPORTS FORECAST — NFL v0.1
 
 An auditable NFL forecasting foundation built on nflverse. Every official forecast is created from an **as-of cutoff**, receives a model version, and is written once to an append-only ledger. The goal of v0.1 is not false precision: it is a forecast that can be reproduced and honestly scored after the fact.
 
@@ -56,7 +56,9 @@ Configuration lives in `config/model.yaml`. Pin the environment (`pip freeze > r
 
 ## Automated operation
 
-`CI` runs lint and tests. `Update forecasts` is scheduled for Thursday 10:17 UTC, after typical statistical corrections, and can be run manually. The workflow currently performs ingestion, tests and publication; **it intentionally cannot create an official forecast until the operator has supplied/verified the upcoming schedule, starters and trained model artifact.** Add that orchestrated production command only after the 2026 preseason acceptance gate below. GitHub Actions permissions are limited to repository contents.
+`CI` runs lint and tests. `Update forecasts` runs daily at 10:17 UTC and can also be started manually. It refreshes data, applies quality gates and rebuilds disposable public views; **it cannot create an official forecast until the operator has supplied and approved the schedule, starters and frozen model artifact.** Only the separate approval workflow may append to the official ledger.
+
+The operational layer now provides explicit QB review, preseason acceptance, data-quality gates, one-click GitHub approval, immutable ledger manifests, performance monitoring, recovery auditing and failure Issues. The model and frozen calibration are not refitted by these controls. See the Finnish [production guide](docs/KAYTTOOHJE.md). The data/recovery job runs daily at 10:17 UTC; only the separate approval workflow may append an official forecast.
 
 ### Havainnon julkaiseminen
 
