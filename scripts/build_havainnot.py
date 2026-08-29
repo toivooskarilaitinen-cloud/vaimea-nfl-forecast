@@ -11,9 +11,9 @@ ROOT = Path(__file__).resolve().parents[1]
 CONTENT = ROOT / "content" / "havainnot"
 OUTPUT = ROOT / "havainnot"
 
-NAV = """<header class="topbar"><a class="wordmark" href="{root}index.html"><span class="signal"></span>VAIMEA <b>NFL</b></a><nav aria-label="Päänavigaatio"><a href="{root}ennusteet.html">Ennusteet</a><a class="active-nav" href="{root}havainnot.html">Havainnot</a><a href="{root}joukkueet.html">Joukkueet</a><a href="{root}mallin-jalki.html">Mallin jälki</a><a href="{root}menetelma.html">Menetelmä</a></nav></header>"""
+NAV = """<header class="topbar"><a class="wordmark" href="{root}index.html"><span class="signal"></span>SARKA <b>NFL</b></a><nav aria-label="Päänavigaatio"><a href="{root}ennusteet.html">Ennusteet</a><a class="active-nav" href="{root}havainnot.html">Havainnot</a><a href="{root}joukkueet.html">Joukkueet</a><a href="{root}mallin-jalki.html">Mallin jälki</a><a href="{root}menetelma.html">Menetelmä</a></nav></header>"""
 
-FOOTER = """<footer><div class="wordmark"><span class="signal"></span>VAIMEA <b>NFL</b></div><p>Havaintoja numeroista — ei melua numeroiden ympärillä.</p><span>© 2026 VAIMEA</span></footer>"""
+FOOTER = """<footer><div class="wordmark"><span class="signal"></span>SARKA <b>NFL</b></div><p>Havaintoja numeroista — ei melua numeroiden ympärillä.</p><span>© 2026 SARKA</span></footer>"""
 
 
 @dataclass(frozen=True)
@@ -109,7 +109,7 @@ def read_post(path: Path) -> Post:
 
 
 def page(title: str, description: str, content: str, root: str = "") -> str:
-    return f"""<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{html.escape(description, quote=True)}"><meta property="og:title" content="{html.escape(title, quote=True)}"><meta property="og:description" content="{html.escape(description, quote=True)}"><meta property="og:type" content="article"><title>{html.escape(title)} — VAIMEA NFL</title><link rel="stylesheet" href="{root}styles.css"></head><body><div class="grain" aria-hidden="true"></div>{NAV.format(root=root)}{content}{FOOTER}</body></html>\n"""
+    return f"""<!doctype html><html lang="fi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{html.escape(description, quote=True)}"><meta property="og:title" content="{html.escape(title, quote=True)}"><meta property="og:description" content="{html.escape(description, quote=True)}"><meta property="og:type" content="article"><title>{html.escape(title)} — SARKA NFL</title><link rel="stylesheet" href="{root}styles.css"></head><body><div class="grain" aria-hidden="true"></div>{NAV.format(root=root)}{content}{FOOTER}</body></html>\n"""
 
 
 def build() -> list[Path]:
@@ -129,7 +129,7 @@ def build() -> list[Path]:
     index_content = f"""<main><section class="page-hero"><span class="kicker">VÄHEMMÄN MELUA</span><h1>Havainnot</h1><p>Kirjoitan tänne siitä, mitä luvut kertovat ja mikä niissä on vielä epäselvää. Tarkoitus ei ole selittää jokaista sunnuntaita jälkikäteen, vaan löytää asioita, joilla voi olla merkitystä myös ensi viikolla.</p></section><section class="page-content"><div class="content-cards">{cards}</div></section></main>"""
     index_path = ROOT / "havainnot.html"
     index_path.write_text(
-        page("Havainnot", "VAIMEA NFL:n havainnot mallista, joukkueista ja kaudesta.", index_content),
+        page("Havainnot", "SARKA NFL:n havainnot mallista, joukkueista ja kaudesta.", index_content),
         encoding="utf-8",
     )
     written = [index_path]
