@@ -9,5 +9,5 @@ qb_cpoe_weight: 0.25
 home_field_prior_points: 1.6
 rest_cap_days: 7
 logistic_c: 0.25
-simulations: 20000
+simulations: 100000
 random_seed: 20260826
