@@ -14,9 +14,11 @@ def gate_pbp(df: pd.DataFrame) -> dict:
     if df["epa"].dropna().abs().quantile(.999) > 15: raise QualityError("implausible EPA tail")
     bad=(df["posteam"].notna() & df["defteam"].notna() & (df["posteam"]==df["defteam"])).sum()
     if bad: raise QualityError(f"{bad} plays have identical offense and defense")
-    return {"rows":len(df),"games":int(df.game_id.nunique()),"epa_null_rate":float(df.epa.isna().mean())}
+    dropbacks = df.get("qb_dropback", pd.Series(0, index=df.index)).fillna(0).astype(bool)
+    quarterback = df.get("passer_player_id", pd.Series(index=df.index, dtype="object"))
+    qb_coverage = float(quarterback[dropbacks].notna().mean()) if dropbacks.any() else 0.0
+    return {"rows":len(df),"games":int(df.game_id.nunique()),"epa_null_rate":float(df.epa.isna().mean()),"qb_coverage":qb_coverage}
 
 def assert_asof(df: pd.DataFrame, cutoff: pd.Timestamp) -> None:
     if (pd.to_datetime(df.available_at, utc=True) >= cutoff).any():
         raise QualityError("future information detected at forecast cutoff")
-
