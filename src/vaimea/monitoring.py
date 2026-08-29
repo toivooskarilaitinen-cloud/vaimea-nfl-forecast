@@ -11,7 +11,7 @@ def _scores(y: np.ndarray, p: np.ndarray) -> dict:
     p = np.clip(p.astype(float), 1e-15, 1 - 1e-15)
     y = y.astype(float)
     return {
-        "games": int(len(y)),
+        "games": len(y),
         "brier": float(np.mean((p - y) ** 2)),
         "log_loss": float(-np.mean(y * np.log(p) + (1 - y) * np.log(1 - p))),
     }
