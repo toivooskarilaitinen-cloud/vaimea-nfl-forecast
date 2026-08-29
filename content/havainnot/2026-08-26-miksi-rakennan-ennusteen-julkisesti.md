@@ -7,7 +7,7 @@ eyebrow: AVAUSHAVAINTO
 
 Minua kiinnostaa ennusteessa lopputulosta enemmän se, **kuinka rehellisesti siihen päädytään**. On helppo kertoa maanantaina, miksi sunnuntain voittaja oli ilmeinen. Vaikeampaa on kirjoittaa arvio etukäteen, lukita se ja palata myöhemmin katsomaan, oliko oma varmuus oikealla tasolla.
 
-VAIMEA syntyy tätä varten. Jokainen virallinen ennuste saa aikaleiman ja malliversion. Sitä ei korjata ottelun jälkeen. Jos 70 prosentin suosikit voittavat pitkällä aikavälillä vain puolet peleistään, malli on liian varma — vaikka yksittäisiä voittajia olisi osunut paljon.
+SARKA syntyy tätä varten. Jokainen virallinen ennuste saa aikaleiman ja malliversion. Sitä ei korjata ottelun jälkeen. Jos 70 prosentin suosikit voittavat pitkällä aikavälillä vain puolet peleistään, malli on liian varma — vaikka yksittäisiä voittajia olisi osunut paljon.
 
 > Tavoite ei ole näyttää jälkikäteen oikeassa olevalta. Tavoite on tietää etukäteen, kuinka epävarma olen.
 
