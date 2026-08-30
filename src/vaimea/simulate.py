@@ -26,6 +26,7 @@ def simulate(schedule: pd.DataFrame, team_meta: pd.DataFrame, n=100000, seed=1, 
     same_division = divisions[home] == divisions[away]
     expected = np.zeros(len(teams), dtype=np.int64)
     playoff_counts = np.zeros(len(teams), dtype=np.int64)
+    division_counts = np.zeros(len(teams), dtype=np.int64)
 
     for start in range(0, n, batch_size):
         batch = min(batch_size, n - start)
@@ -49,23 +50,29 @@ def simulate(schedule: pd.DataFrame, team_meta: pd.DataFrame, n=100000, seed=1, 
             score = score * radix + value
         score = (score * 40 + point_diff + 20) * 40 + np.arange(len(teams))
         selected = np.zeros((batch, len(teams)), dtype=bool)
+        division_champions = np.zeros((batch, len(teams)), dtype=bool)
         for conference in pd.unique(conferences):
             conference_ids = np.flatnonzero(conferences == conference)
             for division in pd.unique(divisions[conference_ids]):
                 division_ids = conference_ids[divisions[conference_ids] == division]
                 champion = division_ids[np.argmax(score[:, division_ids], axis=1)]
                 selected[np.arange(batch), champion] = True
+                division_champions[np.arange(batch), champion] = True
             wild_score = score[:, conference_ids].copy()
             wild_score[selected[:, conference_ids]] = -1
             wild_local = np.argpartition(wild_score, -3, axis=1)[:, -3:]
             selected[np.arange(batch)[:, None], conference_ids[wild_local]] = True
         expected += wins.sum(axis=0)
         playoff_counts += selected.sum(axis=0)
+        division_counts += division_champions.sum(axis=0)
 
     return {
         team: {
             "expected_wins": expected[index] / n,
             "playoff_probability": playoff_counts[index] / n,
+            "division_probability": division_counts[index] / n,
+            "conference_probability": None,
+            "super_bowl_probability": None,
         }
         for index, team in enumerate(teams)
     }

@@ -19,6 +19,12 @@ from .operations import (
 )
 from .publish import build_history
 from .quality import QualityError, gate_pbp
+from .season_history import (
+    archive_snapshot,
+    audit_history,
+    build_public_history,
+    run_simulation_snapshot,
+)
 
 app=typer.Typer(no_args_is_help=True)
 SEASONS = typer.Option(..., help="NFL season; repeat the option to fetch several")
@@ -35,6 +41,29 @@ def download(season: list[int] = SEASONS, data_dir: Path = Path("data")):
 def publish(ledger_dir: Path=Path("data/forecast-ledger"), public_dir: Path=Path("public/data")):
     """Build latest, movers and history JSON."""
     build_history(ledger_dir,public_dir)
+
+
+@app.command("archive-season")
+def archive_season(
+    source: Path = Path("data/season-runs/latest.json"),
+    ledger_dir: Path = Path("data/season-forecast-ledger"),
+    output: Path = Path("public/data/season-history.json"),
+):
+    """Append a changed season simulation and rebuild its public history."""
+    archived = archive_snapshot(source, ledger_dir)
+    payload = build_public_history(ledger_dir, output)
+    typer.echo(archived or "no season simulation available")
+    typer.echo(f"season snapshots: {len(payload['snapshots'])}")
+
+
+@app.command("season-run")
+def season_run(
+    source: Path = Path("data/season-runs/input.json"),
+    output: Path = Path("data/season-runs/latest.json"),
+):
+    """Run 100,000 season simulations from the current approved as-of package."""
+    payload = run_simulation_snapshot(source, output)
+    typer.echo(output if payload else "no approved season simulation input available")
 
 @app.command()
 def backtest(
@@ -148,8 +177,12 @@ def recover(
     if audit["status"] != "ok":
         typer.echo(json.dumps(audit, indent=2))
         raise typer.Exit(1)
+    season_audit = audit_history(ledger_dir.parent / "season-forecast-ledger")
+    if season_audit["status"] != "ok":
+        typer.echo(json.dumps(season_audit, indent=2))
+        raise typer.Exit(1)
     build_history(ledger_dir, public_dir)
-    atomic_json(public_dir / "recovery-audit.json", audit)
+    atomic_json(public_dir / "recovery-audit.json", {**audit, "season_history": season_audit})
     typer.echo(public_dir / "recovery-audit.json")
 
 

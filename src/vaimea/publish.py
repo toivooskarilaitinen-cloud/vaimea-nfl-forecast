@@ -4,6 +4,8 @@ import json
 from datetime import UTC, datetime
 from pathlib import Path
 
+from .season_history import build_public_history
+
 
 def build_history(ledger: Path, public: Path) -> None:
     entries=[]
@@ -27,3 +29,4 @@ def build_history(ledger: Path, public: Path) -> None:
     public.mkdir(parents=True,exist_ok=True)
     for name,value in [("latest.json",latest),("history.json",entries),("movers.json",sorted(movers,key=lambda x:abs(x["move"]),reverse=True)),("status.json",status)]:
         (public/name).write_text(json.dumps(value,indent=2,default=str)+"\n",encoding="utf-8")
+    build_public_history(ledger.parent / "season-forecast-ledger", public / "season-history.json")
