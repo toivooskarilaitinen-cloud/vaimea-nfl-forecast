@@ -38,6 +38,9 @@ def test_simulation_probabilities_and_expected_wins_are_valid():
     result = simulate(schedule, meta, n=500, seed=7, batch_size=100)
     assert set(result) == set(meta.team)
     assert all(0 <= row["playoff_probability"] <= 1 for row in result.values())
+    assert all(0 <= row["division_probability"] <= 1 for row in result.values())
+    assert all(row["conference_probability"] is None for row in result.values())
+    assert all(row["super_bowl_probability"] is None for row in result.values())
     assert all(0 <= row["expected_wins"] <= 12 for row in result.values())
 
 
