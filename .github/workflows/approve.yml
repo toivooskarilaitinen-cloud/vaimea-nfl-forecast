@@ -34,11 +34,14 @@ jobs:
       - name: Append approved forecast to immutable ledger
         run: vaimea approve "${{ inputs.draft_path }}" "${{ inputs.starters_path }}" "${{ inputs.reviewer }}"
       - run: vaimea publish
+      - run: vaimea season-run
+      - run: vaimea archive-season
       - name: Commit official ledger and public views
         run: |
           git config user.name "sarka-forecast-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/forecast-ledger public/data
+          if [ -d data/season-forecast-ledger ]; then git add data/season-forecast-ledger; fi
           git commit -m "forecast: approve official snapshot"
           git push
   alert:

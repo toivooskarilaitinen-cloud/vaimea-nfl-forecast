@@ -19,11 +19,14 @@ jobs:
       - run: vaimea download --season 2024 --season 2025
       - run: vaimea quality-check
       - run: vaimea recover
+      - run: vaimea season-run
+      - run: vaimea archive-season
       - name: Commit versioned public outputs
         run: |
           git config user.name "vaimea-forecast-bot"
           git config user.email "actions@users.noreply.github.com"
           git add public/data data/forecast-ledger
+          if [ -d data/season-forecast-ledger ]; then git add data/season-forecast-ledger; fi
           git diff --cached --quiet || git commit -m "data: weekly forecast update"
           git push
   alert:
