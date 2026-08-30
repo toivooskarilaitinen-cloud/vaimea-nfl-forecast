@@ -28,6 +28,8 @@ Mallin v0.1.1-matematiikka ja kalibrointi pysyvät jäädytettyinä. Tämä pros
 - tiebreaker-approksimaation varoitus
 - ottelukohtainen muutos ja tekninen muutossyy
 - Brier, log loss, 100 ottelun liukuva seuranta ja vertailutasot
+- kaikkien joukkueiden Playoff- ja divisioonatodennäköisyyksien kehityskäyrä
+- konferenssi- ja Super Bowl -käyrät, kun pudotuspelikaavion ottelumalli on valmis
 
 Suorituskykyraportti on vain seurantaa. Se ei muuta mallia kesken kauden.
 
@@ -43,3 +45,15 @@ GitHub lähettää tästä ilmoituksen ilmoituskelloon. Sähköposti tulee, jos 
 ## Palautus
 
 Komento `vaimea recover` tarkistaa ledgerin päällekkäisyydet ja tiedostotiivisteet sekä rakentaa `latest.json`, `history.json`, `movers.json` ja tilatiedoston uudelleen. Se ei kirjoita ledger-tiedostoja uudelleen.
+
+## Kausiennusteen historia
+
+Hyväksytty kausisimulaation syöte tallennetaan tiedostoon `data/season-runs/input.json`. Se sisältää kauden, viikon, aikaleiman, malliversion, jäljellä olevien otteluiden jäädytetyt todennäköisyydet ja joukkueiden konferenssi- sekä divisioonatiedot.
+
+Päivittäinen ajo suorittaa tämän jälkeen:
+
+1. `vaimea season-run` — ajaa 100 000 kautta ja kirjoittaa uusimman tuloksen
+2. `vaimea archive-season` — vertaa tulosta aiempiin ja arkistoi vain muuttuneen ennusteen
+3. rakentaa `public/data/season-history.json`-tiedoston sivuston graafeille
+
+Jokainen arkistoitu piste saa aikaleiman ja sisältötiivisteen. Identtistä ajoa ei lisätä kahdesti. `vaimea recover` tarkistaa myös kausiennustehistorian tiivisteet ja pysäyttää julkaisun, jos vanhaa pistettä on muutettu.
