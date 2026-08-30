@@ -17,6 +17,7 @@ GitHub hakee nflverse-datan automaattisesti joka päivä klo **13.17 Suomen kes�
 3. pysäyttää julkaisun, jos olennaista tietoa puuttuu
 4. päivittää sivuston tavalliset, uudelleen rakennettavat näkymät
 5. tarkistaa, että lukittu ennustehistoria voidaan palauttaa muuttumattomana
+6. arkistoi muuttuneen kausisimulaation Probability History -käyrää varten
 
 Päivittäinen ajo ei saa yksin luoda virallista ennustetta. Virallinen ennuste syntyy vasta erillisessä hyväksyntäajossa, jossa aloittavat QB:t ja ottelulista tarkistetaan ihmisen toimesta.
 
@@ -119,6 +120,8 @@ Joukkuevahvuudet, QB-ero, kotietu ja lepoero yhdistetään regularisoidulla logi
 ### Kausisimulaatio
 
 Jäljellä oleva kausi simuloidaan 100 000 kertaa jäädytetyillä ottelutodennäköisyyksillä. Pudotuspelipaikat ratkaistaan konferensseittain. Tiebreaker-käsittely sisältää luotettavasti toteutettavan ydinosan, mutta kaikkia NFL:n monen joukkueen sääntöjä ei vielä väitetä täydellisiksi. Tulokset merkitään `tiebreaker_mode: approximation_v0.1`.
+
+Jokainen muuttunut kausisimulaatio tallennetaan erillisenä pisteenä `data/season-forecast-ledger`-kansioon. Identtistä ajoa ei tallenneta kahdesti, eikä vanhoja pisteitä kirjoiteta yli. Playoff- ja divisioonatodennäköisyydet ovat käytössä heti. Konferenssi- ja Super Bowl -todennäköisyydet aktivoidaan vasta luotettavan pudotuspelikaavion ottelumallin valmistuttua.
 
 ## Backtest ja seuranta
 
