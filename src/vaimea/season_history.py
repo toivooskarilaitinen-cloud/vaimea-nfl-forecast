@@ -93,7 +93,7 @@ def archive_snapshot(source: Path, ledger_dir: Path) -> Path | None:
         existing = json.loads(path.read_text(encoding="utf-8"))
         if existing.get("forecast_fingerprint") == fingerprint:
             return path
-    as_of = datetime.fromisoformat(str(payload["as_of"]).replace("Z", "+00:00"))
+    as_of = datetime.fromisoformat(str(payload["as_of"]))
     if as_of.tzinfo is None:
         raise ValueError("as_of must include a timezone")
     archived = {
