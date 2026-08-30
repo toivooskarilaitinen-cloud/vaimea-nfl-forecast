@@ -1,0 +1,13 @@
+{
+  "append_only": true,
+  "availability": {
+    "conference_probability": false,
+    "division_probability": true,
+    "playoff_probability": true,
+    "super_bowl_probability": false
+  },
+  "generated_at": null,
+  "kind": "season_probability_history",
+  "latest": null,
+  "snapshots": []
+}
