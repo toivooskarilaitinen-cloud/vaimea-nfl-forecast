@@ -34,6 +34,11 @@ def run_simulation_snapshot(source: Path, output: Path) -> dict | None:
         pd.DataFrame(payload["team_meta"]),
         n=n,
         seed=seed,
+        playoff_matchups=(
+            pd.DataFrame(payload["playoff_matchups"])
+            if payload.get("playoff_matchups")
+            else None
+        ),
     )
     snapshot = {
         "season": int(payload["season"]),
