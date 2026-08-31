@@ -2,5 +2,10 @@
   "errors": [],
   "files": 0,
   "hashes": {},
+  "season_history": {
+    "errors": [],
+    "snapshots": 1,
+    "status": "ok"
+  },
   "status": "ok"
 }
