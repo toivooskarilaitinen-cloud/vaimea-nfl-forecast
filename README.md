@@ -15,9 +15,9 @@ GitHub hakee nflverse-datan automaattisesti joka päivä klo **13.17 Suomen kes�
 1. hakee uuden datan
 2. tarkistaa datan tuoreuden ja kattavuuden
 3. pysäyttää julkaisun, jos olennaista tietoa puuttuu
-4. päivittää sivuston tavalliset, uudelleen rakennettavat näkymät
+4. laskee joukkue- ja QB-ratingit uudelleen, jolloin kauden 2026 pelit vaikuttavat tuleviin ennusteisiin
 5. tarkistaa, että lukittu ennustehistoria voidaan palauttaa muuttumattomana
-6. arkistoi muuttuneen kausisimulaation Probability History -käyrää varten
+6. valmistelee seuraavan viikon muuttuneet ennusteet QB-tarkistusta varten
 
 Päivittäinen ajo ei saa yksin luoda virallista ennustetta. Virallinen ennuste syntyy vasta erillisessä hyväksyntäajossa, jossa aloittavat QB:t ja ottelulista tarkistetaan ihmisen toimesta.
 
@@ -35,7 +35,7 @@ Ennen viikon ennusteiden lukitsemista:
 6. Valitse **Run workflow** ja anna pyydetyt draft-, starter- ja hyväksyjätiedot.
 7. Hyväksy tuotantoympäristön ajo GitHubissa.
 
-Hyväksynnän jälkeen ennuste lisätään append-only-ledgeriin. Vanhaa virallista riviä ei korvata tai kirjoiteta uudelleen. Sivuston `latest.json` on vain viimeisin näkymä; `history.json` on tarkistettava ennustehistoria.
+Hyväksynnän jälkeen ennuste lisätään append-only-ledgeriin, kausisimulaatio arkistoidaan ja GitHub Pages -julkaisu käynnistyy automaattisesti. Vanhaa virallista riviä ei korvata tai kirjoiteta uudelleen. Sivuston `latest.json` on vain viimeisin näkymä; `history.json` on tarkistettava ennustehistoria.
 
 ## QB-aloittajan käsittely
 
