@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-09T16:40:54.024299+00:00",
+  "generated_at": "2026-09-09T16:51:19.099800+00:00",
   "forecast_status": "official",
-  "data_fetched_at": "2026-09-09T15:05:22.575331+00:00",
+  "data_fetched_at": "2026-09-09T16:40:53.506028+00:00",
   "source_week": 1,
   "model_version": "0.1.1",
-  "cutoff": "2026-09-09T15:05:33.071102+00:00",
+  "cutoff": "2026-09-09T16:45:47.531412+00:00",
   "warnings": [
     "2026_01_ARI_LAC: tiebreaker_approximation",
     "2026_01_ATL_PIT: tiebreaker_approximation",
@@ -24,5 +24,5 @@
     "2026_01_TB_CIN: tiebreaker_approximation",
     "2026_01_WAS_PHI: tiebreaker_approximation"
   ],
-  "ledger_entries": 1
+  "ledger_entries": 2
 }
