@@ -7,6 +7,7 @@ import typer
 
 from .backtest import run_backtest
 from .data import ingest
+from .inseason import update_season_input
 from .io import atomic_json
 from .monitoring import performance_report
 from .operations import (
@@ -33,6 +34,13 @@ SEASONS = typer.Option(..., help="NFL season; repeat the option to fetch several
 BACKTEST_SEASON = typer.Option(2025, help="Completed NFL season to replay")
 BACKTEST_OUTPUT = typer.Option(Path("public/data/backtest-2025.json"))
 BACKTEST_CACHE = typer.Option(Path("data/backtest-cache"))
+
+
+@app.command("update-season-input")
+def update_season_input_command():
+    """Recalculate current-season ratings and probabilities from as-of data."""
+    payload = update_season_input()
+    typer.echo(f"updated {len(payload['schedule'])} games as of {payload['as_of']}")
 
 
 @app.command()
@@ -225,18 +233,22 @@ def quality_check(
     if not files:
         raise QualityError("latest clean snapshot contains no play-by-play files")
     reports = []
+    newest_season = max(int(pd.read_parquet(path, columns=["season"]).season.max()) for path in files)
     for path in files:
         frame = pd.read_parquet(path)
         report = gate_pbp(frame)
         teams = set(frame.home_team.dropna()) | set(frame.away_team.dropna())
-        if report["rows"] < 500:
+        season = int(frame.season.max())
+        minimum_rows = 1 if season == newest_season else 500
+        minimum_teams = 2 if season == newest_season else 28
+        if report["rows"] < minimum_rows:
             raise QualityError(f"{path.name}: unexpectedly few rows: {report['rows']}")
-        if len(teams) < 28:
+        if len(teams) < minimum_teams:
             raise QualityError(f"{path.name}: unexpectedly few teams: {len(teams)}")
         reports.append(
             {
                 "file": str(path),
-                "season": int(frame.season.max()),
+                "season": season,
                 "latest_week": int(frame.week.max()),
                 "teams": len(teams),
                 **report,

@@ -124,8 +124,10 @@ def prepare_review_package(
             "away_qb_id": None if pd.isna(current.get("away_qb_id")) else str(current.get("away_qb_id")),
             "home_qb_name": None if pd.isna(current.get("home_qb_name")) else str(current.get("home_qb_name")),
             "away_qb_name": None if pd.isna(current.get("away_qb_name")) else str(current.get("away_qb_name")),
-            "probability_home_qb_id": probability_home.get("player_id"),
-            "probability_away_qb_id": probability_away.get("player_id"),
+            "probability_home_qb_id": base.get("probability_home_qb_id")
+            or probability_home.get("player_id"),
+            "probability_away_qb_id": base.get("probability_away_qb_id")
+            or probability_away.get("player_id"),
             "change_reason": "scheduled_production_snapshot",
         }
         prior = existing.get(base["game_id"])

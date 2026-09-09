@@ -16,18 +16,18 @@ jobs:
         with: {python-version: "3.12", cache: pip}
       - run: pip install -e ".[dev]"
       - run: pytest
-      - run: vaimea download --season 2024 --season 2025
+      - run: vaimea download --season 2018 --season 2019 --season 2020 --season 2021 --season 2022 --season 2023 --season 2024 --season 2025 --season 2026
       - run: vaimea quality-check
       - run: vaimea recover
+      - run: vaimea update-season-input
       - run: vaimea season-run
-      - run: vaimea archive-season
       - name: Prepare the next QB review package
         run: vaimea prepare-review --final-lock-minutes 90
       - name: Commit versioned public outputs and review package
         run: |
           git config user.name "sarka-forecast-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add public/data data/forecast-ledger data/drafts data/operator/starter-review.json
+          git add public/data data/forecast-ledger data/drafts data/operator/starter-review.json data/season-runs/input.json
           if [ -d data/season-forecast-ledger ]; then git add data/season-forecast-ledger; fi
           git diff --cached --quiet || git commit -m "data: prepare forecast review"
           git push
