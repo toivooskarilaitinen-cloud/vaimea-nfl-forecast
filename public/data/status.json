@@ -1,10 +1,28 @@
 {
-  "generated_at": "2026-09-09T15:05:23.089595+00:00",
-  "forecast_status": "awaiting_first_production_run",
+  "generated_at": "2026-09-09T15:13:27.059612+00:00",
+  "forecast_status": "official",
   "data_fetched_at": "2026-09-09T15:05:22.575331+00:00",
-  "source_week": 22,
-  "model_version": null,
-  "cutoff": null,
-  "warnings": [],
-  "ledger_entries": 0
+  "source_week": 1,
+  "model_version": "0.1.1",
+  "cutoff": "2026-09-09T15:05:33.071102+00:00",
+  "warnings": [
+    "2026_01_ARI_LAC: tiebreaker_approximation",
+    "2026_01_ATL_PIT: tiebreaker_approximation",
+    "2026_01_BAL_IND: tiebreaker_approximation",
+    "2026_01_BUF_HOU: tiebreaker_approximation",
+    "2026_01_CHI_CAR: tiebreaker_approximation",
+    "2026_01_CLE_JAX: tiebreaker_approximation",
+    "2026_01_DAL_NYG: tiebreaker_approximation",
+    "2026_01_DEN_KC: tiebreaker_approximation",
+    "2026_01_GB_MIN: tiebreaker_approximation",
+    "2026_01_MIA_LV: tiebreaker_approximation",
+    "2026_01_NE_SEA: tiebreaker_approximation",
+    "2026_01_NO_DET: tiebreaker_approximation",
+    "2026_01_NYJ_TEN: tiebreaker_approximation",
+    "2026_01_SF_LA: neutral_site_home_field_zero",
+    "2026_01_SF_LA: tiebreaker_approximation",
+    "2026_01_TB_CIN: tiebreaker_approximation",
+    "2026_01_WAS_PHI: tiebreaker_approximation"
+  ],
+  "ledger_entries": 1
 }

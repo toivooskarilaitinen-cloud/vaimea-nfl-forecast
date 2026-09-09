@@ -1,16 +1,8 @@
 {
-  "approved_at": "2026-09-09T15:13:26.554028+00:00",
-  "approved_by": "Toivo-Oskari Laitinen",
-  "cutoff": "2026-09-09T15:05:33.071102+00:00",
-  "data_fetched_at": "2026-09-09T15:05:22.575331+00:00",
-  "data_quality": {
-    "games": 570,
-    "pbp_rows": 98263,
-    "qb_coverage": 1.0,
-    "source_week": 22,
-    "teams": 32
-  },
-  "forecasts": [
+  "checked_at": "2026-09-09T15:13:26.037380+00:00",
+  "data_age_hours": 0.13,
+  "errors": [],
+  "games": [
     {
       "away_qb_id": "00-0039851",
       "away_qb_name": "Drake Maye",
@@ -30,11 +22,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0037834",
@@ -56,11 +44,7 @@
         "neutral_site_home_field_zero",
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0036212",
@@ -81,11 +65,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0034796",
@@ -106,11 +86,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0034857",
@@ -131,11 +107,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0039918",
@@ -156,11 +128,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0033537",
@@ -181,11 +149,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0040743",
@@ -206,11 +170,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0030565",
@@ -231,11 +191,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0034855",
@@ -256,11 +212,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0033119",
@@ -281,11 +233,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0036264",
@@ -306,11 +254,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0038128",
@@ -331,11 +275,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0039910",
@@ -356,11 +296,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0033077",
@@ -381,11 +317,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0039732",
@@ -406,54 +338,28 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T15:05:33.071102+00:00",
-      "snapshot_approved_at": "2026-09-09T15:13:26.554028+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     }
   ],
-  "input_hashes": {
-    "schedule_rows": "76619448b50b659c07ac65b340c3e78cbd723a80dd35939fc952bd4abb5ca96e",
-    "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "a46a79ef11a532ebbdea314d17dc43f28584196a2b04e31bf547627f48597412"
-  },
-  "kind": "forecast_draft",
-  "model_version": "0.1.1",
-  "quality": {
-    "checked_at": "2026-09-09T15:13:26.554028+00:00",
-    "data_age_hours": 0.13,
-    "errors": [],
-    "warnings": [
-      "2026_01_ARI_LAC: tiebreaker_approximation",
-      "2026_01_ATL_PIT: tiebreaker_approximation",
-      "2026_01_BAL_IND: tiebreaker_approximation",
-      "2026_01_BUF_HOU: tiebreaker_approximation",
-      "2026_01_CHI_CAR: tiebreaker_approximation",
-      "2026_01_CLE_JAX: tiebreaker_approximation",
-      "2026_01_DAL_NYG: tiebreaker_approximation",
-      "2026_01_DEN_KC: tiebreaker_approximation",
-      "2026_01_GB_MIN: tiebreaker_approximation",
-      "2026_01_MIA_LV: tiebreaker_approximation",
-      "2026_01_NE_SEA: tiebreaker_approximation",
-      "2026_01_NO_DET: tiebreaker_approximation",
-      "2026_01_NYJ_TEN: tiebreaker_approximation",
-      "2026_01_SF_LA: neutral_site_home_field_zero",
-      "2026_01_SF_LA: tiebreaker_approximation",
-      "2026_01_TB_CIN: tiebreaker_approximation",
-      "2026_01_WAS_PHI: tiebreaker_approximation"
-    ]
-  },
-  "random_seed": 20260826,
-  "reproducibility": {
-    "approvals_sha256": "4da29e8c6cf58d77d2dc7a757822083a76e76c4cdd455236e2eb2d42c1c6acd5",
-    "config_sha256": "237ac858e131a87881bb3d7e417d98a92c18d9078ff70e2aba9cc77bb3a82465",
-    "draft_sha256": "d85977e00c0acf2eb6d374614502112063ce22f6b38a29d1c7b04b898bcf5a13",
-    "git_commit": "5cd74a8b6abe850c3cb5943f5cc97af5d063635f",
-    "python": "3.12.14",
-    "random_seed": 20260826
-  },
   "source_week": 1,
-  "status": "official",
-  "tiebreaker_mode": "approximation_v0.1"
+  "status": "ready",
+  "warnings": [
+    "2026_01_ARI_LAC: tiebreaker_approximation",
+    "2026_01_ATL_PIT: tiebreaker_approximation",
+    "2026_01_BAL_IND: tiebreaker_approximation",
+    "2026_01_BUF_HOU: tiebreaker_approximation",
+    "2026_01_CHI_CAR: tiebreaker_approximation",
+    "2026_01_CLE_JAX: tiebreaker_approximation",
+    "2026_01_DAL_NYG: tiebreaker_approximation",
+    "2026_01_DEN_KC: tiebreaker_approximation",
+    "2026_01_GB_MIN: tiebreaker_approximation",
+    "2026_01_MIA_LV: tiebreaker_approximation",
+    "2026_01_NE_SEA: tiebreaker_approximation",
+    "2026_01_NO_DET: tiebreaker_approximation",
+    "2026_01_NYJ_TEN: tiebreaker_approximation",
+    "2026_01_SF_LA: neutral_site_home_field_zero",
+    "2026_01_SF_LA: tiebreaker_approximation",
+    "2026_01_TB_CIN: tiebreaker_approximation",
+    "2026_01_WAS_PHI: tiebreaker_approximation"
+  ]
 }
