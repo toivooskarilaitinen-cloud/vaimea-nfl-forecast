@@ -44,9 +44,13 @@ def update_season_input_command():
 
 
 @app.command()
-def download(season: list[int] = SEASONS, data_dir: Path = Path("data")):
+def download(
+    season: list[int] = SEASONS,
+    data_dir: Path = Path("data"),
+    allow_missing: bool = typer.Option(False, help="Skip seasons not published yet"),
+):
     """Create an immutable nflverse snapshot and cleaned layer."""
-    for p in ingest(data_dir, season):
+    for p in ingest(data_dir, season, allow_missing=allow_missing):
         typer.echo(p)
 
 

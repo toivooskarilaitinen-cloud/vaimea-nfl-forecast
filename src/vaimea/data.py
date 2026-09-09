@@ -17,11 +17,24 @@ def fetch(url: str, target: Path, timeout: int = 120) -> Path:
     tmp = target.with_suffix(target.suffix + ".tmp"); tmp.write_bytes(r.content); tmp.replace(target)
     return target
 
-def ingest(root: Path, seasons: list[int], snapshot: str | None = None) -> list[Path]:
+def ingest(
+    root: Path,
+    seasons: list[int],
+    snapshot: str | None = None,
+    allow_missing: bool = False,
+) -> list[Path]:
     stamp = snapshot or datetime.now(UTC).strftime("%Y%m%dT%H%M%SZ")
     out=[]
     for season in seasons:
-        raw = fetch(f"{BASE}/pbp/play_by_play_{season}.parquet", root/"raw"/stamp/f"pbp_{season}.parquet")
+        try:
+            raw = fetch(
+                f"{BASE}/pbp/play_by_play_{season}.parquet",
+                root / "raw" / stamp / f"pbp_{season}.parquet",
+            )
+        except requests.HTTPError as error:
+            if allow_missing and error.response is not None and error.response.status_code == 404:
+                continue
+            raise
         df = pd.read_parquet(raw)
         cols = [c for c in ["game_id","season","week","game_date","home_team","away_team","posteam","defteam","play_type","epa","cpoe","qb_dropback","passer_player_id","passer_player_name","complete_pass","air_yards","yards_gained"] if c in df]
         clean=df[cols].copy(); clean["available_at"] = pd.to_datetime(clean["game_date"], utc=True) + pd.Timedelta(days=2)
