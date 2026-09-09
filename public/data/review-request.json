@@ -8,7 +8,7 @@
       "game_id": "2026_01_NE_SEA",
       "home_qb_name": "Sam Darnold",
       "home_team": "SEA",
-      "home_win_probability": 0.5986043070911548,
+      "home_win_probability": 0.5986228854033223,
       "qb_probability_match": true
     },
     {
@@ -18,7 +18,7 @@
       "game_id": "2026_01_SF_LA",
       "home_qb_name": "Matthew Stafford",
       "home_team": "LA",
-      "home_win_probability": 0.5590723043913901,
+      "home_win_probability": 0.5591657670482091,
       "qb_probability_match": true
     },
     {
@@ -28,7 +28,7 @@
       "game_id": "2026_01_ATL_PIT",
       "home_qb_name": "Aaron Rodgers",
       "home_team": "PIT",
-      "home_win_probability": 0.3954112987523714,
+      "home_win_probability": 0.3954970593259769,
       "qb_probability_match": true
     },
     {
@@ -38,7 +38,7 @@
       "game_id": "2026_01_BAL_IND",
       "home_qb_name": "Daniel Jones",
       "home_team": "IND",
-      "home_win_probability": 0.4357670748513502,
+      "home_win_probability": 0.4358997779133646,
       "qb_probability_match": true
     },
     {
@@ -48,7 +48,7 @@
       "game_id": "2026_01_BUF_HOU",
       "home_qb_name": "C.J. Stroud",
       "home_team": "HOU",
-      "home_win_probability": 0.41208170172982606,
+      "home_win_probability": 0.4122615348427607,
       "qb_probability_match": true
     },
     {
@@ -58,7 +58,7 @@
       "game_id": "2026_01_CHI_CAR",
       "home_qb_name": "Bryce Young",
       "home_team": "CAR",
-      "home_win_probability": 0.5348698708301841,
+      "home_win_probability": 0.5347503545527413,
       "qb_probability_match": true
     },
     {
@@ -68,7 +68,7 @@
       "game_id": "2026_01_CLE_JAX",
       "home_qb_name": "Trevor Lawrence",
       "home_team": "JAX",
-      "home_win_probability": 0.6370871890052293,
+      "home_win_probability": 0.6368514609313878,
       "qb_probability_match": true
     },
     {
@@ -78,7 +78,7 @@
       "game_id": "2026_01_NO_DET",
       "home_qb_name": "Jared Goff",
       "home_team": "DET",
-      "home_win_probability": 0.6541910829821259,
+      "home_win_probability": 0.653850789313046,
       "qb_probability_match": true
     },
     {
@@ -88,7 +88,7 @@
       "game_id": "2026_01_NYJ_TEN",
       "home_qb_name": "Cam Ward",
       "home_team": "TEN",
-      "home_win_probability": 0.413368271951763,
+      "home_win_probability": 0.41357504400390516,
       "qb_probability_match": true
     },
     {
@@ -98,7 +98,7 @@
       "game_id": "2026_01_TB_CIN",
       "home_qb_name": "Joe Burrow",
       "home_team": "CIN",
-      "home_win_probability": 0.6094877445914207,
+      "home_win_probability": 0.6092334875006381,
       "qb_probability_match": true
     },
     {
@@ -108,7 +108,7 @@
       "game_id": "2026_01_ARI_LAC",
       "home_qb_name": "Justin Herbert",
       "home_team": "LAC",
-      "home_win_probability": 0.5240686275169819,
+      "home_win_probability": 0.523900028470372,
       "qb_probability_match": true
     },
     {
@@ -118,7 +118,7 @@
       "game_id": "2026_01_GB_MIN",
       "home_qb_name": "Kyler Murray",
       "home_team": "MIN",
-      "home_win_probability": 0.48250704746470585,
+      "home_win_probability": 0.48262053453633796,
       "qb_probability_match": true
     },
     {
@@ -128,7 +128,7 @@
       "game_id": "2026_01_MIA_LV",
       "home_qb_name": "Kirk Cousins",
       "home_team": "LV",
-      "home_win_probability": 0.41673127540269994,
+      "home_win_probability": 0.4169999454364331,
       "qb_probability_match": true
     },
     {
@@ -138,7 +138,7 @@
       "game_id": "2026_01_WAS_PHI",
       "home_qb_name": "Jalen Hurts",
       "home_team": "PHI",
-      "home_win_probability": 0.551035833500986,
+      "home_win_probability": 0.5508476271460968,
       "qb_probability_match": true
     },
     {
@@ -148,7 +148,7 @@
       "game_id": "2026_01_DAL_NYG",
       "home_qb_name": "Jaxson Dart",
       "home_team": "NYG",
-      "home_win_probability": 0.5017402040791518,
+      "home_win_probability": 0.501805118953213,
       "qb_probability_match": true
     },
     {
@@ -158,11 +158,11 @@
       "game_id": "2026_01_DEN_KC",
       "home_qb_name": "Patrick Mahomes",
       "home_team": "KC",
-      "home_win_probability": 0.6145830293622123,
+      "home_win_probability": 0.6143581515264677,
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-09-09T15:05:33.071102+00:00",
+  "generated_at": "2026-09-09T16:45:47.531412+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 1,

@@ -1,7 +1,9 @@
 {
   "errors": [],
-  "files": 0,
-  "hashes": {},
+  "files": 1,
+  "hashes": {
+    "2026-09-09T15-05-33.071102+00-00_0.1.1.json": "63004bc8aa3f020adbec7966444b632b60dde45d6a945edfa32465c05503f93f"
+  },
   "season_history": {
     "errors": [],
     "snapshots": 1,

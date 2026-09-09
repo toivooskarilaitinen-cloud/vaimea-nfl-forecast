@@ -1,9 +1,69 @@
 {
-  "checked_at": "2026-09-09T15:05:22.575331+00:00",
+  "checked_at": "2026-09-09T16:40:53.506028+00:00",
   "files": [
     {
+      "epa_null_rate": 0.011505232545798043,
+      "file": "data/clean/20260909T164045Z/pbp_2018.parquet",
+      "games": 267,
+      "latest_week": 21,
+      "qb_coverage": 0.9601937046004843,
+      "rows": 47109,
+      "season": 2018,
+      "teams": 32
+    },
+    {
+      "epa_null_rate": 0.011531950909860348,
+      "file": "data/clean/20260909T164045Z/pbp_2019.parquet",
+      "games": 267,
+      "latest_week": 21,
+      "qb_coverage": 0.9596008291953912,
+      "rows": 47260,
+      "season": 2019,
+      "teams": 32
+    },
+    {
+      "epa_null_rate": 0.011277643852845614,
+      "file": "data/clean/20260909T164045Z/pbp_2020.parquet",
+      "games": 269,
+      "latest_week": 21,
+      "qb_coverage": 0.9571340509270235,
+      "rows": 47705,
+      "season": 2020,
+      "teams": 32
+    },
+    {
+      "epa_null_rate": 0.011417811786386763,
+      "file": "data/clean/20260909T164045Z/pbp_2021.parquet",
+      "games": 285,
+      "latest_week": 22,
+      "qb_coverage": 0.9567395264116576,
+      "rows": 49922,
+      "season": 2021,
+      "teams": 32
+    },
+    {
+      "epa_null_rate": 0.01149006756483392,
+      "file": "data/clean/20260909T164045Z/pbp_2022.parquet",
+      "games": 284,
+      "latest_week": 22,
+      "qb_coverage": 0.9550861745972274,
+      "rows": 49434,
+      "season": 2022,
+      "teams": 32
+    },
+    {
+      "epa_null_rate": 0.01147689519782543,
+      "file": "data/clean/20260909T164045Z/pbp_2023.parquet",
+      "games": 285,
+      "latest_week": 22,
+      "qb_coverage": 0.9497685503460287,
+      "rows": 49665,
+      "season": 2023,
+      "teams": 32
+    },
+    {
       "epa_null_rate": 0.011517012850561706,
-      "file": "data/clean/20260909T150520Z/pbp_2024.parquet",
+      "file": "data/clean/20260909T164045Z/pbp_2024.parquet",
       "games": 285,
       "latest_week": 22,
       "qb_coverage": 0.9464049195837275,
@@ -13,7 +73,7 @@
     },
     {
       "epa_null_rate": 0.011687273174632466,
-      "file": "data/clean/20260909T150520Z/pbp_2025.parquet",
+      "file": "data/clean/20260909T164045Z/pbp_2025.parquet",
       "games": 285,
       "latest_week": 22,
       "qb_coverage": 0.9449870726802643,
@@ -22,11 +82,11 @@
       "teams": 32
     }
   ],
-  "snapshot": "20260909T150520Z",
+  "snapshot": "20260909T164045Z",
   "status": "passed",
   "summary": {
-    "games": 570,
-    "pbp_rows": 98263,
+    "games": 2227,
+    "pbp_rows": 389358,
     "qb_coverage": 0.9449870726802643,
     "source_week": 22,
     "teams": 32
