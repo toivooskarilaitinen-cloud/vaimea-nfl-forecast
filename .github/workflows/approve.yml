@@ -11,6 +11,7 @@ on:
 permissions:
   contents: write
   issues: write
+  actions: write
 concurrency:
   group: official-forecast-approval
   cancel-in-progress: false
@@ -44,6 +45,10 @@ jobs:
           if [ -d data/season-forecast-ledger ]; then git add data/season-forecast-ledger; fi
           git commit -m "forecast: approve official snapshot"
           git push
+      - name: Publish the approved snapshot to GitHub Pages
+        run: gh workflow run pages.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
       - name: Close the QB review notification
         uses: actions/github-script@v8
         with:
