@@ -43,6 +43,13 @@ def fit(train: pd.DataFrame, c=.25):
     return RegularizedLogit(w, scale)
 
 
+def apply_temperature(probability, slope: float):
+    """Apply the frozen calibration slope on the log-odds scale."""
+    probability = np.clip(np.asarray(probability, dtype=float), 1e-12, 1 - 1e-12)
+    log_odds = np.log(probability / (1 - probability))
+    return 1 / (1 + np.exp(-slope * log_odds))
+
+
 def _brier(y, p):
     return float(np.mean((np.asarray(p) - np.asarray(y)) ** 2))
 
