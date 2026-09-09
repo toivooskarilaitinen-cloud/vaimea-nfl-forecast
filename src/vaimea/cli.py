@@ -11,12 +11,14 @@ from .io import atomic_json
 from .monitoring import performance_report
 from .operations import (
     approve_forecast,
+    confirm_starters,
     create_draft,
     make_review,
     preseason_checklist,
     recovery_audit,
     suggest_starters,
 )
+from .production import write_review_package
 from .publish import build_history
 from .quality import QualityError, gate_pbp
 from .season_history import (
@@ -26,21 +28,24 @@ from .season_history import (
     run_simulation_snapshot,
 )
 
-app=typer.Typer(no_args_is_help=True)
+app = typer.Typer(no_args_is_help=True)
 SEASONS = typer.Option(..., help="NFL season; repeat the option to fetch several")
 BACKTEST_SEASON = typer.Option(2025, help="Completed NFL season to replay")
 BACKTEST_OUTPUT = typer.Option(Path("public/data/backtest-2025.json"))
 BACKTEST_CACHE = typer.Option(Path("data/backtest-cache"))
 
+
 @app.command()
 def download(season: list[int] = SEASONS, data_dir: Path = Path("data")):
     """Create an immutable nflverse snapshot and cleaned layer."""
-    for p in ingest(data_dir,season): typer.echo(p)
+    for p in ingest(data_dir, season):
+        typer.echo(p)
+
 
 @app.command()
-def publish(ledger_dir: Path=Path("data/forecast-ledger"), public_dir: Path=Path("public/data")):
+def publish(ledger_dir: Path = Path("data/forecast-ledger"), public_dir: Path = Path("public/data")):
     """Build latest, movers and history JSON."""
-    build_history(ledger_dir,public_dir)
+    build_history(ledger_dir, public_dir)
 
 
 @app.command("archive-season")
@@ -65,6 +70,7 @@ def season_run(
     payload = run_simulation_snapshot(source, output)
     typer.echo(output if payload else "no approved season simulation input available")
 
+
 @app.command()
 def backtest(
     season: int = BACKTEST_SEASON,
@@ -87,6 +93,26 @@ def starter_sheet(
     suggestions = suggest_starters(pd.read_csv(schedule), pd.read_csv(depth_chart), cutoff)
     atomic_json(output, {"cutoff": cutoff, "reviewed_by": None, "games": suggestions})
     typer.echo(output)
+
+
+@app.command("prepare-review")
+def prepare_review(final_lock_minutes: int = 90):
+    """Create the next QB review package from frozen probabilities and the live schedule."""
+    payload = write_review_package(final_lock_minutes=final_lock_minutes)
+    typer.echo(json.dumps(payload, indent=2))
+
+
+@app.command("confirm-starters")
+def confirm_starters_command(
+    starters: Path = Path("data/operator/starter-review.json"),
+    reviewer: str = typer.Option(..., help="Human reviewer name"),
+    confirmation: str = typer.Option(..., help="Type APPROVE to confirm every listed QB"),
+):
+    """Explicitly approve the generated QB sheet before publication."""
+    payload = json.loads(starters.read_text(encoding="utf-8"))
+    payload = confirm_starters(payload, reviewer, confirmation)
+    atomic_json(starters, payload)
+    typer.echo(starters)
 
 
 @app.command("draft")
@@ -207,13 +233,15 @@ def quality_check(
             raise QualityError(f"{path.name}: unexpectedly few rows: {report['rows']}")
         if len(teams) < 28:
             raise QualityError(f"{path.name}: unexpectedly few teams: {len(teams)}")
-        reports.append({
-            "file": str(path),
-            "season": int(frame.season.max()),
-            "latest_week": int(frame.week.max()),
-            "teams": len(teams),
-            **report,
-        })
+        reports.append(
+            {
+                "file": str(path),
+                "season": int(frame.season.max()),
+                "latest_week": int(frame.week.max()),
+                "teams": len(teams),
+                **report,
+            }
+        )
     payload = {
         "status": "passed",
         "checked_at": datetime.now(UTC).isoformat(),
@@ -230,4 +258,6 @@ def quality_check(
     atomic_json(output, payload)
     typer.echo(json.dumps(payload, indent=2))
 
-if __name__ == "__main__": app()
+
+if __name__ == "__main__":
+    app()

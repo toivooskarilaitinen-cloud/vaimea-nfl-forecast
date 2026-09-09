@@ -11,10 +11,19 @@ import pandas as pd
 from .io import atomic_json, sha256
 from .quality import QualityError
 
+DEFAULT_FINAL_LOCK_MINUTES = 90
+
 
 def _utc(value: str) -> pd.Timestamp:
     stamp = pd.Timestamp(value)
     return stamp.tz_localize("UTC") if stamp.tzinfo is None else stamp.tz_convert("UTC")
+
+
+def _final_lock(row: dict, minutes: int = DEFAULT_FINAL_LOCK_MINUTES) -> pd.Timestamp:
+    explicit = row.get("final_lock_at")
+    if explicit:
+        return _utc(explicit)
+    return _utc(row["kickoff"]) - pd.Timedelta(minutes=minutes)
 
 
 def create_draft(
@@ -82,15 +91,47 @@ def suggest_starters(schedule: pd.DataFrame, depth_chart: pd.DataFrame, cutoff: 
     return games
 
 
-def make_review(draft: dict, starter_approvals: dict, max_age_hours: int = 72) -> dict:
+def confirm_starters(starter_approvals: dict, reviewer: str, confirmation: str) -> dict:
+    """Turn one generated starter sheet into an explicit human approval."""
+    if confirmation.strip().upper() != "APPROVE":
+        raise QualityError("QB confirmation must be exactly APPROVE")
+    if not reviewer.strip():
+        raise QualityError("reviewer is required")
+    games = starter_approvals.get("games", {})
+    if not games:
+        raise QualityError("starter review has no games")
+    approved_at = datetime.now(UTC).isoformat()
+    for game in games.values():
+        game["approved"] = True
+        game["status"] = "approved"
+    starter_approvals["reviewed_by"] = reviewer.strip()
+    starter_approvals["reviewed_at"] = approved_at
+    starter_approvals["status"] = "approved"
+    return starter_approvals
+
+
+def make_review(
+    draft: dict,
+    starter_approvals: dict,
+    max_age_hours: int = 72,
+    now: pd.Timestamp | None = None,
+) -> dict:
     forecasts = draft.get("forecasts", [])
     if not forecasts:
         raise QualityError("forecast draft is empty")
-    now = pd.Timestamp.now(tz="UTC")
+    now = now or pd.Timestamp.now(tz="UTC")
+    now = _utc(str(now))
     cutoff = _utc(draft["cutoff"])
     fetched = _utc(draft["data_fetched_at"])
     errors: list[str] = []
     warnings: list[str] = []
+
+    if starter_approvals.get("kind") == "starter_review":
+        if starter_approvals.get("cutoff") != draft.get("cutoff"):
+            errors.append("starter review cutoff does not match draft cutoff")
+        if starter_approvals.get("source_week") != draft.get("source_week"):
+            errors.append("starter review source_week does not match draft")
+
     game_ids = [row.get("game_id") for row in forecasts]
     if len(game_ids) != len(set(game_ids)):
         errors.append("duplicate game_id")
@@ -124,10 +165,24 @@ def make_review(draft: dict, starter_approvals: dict, max_age_hours: int = 72) -
             probability = 0.5
         if not 0 <= probability <= 1:
             errors.append(f"{game_id}: probability outside [0,1]")
-        if cutoff >= _utc(row["kickoff"]):
+        kickoff = _utc(row["kickoff"])
+        final_lock_at = _final_lock(row)
+        if cutoff >= kickoff:
             errors.append(f"{game_id}: cutoff does not precede kickoff")
+        if final_lock_at >= kickoff:
+            errors.append(f"{game_id}: final lock must precede kickoff")
+        if now >= final_lock_at:
+            errors.append(f"{game_id}: final lock has passed")
         if row.get("home_team") == row.get("away_team"):
             errors.append(f"{game_id}: identical teams")
+
+        probability_home_qb = row.get("probability_home_qb_id", row.get("home_qb_id"))
+        probability_away_qb = row.get("probability_away_qb_id", row.get("away_qb_id"))
+        if probability_home_qb != row.get("home_qb_id"):
+            errors.append(f"{game_id}: home QB changed; probability must be recomputed")
+        if probability_away_qb != row.get("away_qb_id"):
+            errors.append(f"{game_id}: away QB changed; probability must be recomputed")
+
         approval = approvals.get(game_id, {})
         for side in ("home", "away"):
             proposed = row.get(f"{side}_qb_id")
@@ -144,14 +199,14 @@ def make_review(draft: dict, starter_approvals: dict, max_age_hours: int = 72) -
         if draft.get("tiebreaker_mode") != "official_complete":
             row_warnings.append("tiebreaker_approximation")
         warnings.extend(f"{game_id}: {item}" for item in row_warnings)
-        reviewed_games.append({**row, "warnings": sorted(set(row_warnings))})
+        reviewed_games.append({**row, "final_lock_at": final_lock_at.isoformat(), "warnings": sorted(set(row_warnings))})
 
     input_hashes = draft.get("input_hashes", {})
     if not input_hashes:
         errors.append("input_hashes are missing")
     return {
         "status": "ready" if not errors else "blocked",
-        "checked_at": datetime.now(UTC).isoformat(),
+        "checked_at": now.isoformat(),
         "data_age_hours": round(age_hours, 2),
         "source_week": draft.get("source_week"),
         "games": reviewed_games,
@@ -169,7 +224,8 @@ def approve_forecast(
 ) -> Path:
     draft = json.loads(draft_path.read_text(encoding="utf-8"))
     approvals = json.loads(approvals_path.read_text(encoding="utf-8"))
-    review = make_review(draft, approvals)
+    approved_at = pd.Timestamp.now(tz="UTC")
+    review = make_review(draft, approvals, now=approved_at)
     if review["status"] != "ready":
         raise QualityError("forecast approval blocked: " + "; ".join(review["errors"]))
     cutoff = draft["cutoff"]
@@ -182,7 +238,7 @@ def approve_forecast(
         **draft,
         "status": "official",
         "approved_by": reviewer,
-        "approved_at": datetime.now(UTC).isoformat(),
+        "approved_at": approved_at.isoformat(),
         "forecasts": review["games"],
         "quality": {key: review[key] for key in ("checked_at", "data_age_hours", "errors", "warnings")},
         "reproducibility": {
