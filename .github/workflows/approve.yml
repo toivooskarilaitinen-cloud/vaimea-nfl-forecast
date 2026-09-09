@@ -2,16 +2,11 @@ name: Approve official forecast
 on:
   workflow_dispatch:
     inputs:
-      draft_path:
-        description: Forecast draft JSON path
-        required: true
-        default: data/drafts/latest.json
-      starters_path:
-        description: Reviewed QB approvals JSON path
-        required: true
-        default: data/operator/starter-review.json
       reviewer:
         description: Reviewer name
+        required: true
+      confirmation:
+        description: Type APPROVE after checking every listed QB
         required: true
 permissions:
   contents: write
@@ -29,10 +24,15 @@ jobs:
         with: {python-version: "3.12", cache: pip}
       - run: pip install -e ".[dev]"
       - run: pytest
-      - name: Run quality and QB review gates
-        run: vaimea review "${{ inputs.draft_path }}" "${{ inputs.starters_path }}"
+      - name: Record explicit human QB approval
+        run: >-
+          vaimea confirm-starters
+          --reviewer "${{ inputs.reviewer }}"
+          --confirmation "${{ inputs.confirmation }}"
+      - name: Run quality, QB, provenance and final-lock gates
+        run: vaimea review data/drafts/latest.json data/operator/starter-review.json
       - name: Append approved forecast to immutable ledger
-        run: vaimea approve "${{ inputs.draft_path }}" "${{ inputs.starters_path }}" "${{ inputs.reviewer }}"
+        run: vaimea approve data/drafts/latest.json data/operator/starter-review.json "${{ inputs.reviewer }}"
       - run: vaimea publish
       - run: vaimea season-run
       - run: vaimea archive-season
@@ -40,10 +40,27 @@ jobs:
         run: |
           git config user.name "sarka-forecast-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/forecast-ledger public/data
+          git add data/forecast-ledger data/operator/starter-review.json public/data
           if [ -d data/season-forecast-ledger ]; then git add data/season-forecast-ledger; fi
           git commit -m "forecast: approve official snapshot"
           git push
+      - name: Close the QB review notification
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const fs = require("fs");
+            const request = JSON.parse(fs.readFileSync("public/data/review-request.json", "utf8"));
+            const title = `SARKA QB review required: Week ${request.source_week}`;
+            const {data: issues} = await github.rest.issues.listForRepo({...context.repo, state: "open"});
+            const issue = issues.find(item => item.title === title);
+            if (issue) {
+              await github.rest.issues.createComment({
+                ...context.repo,
+                issue_number: issue.number,
+                body: `Approved by **${{ inputs.reviewer }}**. The snapshot is now in the immutable ledger. Later snapshots may still be published before each game's T−90 final lock.`
+              });
+              await github.rest.issues.update({...context.repo, issue_number: issue.number, state: "closed"});
+            }
   alert:
     if: failure()
     needs: approve
