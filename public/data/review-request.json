@@ -1,0 +1,170 @@
+{
+  "approval_deadline": "2026-09-09T22:50:00+00:00",
+  "games": [
+    {
+      "away_qb_name": "Drake Maye",
+      "away_team": "NE",
+      "final_lock_at": "2026-09-09T22:50:00+00:00",
+      "game_id": "2026_01_NE_SEA",
+      "home_qb_name": "Sam Darnold",
+      "home_team": "SEA",
+      "home_win_probability": 0.5986043070911548,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Brock Purdy",
+      "away_team": "SF",
+      "final_lock_at": "2026-09-10T23:05:00+00:00",
+      "game_id": "2026_01_SF_LA",
+      "home_qb_name": "Matthew Stafford",
+      "home_team": "LA",
+      "home_win_probability": 0.5590723043913901,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Tua Tagovailoa",
+      "away_team": "ATL",
+      "final_lock_at": "2026-09-13T15:30:00+00:00",
+      "game_id": "2026_01_ATL_PIT",
+      "home_qb_name": "Aaron Rodgers",
+      "home_team": "PIT",
+      "home_win_probability": 0.3954112987523714,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Lamar Jackson",
+      "away_team": "BAL",
+      "final_lock_at": "2026-09-13T15:30:00+00:00",
+      "game_id": "2026_01_BAL_IND",
+      "home_qb_name": "Daniel Jones",
+      "home_team": "IND",
+      "home_win_probability": 0.4357670748513502,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Josh Allen",
+      "away_team": "BUF",
+      "final_lock_at": "2026-09-13T15:30:00+00:00",
+      "game_id": "2026_01_BUF_HOU",
+      "home_qb_name": "C.J. Stroud",
+      "home_team": "HOU",
+      "home_win_probability": 0.41208170172982606,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Caleb Williams",
+      "away_team": "CHI",
+      "final_lock_at": "2026-09-13T15:30:00+00:00",
+      "game_id": "2026_01_CHI_CAR",
+      "home_qb_name": "Bryce Young",
+      "home_team": "CAR",
+      "home_win_probability": 0.5348698708301841,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Deshaun Watson",
+      "away_team": "CLE",
+      "final_lock_at": "2026-09-13T15:30:00+00:00",
+      "game_id": "2026_01_CLE_JAX",
+      "home_qb_name": "Trevor Lawrence",
+      "home_team": "JAX",
+      "home_win_probability": 0.6370871890052293,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Tyler Shough",
+      "away_team": "NO",
+      "final_lock_at": "2026-09-13T15:30:00+00:00",
+      "game_id": "2026_01_NO_DET",
+      "home_qb_name": "Jared Goff",
+      "home_team": "DET",
+      "home_win_probability": 0.6541910829821259,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Geno Smith",
+      "away_team": "NYJ",
+      "final_lock_at": "2026-09-13T15:30:00+00:00",
+      "game_id": "2026_01_NYJ_TEN",
+      "home_qb_name": "Cam Ward",
+      "home_team": "TEN",
+      "home_win_probability": 0.413368271951763,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Baker Mayfield",
+      "away_team": "TB",
+      "final_lock_at": "2026-09-13T15:30:00+00:00",
+      "game_id": "2026_01_TB_CIN",
+      "home_qb_name": "Joe Burrow",
+      "home_team": "CIN",
+      "home_win_probability": 0.6094877445914207,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Jacoby Brissett",
+      "away_team": "ARI",
+      "final_lock_at": "2026-09-13T18:55:00+00:00",
+      "game_id": "2026_01_ARI_LAC",
+      "home_qb_name": "Justin Herbert",
+      "home_team": "LAC",
+      "home_win_probability": 0.5240686275169819,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Jordan Love",
+      "away_team": "GB",
+      "final_lock_at": "2026-09-13T18:55:00+00:00",
+      "game_id": "2026_01_GB_MIN",
+      "home_qb_name": "Kyler Murray",
+      "home_team": "MIN",
+      "home_win_probability": 0.48250704746470585,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Malik Willis",
+      "away_team": "MIA",
+      "final_lock_at": "2026-09-13T18:55:00+00:00",
+      "game_id": "2026_01_MIA_LV",
+      "home_qb_name": "Kirk Cousins",
+      "home_team": "LV",
+      "home_win_probability": 0.41673127540269994,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Jayden Daniels",
+      "away_team": "WAS",
+      "final_lock_at": "2026-09-13T18:55:00+00:00",
+      "game_id": "2026_01_WAS_PHI",
+      "home_qb_name": "Jalen Hurts",
+      "home_team": "PHI",
+      "home_win_probability": 0.551035833500986,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Dak Prescott",
+      "away_team": "DAL",
+      "final_lock_at": "2026-09-13T22:50:00+00:00",
+      "game_id": "2026_01_DAL_NYG",
+      "home_qb_name": "Jaxson Dart",
+      "home_team": "NYG",
+      "home_win_probability": 0.5017402040791518,
+      "qb_probability_match": true
+    },
+    {
+      "away_qb_name": "Bo Nix",
+      "away_team": "DEN",
+      "final_lock_at": "2026-09-14T22:45:00+00:00",
+      "game_id": "2026_01_DEN_KC",
+      "home_qb_name": "Patrick Mahomes",
+      "home_team": "KC",
+      "home_win_probability": 0.6145830293622123,
+      "qb_probability_match": true
+    }
+  ],
+  "generated_at": "2026-09-09T15:05:33.071102+00:00",
+  "kind": "qb_review_request",
+  "review_needed": true,
+  "source_week": 1,
+  "status": "needs_review"
+}
