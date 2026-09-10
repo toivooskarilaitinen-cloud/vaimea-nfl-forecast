@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 
 FEATURES = ["strength_diff", "qb_diff", "home_field", "rest_diff"]
+TEMPERATURE_SLOPE = 0.869
 
 
 class RegularizedLogit:

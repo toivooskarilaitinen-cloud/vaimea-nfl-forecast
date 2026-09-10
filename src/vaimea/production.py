@@ -47,6 +47,17 @@ def _probability_qbs(preseason_review: dict) -> dict[str, dict]:
     return result
 
 
+def _reviewed_qb(current: pd.Series, side: str, team: str, reviewed: dict) -> tuple[str | None, str | None, str]:
+    qb_id = None if pd.isna(current.get(f"{side}_qb_id")) else str(current.get(f"{side}_qb_id"))
+    qb_name = None if pd.isna(current.get(f"{side}_qb_name")) else str(current.get(f"{side}_qb_name"))
+    team_review = reviewed.get(team, {})
+    if team_review.get("manual_override") is True:
+        return team_review.get("player_id"), team_review.get("player_name"), "human_override"
+    if qb_id:
+        return qb_id, qb_name, "nflverse_nfldata_games"
+    return team_review.get("player_id"), team_review.get("player_name"), "reviewed_roster_fallback"
+
+
 def _latest_official_by_game(ledger_dir: Path) -> dict[str, dict]:
     latest: dict[str, dict] = {}
     for path in sorted(ledger_dir.glob("*.json")):
@@ -115,15 +126,21 @@ def prepare_review_package(
         home_team, away_team = base["home_team"], base["away_team"]
         probability_home = probability_qbs.get(home_team, {})
         probability_away = probability_qbs.get(away_team, {})
+        home_qb_id, home_qb_name, home_qb_source = _reviewed_qb(
+            current, "home", home_team, probability_qbs
+        )
+        away_qb_id, away_qb_name, away_qb_source = _reviewed_qb(
+            current, "away", away_team, probability_qbs
+        )
         row = {
             **base,
             "kickoff": _utc_iso(kickoff),
             "final_lock_at": _utc_iso(final_lock_at),
             "neutral_site": str(current.get("location", "")).lower() == "neutral",
-            "home_qb_id": None if pd.isna(current.get("home_qb_id")) else str(current.get("home_qb_id")),
-            "away_qb_id": None if pd.isna(current.get("away_qb_id")) else str(current.get("away_qb_id")),
-            "home_qb_name": None if pd.isna(current.get("home_qb_name")) else str(current.get("home_qb_name")),
-            "away_qb_name": None if pd.isna(current.get("away_qb_name")) else str(current.get("away_qb_name")),
+            "home_qb_id": home_qb_id,
+            "away_qb_id": away_qb_id,
+            "home_qb_name": home_qb_name,
+            "away_qb_name": away_qb_name,
             "probability_home_qb_id": base.get("probability_home_qb_id")
             or probability_home.get("player_id"),
             "probability_away_qb_id": base.get("probability_away_qb_id")
@@ -143,8 +160,8 @@ def prepare_review_package(
             "away_qb_id": row["away_qb_id"],
             "home_qb_name": row["home_qb_name"],
             "away_qb_name": row["away_qb_name"],
-            "home_source": "nflverse_nfldata_games",
-            "away_source": "nflverse_nfldata_games",
+            "home_source": home_qb_source,
+            "away_source": away_qb_source,
             "approved": False,
             "status": "needs_review",
         }

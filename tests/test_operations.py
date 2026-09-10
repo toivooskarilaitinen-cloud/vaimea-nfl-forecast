@@ -10,8 +10,10 @@ from vaimea.operations import (
     create_draft,
     make_review,
     recovery_audit,
+    set_qb_override,
     suggest_starters,
 )
+from vaimea.quality import QualityError
 
 
 def _draft():
@@ -92,7 +94,8 @@ def test_performance_monitor_includes_baselines_without_refitting():
     )
     report = performance_report(rows, rolling_games=3)
     assert report["model"]["games"] == 4
-    assert "constant_home_rate" in report["baselines"]
+    baseline = report["baselines"]["historical_home_rate_2021_2024"]
+    assert baseline["brier"] == pytest.approx(0.227782, abs=1e-6)
     assert "elo" in report["baselines"]
     assert "not refitted" in report["calibration_note"]
 
@@ -118,3 +121,17 @@ def test_draft_packages_probabilities_without_changing_them(tmp_path):
     )
     assert result["forecasts"][0]["home_win_probability"] == 0.6
     assert result["status"] == "needs_review"
+
+
+def test_qb_override_requires_explicit_recompute_and_is_persisted(tmp_path):
+    review = tmp_path / "qb-review.json"
+    review.write_text(
+        json.dumps({"teams": [{"team": "SEA", "player_id": "old", "player_name": "Old"}]}),
+        encoding="utf-8",
+    )
+    with pytest.raises(QualityError, match="RECOMPUTE"):
+        set_qb_override(review, "SEA", "new", "New QB", "tester", "yes")
+    row = set_qb_override(review, "sea", "new", "New QB", "tester", "RECOMPUTE")
+    assert row["manual_override"] is True
+    assert row["player_id"] == "new"
+    assert json.loads(review.read_text())["teams"][0]["override_reviewed_by"] == "tester"

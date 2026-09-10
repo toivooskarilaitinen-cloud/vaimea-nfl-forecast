@@ -44,7 +44,8 @@ def build_history(ledger: Path, public: Path) -> None:
     status = {
         "generated_at": datetime.now(UTC).isoformat(),
         "forecast_status": "official" if entries else "awaiting_first_production_run",
-        "data_fetched_at": newest_entry.get("data_fetched_at") or data_quality.get("checked_at"),
+        "data_fetched_at": data_quality.get("checked_at") or newest_entry.get("data_fetched_at"),
+        "official_forecast_data_fetched_at": newest_entry.get("data_fetched_at"),
         "source_week": newest_entry.get("source_week") or data_quality.get("summary", {}).get("source_week"),
         "model_version": newest_entry.get("model_version"),
         "cutoff": newest_entry.get("cutoff"),

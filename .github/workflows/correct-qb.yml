@@ -1,0 +1,74 @@
+name: Correct QB and recompute
+on:
+  workflow_dispatch:
+    inputs:
+      team:
+        description: NFL team code, for example SEA
+        required: true
+      player_id:
+        description: nflverse player id
+        required: true
+      player_name:
+        description: Player name shown in the review
+        required: true
+      reviewer:
+        description: Reviewer name
+        required: true
+      confirmation:
+        description: Type RECOMPUTE
+        required: true
+permissions:
+  contents: write
+  actions: write
+  issues: write
+concurrency:
+  group: qb-correction
+  cancel-in-progress: false
+jobs:
+  correct:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with: {python-version: "3.12", cache: pip}
+      - run: pip install -e ".[dev]"
+      - run: pytest
+      - name: Record reviewed QB override
+        env:
+          QB_TEAM: ${{ inputs.team }}
+          QB_PLAYER_ID: ${{ inputs.player_id }}
+          QB_PLAYER_NAME: ${{ inputs.player_name }}
+          QB_REVIEWER: ${{ inputs.reviewer }}
+          QB_CONFIRMATION: ${{ inputs.confirmation }}
+        run: >-
+          vaimea set-qb
+          --team "$QB_TEAM"
+          --player-id "$QB_PLAYER_ID"
+          --player-name "$QB_PLAYER_NAME"
+          --reviewer "$QB_REVIEWER"
+          --confirmation "$QB_CONFIRMATION"
+      - name: Commit the reviewed QB source
+        run: |
+          git config user.name "sarka-forecast-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/operator/preseason-qb-review.json
+          git commit -m "data: correct reviewed QB"
+          git push
+      - name: Recompute forecasts from the corrected QB
+        run: gh workflow run update.yml --ref main
+        env:
+          GH_TOKEN: ${{ github.token }}
+  alert:
+    if: failure()
+    needs: correct
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v8
+        with:
+          script: |
+            const title = "SARKA operational alert: QB correction failed";
+            const body = `QB correction failed: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const {data: issues} = await github.rest.issues.listForRepo({...context.repo, state: "open"});
+            const existing = issues.find(issue => issue.title === title);
+            if (existing) await github.rest.issues.createComment({...context.repo, issue_number: existing.number, body});
+            else await github.rest.issues.create({...context.repo, title, body, assignees: [context.repo.owner]});

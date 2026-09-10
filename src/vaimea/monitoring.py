@@ -11,6 +11,8 @@ import pandas as pd
 from .io import atomic_json
 from .production import load_games
 
+HISTORICAL_HOME_WIN_PROBABILITY = 0.5492957746478874
+
 
 def _scores(y: np.ndarray, p: np.ndarray) -> dict:
     p = np.clip(p.astype(float), 1e-15, 1 - 1e-15)
@@ -30,7 +32,7 @@ def performance_report(rows: pd.DataFrame, rolling_games: int = 100) -> dict:
     frame = rows.copy()
     y = frame.home_win.to_numpy(float)
     probability = frame.home_win_probability.to_numpy(float)
-    home_rate = np.repeat(y.mean(), len(y))
+    home_rate = np.repeat(HISTORICAL_HOME_WIN_PROBABILITY, len(y))
     bins = pd.cut(probability, np.linspace(0, 1, 11), include_lowest=True)
     calibration = (
         frame.assign(bin=bins)
@@ -43,7 +45,9 @@ def performance_report(rows: pd.DataFrame, rolling_games: int = 100) -> dict:
         "generated_at": datetime.now(UTC).isoformat(),
         "model": _scores(y, probability),
         "rolling": _scores(y[-rolling_games:], probability[-rolling_games:]),
-        "baselines": {"constant_home_rate": _scores(y, home_rate)},
+        "baselines": {
+            "historical_home_rate_2021_2024": _scores(y, home_rate),
+        },
         "calibration": calibration.to_dict("records"),
         "calibration_note": "Monitoring only. The frozen in-season model is not refitted from this report.",
     }
@@ -176,5 +180,8 @@ def publish_live_performance(
         }
     report["forecasts"] = rows
     report["selection_rule"] = "latest official forecast approved no later than T-90"
+    report["baseline_rule"] = (
+        "fixed 2021-2024 training-sample home-win rate; never estimated from 2026 outcomes"
+    )
     atomic_json(output, report)
     return report

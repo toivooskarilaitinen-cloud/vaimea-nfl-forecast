@@ -16,7 +16,7 @@ Mallin v0.1.1-matematiikka ja kalibrointi pysyvät jäädytettyinä. Tämä pros
 3. Jokaiselle ottelulle lasketaan **FINAL LOCK = kickoff − 90 min**.
 4. Ottelut, joiden final lock on jo ohitettu, eivät voi enää tulla uuteen draftiin.
 5. Jos uusinta virallista snapshotia vastaava todennäköisyys ja QB:t eivät ole muuttuneet, uutta hyväksyntää ei pyydetä.
-6. Kun hyväksyntää tarvitaan, GitHub avaa omistajalle Issuen **SARKA QB review required: Week N**. GitHubin ilmoituskello ja haluttaessa sähköposti toimivat ilmoituksena.
+6. Kun hyväksyntää tarvitaan, GitHub avaa omistajalle Issuen **SARKA QB review required: Week N**. Jos avoimen viikon paketti muuttuu, workflow lisää Issueen uuden kommentin, jotta päivityksestä syntyy uusi ilmoitustapahtuma.
 7. Issue näyttää ottelun, molemmat QB:t, nykyisen todennäköisyyden sekä tiedon siitä, vastaavatko QB:t niitä QB:ita, joilla todennäköisyys laskettiin.
 
 ## Ihmisen hyväksyntä
@@ -54,6 +54,8 @@ Jos tämänhetkinen aloittava QB poikkeaa QB:sta, jolla kyseinen todennäköisyy
 
 Tällöin todennäköisyys on ensin laskettava uudelleen uuden QB:n tiedolla ja vasta sen jälkeen pyydetään uusi ihmisen hyväksyntä.
 
+Avaa silloin **Actions → Correct QB and recompute**, anna joukkue, nflverse-pelaajatunnus, nimi ja tarkistajan nimi sekä kirjoita `RECOMPUTE`. Workflow tallentaa QB:n ihmisen vahvistamaksi overrideksi, käynnistää uuden laskennan ja muodostaa uuden QB review -pyynnön. Lopullinen julkaisu vaatii edelleen erillisen `APPROVE`-hyväksynnän.
+
 ## Mitä sivustolla näkyy
 
 - datan hakuaika ja lähdeviikko
@@ -75,6 +77,8 @@ Epäonnistunut automaattinen ajo näkyy kahdessa paikassa:
 
 1. **GitHub → Actions** näyttää epäonnistuneen vaiheen ja lokin.
 2. Automaattinen Issue **SARKA operational alert: ... failed** avataan tai sitä päivitetään.
+
+Tuntikohtainen heartbeat-watchdog avaa lisäksi Issuen, jos onnistuneesta varsinaisesta tuotantoajosta on yli 27 tuntia. Näin myös kokonaan käynnistymättä jäänyt päivittäinen ajo havaitaan.
 
 GitHub lähettää Issuesta ilmoituksen ilmoituskelloon. Sähköposti tulee, jos GitHubin **Settings → Notifications → Issues** -sähköposti-ilmoitukset ovat käytössä.
 

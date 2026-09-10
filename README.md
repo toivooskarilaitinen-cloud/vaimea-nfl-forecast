@@ -10,15 +10,16 @@ Jokainen virallinen ennuste muodostetaan vain ennen määriteltyä katkaisuaikaa
 
 ## Näin järjestelmä toimii kauden aikana
 
-GitHub hakee nflverse-datan automaattisesti joka päivä klo **13.17 Suomen kesäaikaa** eli klo 10.17 UTC. Päivittäinen ajo:
+GitHub hakee nflverse-datan automaattisesti joka päivä nimellisesti klo **13.17 Suomen aikaa**. Työnkulussa on erilliset kesä- ja talviajan cronit, joista vain Europe/Helsinki-aikavyöhykkeessä oikea ajo jatkuu. GitHub voi silti jonottaa käynnistystä. Päivittäinen ajo:
 
 1. hakee uuden datan
 2. tarkistaa datan tuoreuden ja kattavuuden
 3. pysäyttää julkaisun, jos olennaista tietoa puuttuu
 4. laskee joukkue- ja QB-ratingit uudelleen, jolloin kauden 2026 pelit vaikuttavat tuleviin ennusteisiin
 5. yhdistää päättyneet ottelut viimeiseen ennen T−90-rajaa hyväksyttyyn ennusteeseen ja päivittää Mallin jäljen
-6. tarkistaa, että lukittu ennustehistoria voidaan palauttaa muuttumattomana
-7. valmistelee seuraavan viikon muuttuneet ennusteet QB-tarkistusta varten
+6. simuloi loppukauden ja arkistoi muuttuneet playoff- ja divisioonatodennäköisyydet
+7. tarkistaa, että lukittu ennustehistoria voidaan palauttaa muuttumattomana
+8. valmistelee seuraavan viikon muuttuneet ennusteet QB-tarkistusta varten
 
 Päivittäinen ajo ei saa yksin luoda virallista ennustetta. Virallinen ennuste syntyy vasta erillisessä hyväksyntäajossa, jossa aloittavat QB:t ja ottelulista tarkistetaan ihmisen toimesta.
 
@@ -44,6 +45,8 @@ Depth chart auttaa ehdottamaan aloittajaa, mutta v0.1 ei hyväksy QB:ta automaat
 
 Loukkantumisia ei automatisoida v0.1:ssä, koska riittävän luotettavaa, vakaata ja aikaleimattua ilmaista lähdettä ei ole lukittu järjestelmään.
 
+Jos nflversen QB on väärä tai puuttuu, **Correct QB and recompute** -workflow tallentaa ihmisen vahvistaman QB:n, laskee todennäköisyydet uudelleen ja muodostaa uuden hyväksyntäpyynnön. Käsin vahvistettua QB:ta ei koskaan liimata vanhaan prosenttiin.
+
 ## Preseason-ennuste ennen kauden alkua
 
 Preseason-ennuste muodostetaan edellisen kauden tiedosta ja jäädytetystä mallista. Ennen ensimmäistä virallista ajoa:
@@ -61,6 +64,8 @@ Preseason-prosessi ei sovita mallia uudelleen. Se tarkistaa lähtötiedot ja sen
 ## Hälytykset
 
 Jos päivittäinen datahaku, laatuportti, ennusteajo tai Pages-julkaisu epäonnistuu, työnkulku luo tai päivittää GitHub Issue -hälytyksen ja osoittaa sen repon omistajalle.
+
+Erillinen tuntikohtainen watchdog tarkistaa onnistuneen tuotantoajon heartbeat-tiedoston. Se avaa hälytyksen, jos onnistuneesta ajosta on yli 27 tuntia, myös silloin kun varsinainen päivitysajo ei käynnisty lainkaan.
 
 Hälytyksen näkee:
 
@@ -130,7 +135,7 @@ Walk-forward-backtest harjoittelee mallin vain testikautta edeltävillä kausill
 
 Backtest ei ole sama asia kuin ennen otteluita lukittu ennustehistoria. Kauden 2026 viralliset ennusteet raportoidaan erikseen eikä mallia säädetä kesken kauden lyhyiden tulosjaksojen perusteella.
 
-Mallin jälki päivittyy päivittäisessä tuotantoajossa ilman erillistä ihmishyväksyntää. Jokaiselle päättyneelle ottelulle valitaan vain viimeinen ennen ottelun T−90-rajaa hyväksytty virallinen ennuste. Saman ottelun aiempia snapshotteja ei lasketa uusiksi ennusteiksi. Tasapelit jätetään binääristen Brier- ja log loss -lukujen ulkopuolelle.
+Mallin jälki päivittyy päivittäisessä tuotantoajossa ilman erillistä ihmishyväksyntää. Jokaiselle päättyneelle ottelulle valitaan vain viimeinen ennen ottelun T−90-rajaa hyväksytty virallinen ennuste. Saman ottelun aiempia snapshotteja ei lasketa uusiksi ennusteiksi. Tasapelit jätetään binääristen Brier- ja log loss -lukujen ulkopuolelle. Live-vertailutaso on kausien 2021–2024 harjoitteluaineiston kiinteä 54,93 prosentin kotivoitto-osuus, eikä vuoden 2026 toteutuneista tuloksista jälkikäteen laskettu arvo.
 
 ## Datarakenne ja toistettavuus
 

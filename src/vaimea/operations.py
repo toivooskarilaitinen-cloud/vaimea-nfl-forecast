@@ -110,6 +110,40 @@ def confirm_starters(starter_approvals: dict, reviewer: str, confirmation: str) 
     return starter_approvals
 
 
+def set_qb_override(
+    review_path: Path,
+    team: str,
+    player_id: str,
+    player_name: str,
+    reviewer: str,
+    confirmation: str,
+) -> dict:
+    """Record a human-supplied QB that must drive the next recomputation."""
+    if confirmation.strip().upper() != "RECOMPUTE":
+        raise QualityError("QB override confirmation must be exactly RECOMPUTE")
+    values = (team.strip().upper(), player_id.strip(), player_name.strip(), reviewer.strip())
+    if not all(values):
+        raise QualityError("team, player id, player name and reviewer are required")
+    payload = json.loads(review_path.read_text(encoding="utf-8"))
+    row = next((item for item in payload.get("teams", []) if item.get("team") == values[0]), None)
+    if row is None:
+        raise QualityError(f"unknown team: {values[0]}")
+    changed_at = datetime.now(UTC).isoformat()
+    row.update(
+        {
+            "player_id": values[1],
+            "player_name": values[2],
+            "approved": True,
+            "manual_override": True,
+            "override_reviewed_by": values[3],
+            "override_at": changed_at,
+        }
+    )
+    payload["last_manual_override_at"] = changed_at
+    atomic_json(review_path, payload)
+    return row
+
+
 def make_review(
     draft: dict,
     starter_approvals: dict,
