@@ -29,10 +29,22 @@ jobs:
               if (error.status !== 404) throw error;
             }
             const completedAt = heartbeat?.completed_at ? Date.parse(heartbeat.completed_at) : 0;
-            const ageHours = completedAt ? (Date.now() - completedAt) / 3600000 : Infinity;
+            let referenceAt = completedAt;
+            if (!referenceAt) {
+              const {data: commits} = await github.rest.repos.listCommits({
+                ...context.repo,
+                path: ".github/workflows/watchdog.yml",
+                per_page: 1
+              });
+              referenceAt = commits[0]?.commit?.committer?.date
+                ? Date.parse(commits[0].commit.committer.date)
+                : 0;
+            }
+            const ageHours = referenceAt ? (Date.now() - referenceAt) / 3600000 : Infinity;
             if (ageHours <= 27) {
               if (existing) {
-                await github.rest.issues.createComment({...context.repo, issue_number: existing.number, body: `Production heartbeat recovered at ${heartbeat.completed_at}. Closing alert.`});
+                const recovered = heartbeat?.completed_at || "the watchdog deployment grace period";
+                await github.rest.issues.createComment({...context.repo, issue_number: existing.number, body: `Production heartbeat recovered at ${recovered}. Closing alert.`});
                 await github.rest.issues.update({...context.repo, issue_number: existing.number, state: "closed"});
               }
               return;
