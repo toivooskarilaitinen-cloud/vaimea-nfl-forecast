@@ -16,8 +16,9 @@ GitHub hakee nflverse-datan automaattisesti joka päivä klo **13.17 Suomen kes�
 2. tarkistaa datan tuoreuden ja kattavuuden
 3. pysäyttää julkaisun, jos olennaista tietoa puuttuu
 4. laskee joukkue- ja QB-ratingit uudelleen, jolloin kauden 2026 pelit vaikuttavat tuleviin ennusteisiin
-5. tarkistaa, että lukittu ennustehistoria voidaan palauttaa muuttumattomana
-6. valmistelee seuraavan viikon muuttuneet ennusteet QB-tarkistusta varten
+5. yhdistää päättyneet ottelut viimeiseen ennen T−90-rajaa hyväksyttyyn ennusteeseen ja päivittää Mallin jäljen
+6. tarkistaa, että lukittu ennustehistoria voidaan palauttaa muuttumattomana
+7. valmistelee seuraavan viikon muuttuneet ennusteet QB-tarkistusta varten
 
 Päivittäinen ajo ei saa yksin luoda virallista ennustetta. Virallinen ennuste syntyy vasta erillisessä hyväksyntäajossa, jossa aloittavat QB:t ja ottelulista tarkistetaan ihmisen toimesta.
 
@@ -128,6 +129,8 @@ Jokainen muuttunut kausisimulaatio tallennetaan erillisenä pisteenä `data/seas
 Walk-forward-backtest harjoittelee mallin vain testikautta edeltävillä kausilla. Kauden 2025 julkaistu testi sisältää 284 ottelua. Sivulla näytetään Brier, log loss, kalibraatio sekä yksinkertainen kotivoittoprosentin vertailutaso.
 
 Backtest ei ole sama asia kuin ennen otteluita lukittu ennustehistoria. Kauden 2026 viralliset ennusteet raportoidaan erikseen eikä mallia säädetä kesken kauden lyhyiden tulosjaksojen perusteella.
+
+Mallin jälki päivittyy päivittäisessä tuotantoajossa ilman erillistä ihmishyväksyntää. Jokaiselle päättyneelle ottelulle valitaan vain viimeinen ennen ottelun T−90-rajaa hyväksytty virallinen ennuste. Saman ottelun aiempia snapshotteja ei lasketa uusiksi ennusteiksi. Tasapelit jätetään binääristen Brier- ja log loss -lukujen ulkopuolelle.
 
 ## Datarakenne ja toistettavuus
 

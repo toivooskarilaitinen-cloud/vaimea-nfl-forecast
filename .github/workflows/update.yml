@@ -20,6 +20,8 @@ jobs:
       - run: vaimea quality-check
       - run: vaimea recover
       - run: vaimea update-season-input
+      - name: Score completed official forecasts
+        run: vaimea score-official
       - run: vaimea season-run
       - name: Prepare the next QB review package
         run: vaimea prepare-review --final-lock-minutes 90

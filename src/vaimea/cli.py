@@ -9,7 +9,7 @@ from .backtest import run_backtest
 from .data import ingest
 from .inseason import update_season_input
 from .io import atomic_json
-from .monitoring import performance_report
+from .monitoring import performance_report, publish_live_performance
 from .operations import (
     approve_forecast,
     confirm_starters,
@@ -203,6 +203,17 @@ def monitor(
     payload = performance_report(pd.read_csv(scored_forecasts), rolling_games)
     atomic_json(output, payload)
     typer.echo(output)
+
+
+@app.command("score-official")
+def score_official(
+    ledger_dir: Path = Path("data/forecast-ledger"),
+    output: Path = Path("public/data/performance.json"),
+    rolling_games: int = 100,
+):
+    """Score final official forecasts against completed NFL results."""
+    payload = publish_live_performance(ledger_dir, output, rolling_games=rolling_games)
+    typer.echo(f"scored official forecasts: {payload['model']['games']}")
 
 
 @app.command("recover")
