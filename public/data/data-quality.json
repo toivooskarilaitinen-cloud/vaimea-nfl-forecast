@@ -1,9 +1,9 @@
 {
-  "checked_at": "2026-09-09T16:40:53.506028+00:00",
+  "checked_at": "2026-09-10T14:26:40.855443+00:00",
   "files": [
     {
       "epa_null_rate": 0.011505232545798043,
-      "file": "data/clean/20260909T164045Z/pbp_2018.parquet",
+      "file": "data/clean/20260910T142634Z/pbp_2018.parquet",
       "games": 267,
       "latest_week": 21,
       "qb_coverage": 0.9601937046004843,
@@ -13,7 +13,7 @@
     },
     {
       "epa_null_rate": 0.011531950909860348,
-      "file": "data/clean/20260909T164045Z/pbp_2019.parquet",
+      "file": "data/clean/20260910T142634Z/pbp_2019.parquet",
       "games": 267,
       "latest_week": 21,
       "qb_coverage": 0.9596008291953912,
@@ -23,7 +23,7 @@
     },
     {
       "epa_null_rate": 0.011277643852845614,
-      "file": "data/clean/20260909T164045Z/pbp_2020.parquet",
+      "file": "data/clean/20260910T142634Z/pbp_2020.parquet",
       "games": 269,
       "latest_week": 21,
       "qb_coverage": 0.9571340509270235,
@@ -33,7 +33,7 @@
     },
     {
       "epa_null_rate": 0.011417811786386763,
-      "file": "data/clean/20260909T164045Z/pbp_2021.parquet",
+      "file": "data/clean/20260910T142634Z/pbp_2021.parquet",
       "games": 285,
       "latest_week": 22,
       "qb_coverage": 0.9567395264116576,
@@ -43,7 +43,7 @@
     },
     {
       "epa_null_rate": 0.01149006756483392,
-      "file": "data/clean/20260909T164045Z/pbp_2022.parquet",
+      "file": "data/clean/20260910T142634Z/pbp_2022.parquet",
       "games": 284,
       "latest_week": 22,
       "qb_coverage": 0.9550861745972274,
@@ -53,7 +53,7 @@
     },
     {
       "epa_null_rate": 0.01147689519782543,
-      "file": "data/clean/20260909T164045Z/pbp_2023.parquet",
+      "file": "data/clean/20260910T142634Z/pbp_2023.parquet",
       "games": 285,
       "latest_week": 22,
       "qb_coverage": 0.9497685503460287,
@@ -63,7 +63,7 @@
     },
     {
       "epa_null_rate": 0.011517012850561706,
-      "file": "data/clean/20260909T164045Z/pbp_2024.parquet",
+      "file": "data/clean/20260910T142634Z/pbp_2024.parquet",
       "games": 285,
       "latest_week": 22,
       "qb_coverage": 0.9464049195837275,
@@ -73,21 +73,31 @@
     },
     {
       "epa_null_rate": 0.011687273174632466,
-      "file": "data/clean/20260909T164045Z/pbp_2025.parquet",
+      "file": "data/clean/20260910T142634Z/pbp_2025.parquet",
       "games": 285,
       "latest_week": 22,
       "qb_coverage": 0.9449870726802643,
       "rows": 48771,
       "season": 2025,
       "teams": 32
+    },
+    {
+      "epa_null_rate": 0.012048192771084338,
+      "file": "data/clean/20260910T142634Z/pbp_2026.parquet",
+      "games": 1,
+      "latest_week": 1,
+      "qb_coverage": 0.8985507246376812,
+      "rows": 166,
+      "season": 2026,
+      "teams": 2
     }
   ],
-  "snapshot": "20260909T164045Z",
+  "snapshot": "20260910T142634Z",
   "status": "passed",
   "summary": {
-    "games": 2227,
-    "pbp_rows": 389358,
-    "qb_coverage": 0.9449870726802643,
+    "games": 2228,
+    "pbp_rows": 389524,
+    "qb_coverage": 0.8985507246376812,
     "source_week": 22,
     "teams": 32
   }

@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-09T16:40:54+00:00",
+  "as_of": "2026-09-10T14:26:41+00:00",
   "model_version": "0.1.1",
   "playoff_format": "NFL_14_team_reseed_v1",
   "playoff_matchups": [
@@ -6949,7 +6949,7 @@
     }
   ],
   "provenance": {
-    "available_at_cutoff": "2026-09-09T16:40:54+00:00",
+    "available_at_cutoff": "2026-09-10T14:26:41+00:00",
     "current_season_updates": true,
     "feature_history_seasons": [
       2018,
@@ -6978,11 +6978,11 @@
   "schedule": [
     {
       "away_team": "NE",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_01_NE_SEA",
       "gameday": "2026-09-09",
       "home_team": "SEA",
-      "home_win_probability": 0.5986228854033223,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0039851",
       "probability_home_qb_id": "00-0034869",
       "week": 1
