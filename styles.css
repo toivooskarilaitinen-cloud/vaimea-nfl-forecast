@@ -29,3 +29,7 @@
 .manifesto-signoff{display:block;margin-top:46px;padding-top:30px;border-top:1px solid var(--line);font-size:clamp(24px,3vw,40px);letter-spacing:-.035em}
 .manifesto-signoff em{color:var(--acid);font-style:normal}
 @media(max-width:800px){.manifesto{grid-template-columns:1fr;padding:75px 24px}.manifesto-label{min-height:auto;display:block}.manifesto-label b{display:none}.manifesto-copy{columns:1}.manifesto-lead{margin-bottom:38px}}
+
+/* Product descriptor under the SARKA NFL wordmark. */
+.topbar .wordmark{position:relative;padding-bottom:10px}
+.topbar .wordmark::after{content:"Forecast";position:absolute;left:17px;bottom:0;color:var(--muted);font:300 8px Arial,Helvetica,sans-serif;letter-spacing:.27em;line-height:1;text-transform:uppercase;white-space:nowrap}
