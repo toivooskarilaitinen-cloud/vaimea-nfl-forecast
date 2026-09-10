@@ -3,12 +3,39 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "17 10 * * *"
+    - cron: "17 11 * * *"
 permissions:
   contents: write
   issues: write
 concurrency: {group: forecast-update, cancel-in-progress: false}
 jobs:
+  schedule-gate:
+    runs-on: ubuntu-latest
+    outputs:
+      should_run: ${{ steps.gate.outputs.should_run }}
+    steps:
+      - name: Select the cron that represents 13.17 Europe/Helsinki today
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          EVENT_SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          python - <<'PY'
+          import datetime
+          import os
+          from zoneinfo import ZoneInfo
+
+          should_run = True
+          if os.environ["EVENT_NAME"] == "schedule":
+              helsinki = datetime.datetime.now(ZoneInfo("Europe/Helsinki"))
+              utc_hour = helsinki.replace(hour=13, minute=17).astimezone(datetime.UTC).hour
+              should_run = os.environ["EVENT_SCHEDULE"] == f"17 {utc_hour} * * *"
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as output:
+              output.write(f"should_run={str(should_run).lower()}\n")
+          PY
   update:
+    needs: schedule-gate
+    if: needs.schedule-gate.outputs.should_run == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -23,8 +50,27 @@ jobs:
       - name: Score completed official forecasts
         run: vaimea score-official
       - run: vaimea season-run
+      - name: Archive changed season probabilities
+        run: vaimea archive-season
       - name: Prepare the next QB review package
         run: vaimea prepare-review --final-lock-minutes 90
+      - name: Record successful production heartbeat
+        run: |
+          python - <<'PY'
+          import datetime
+          import json
+          from pathlib import Path
+
+          heartbeat = {
+              "status": "ok",
+              "completed_at": datetime.datetime.now(datetime.UTC).isoformat(),
+              "run_id": "${{ github.run_id }}",
+              "commit": "${{ github.sha }}",
+          }
+          Path("public/data/automation-heartbeat.json").write_text(
+              json.dumps(heartbeat, indent=2) + "\n", encoding="utf-8"
+          )
+          PY
       - name: Commit versioned public outputs and review package
         run: |
           git config user.name "sarka-forecast-bot"
@@ -69,18 +115,29 @@ jobs:
               "If every QB is correct and no row says recompute required, open:",
               `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/workflows/approve.yml`,
               "",
+              "If a QB is wrong, open **Correct QB and recompute** first:",
+              `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/workflows/correct-qb.yml`,
+              "",
               "Run **Approve official forecast**, enter your name, and type `APPROVE`.",
               "The workflow will refuse publication after the T−90 minute final lock or if a QB no longer matches the probability calculation."
             ].join("\n");
             const existing = old.find(issue => issue.title === title);
             if (existing) {
+              const packageChanged = existing.body !== body;
               await github.rest.issues.update({...context.repo, issue_number: existing.number, body, assignees: [context.repo.owner]});
+              if (packageChanged) {
+                await github.rest.issues.createComment({
+                  ...context.repo,
+                  issue_number: existing.number,
+                  body: `QB review package changed at ${request.generated_at}. Please review the updated probabilities and starters before ${request.approval_deadline}.`
+                });
+              }
             } else {
               await github.rest.issues.create({...context.repo, title, body, assignees: [context.repo.owner]});
             }
   alert:
-    if: failure()
-    needs: update
+    if: always() && (needs.schedule-gate.result == 'failure' || needs.update.result == 'failure')
+    needs: [schedule-gate, update]
     runs-on: ubuntu-latest
     steps:
       - name: Create or update the GitHub alert issue

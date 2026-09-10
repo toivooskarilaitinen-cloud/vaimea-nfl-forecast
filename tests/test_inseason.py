@@ -72,3 +72,9 @@ def test_current_season_play_changes_future_probability_and_completed_game_is_fi
     assert played["home_win_probability"] == 1.0
     assert played["completed"] is True
     assert after["provenance"]["current_season_updates"] is True
+
+
+def test_manual_qb_override_wins_over_live_schedule_value():
+    starters = {"SEA": {"player_id": "manual", "manual_override": True}}
+    assert inseason._selected_qb(starters, "SEA", "live") == "manual"
+    assert inseason._selected_qb({"SEA": {"player_id": "fallback"}}, "SEA", "live") == "live"

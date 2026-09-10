@@ -49,3 +49,24 @@ def test_publish_keeps_latest_snapshot_per_game(tmp_path):
     assert len(movers) == 1
     assert movers[0]["game_id"] == "g2"
     assert movers[0]["move"] == pytest.approx(0.03)
+
+
+def test_status_uses_latest_operational_data_time(tmp_path):
+    ledger = tmp_path / "ledger"
+    public = tmp_path / "public"
+    ledger.mkdir()
+    public.mkdir()
+    _write(
+        ledger / "1.json",
+        {
+            "status": "official",
+            "cutoff": "2026-09-09T18:00:00+00:00",
+            "data_fetched_at": "2026-09-09T17:00:00+00:00",
+            "forecasts": [],
+        },
+    )
+    _write(public / "data-quality.json", {"checked_at": "2026-09-10T10:17:00+00:00"})
+    build_history(ledger, public)
+    status = json.loads((public / "status.json").read_text())
+    assert status["data_fetched_at"] == "2026-09-10T10:17:00+00:00"
+    assert status["official_forecast_data_fetched_at"] == "2026-09-09T17:00:00+00:00"

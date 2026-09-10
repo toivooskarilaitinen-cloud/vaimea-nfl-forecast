@@ -9,10 +9,9 @@ import pandas as pd
 from .backtest import build_game_features
 from .features import game_context, qb_strength, team_strength
 from .io import atomic_json
-from .model import FEATURES, apply_temperature, fit
+from .model import FEATURES, TEMPERATURE_SLOPE, apply_temperature, fit
 from .production import load_games
 
-TEMPERATURE_SLOPE = 0.869
 HISTORY_GAMES = 640
 
 
@@ -31,6 +30,13 @@ def load_clean_pbp(clean_dir: Path, cutoff: pd.Timestamp) -> pd.DataFrame:
 
 def _starter_map(review: dict) -> dict[str, dict]:
     return {row["team"]: row for row in review.get("teams", [])}
+
+
+def _selected_qb(starters: dict[str, dict], team: str, live_qb_id: str | None) -> str | None:
+    reviewed = starters.get(team, {})
+    if reviewed.get("manual_override") is True:
+        return reviewed.get("player_id")
+    return live_qb_id or reviewed.get("player_id")
 
 
 def _rating(tables: pd.DataFrame, team: str) -> float:
@@ -87,8 +93,8 @@ def update_season_input(
     for game in current.itertuples():
         home_live = None if pd.isna(getattr(game, "home_qb_id", None)) else str(game.home_qb_id)
         away_live = None if pd.isna(getattr(game, "away_qb_id", None)) else str(game.away_qb_id)
-        home_qb_id = home_live or starters.get(game.home_team, {}).get("player_id")
-        away_qb_id = away_live or starters.get(game.away_team, {}).get("player_id")
+        home_qb_id = _selected_qb(starters, game.home_team, home_live)
+        away_qb_id = _selected_qb(starters, game.away_team, away_live)
         home_score = getattr(game, "home_score", None)
         away_score = getattr(game, "away_score", None)
         completed = pd.notna(home_score) and pd.notna(away_score) and home_score != away_score

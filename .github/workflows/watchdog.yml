@@ -1,0 +1,43 @@
+name: Watch SARKA production heartbeat
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "47 * * * *"
+permissions:
+  contents: read
+  issues: write
+jobs:
+  watchdog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Alert if no successful production heartbeat exists in 27 hours
+        uses: actions/github-script@v8
+        with:
+          script: |
+            const title = "SARKA operational alert: scheduled update is stale";
+            const {data: issues} = await github.rest.issues.listForRepo({...context.repo, state: "open"});
+            const existing = issues.find(issue => issue.title === title);
+            let heartbeat = null;
+            try {
+              const {data: file} = await github.rest.repos.getContent({
+                ...context.repo,
+                path: "public/data/automation-heartbeat.json",
+                ref: "main"
+              });
+              heartbeat = JSON.parse(Buffer.from(file.content, "base64").toString("utf8"));
+            } catch (error) {
+              if (error.status !== 404) throw error;
+            }
+            const completedAt = heartbeat?.completed_at ? Date.parse(heartbeat.completed_at) : 0;
+            const ageHours = completedAt ? (Date.now() - completedAt) / 3600000 : Infinity;
+            if (ageHours <= 27) {
+              if (existing) {
+                await github.rest.issues.createComment({...context.repo, issue_number: existing.number, body: `Production heartbeat recovered at ${heartbeat.completed_at}. Closing alert.`});
+                await github.rest.issues.update({...context.repo, issue_number: existing.number, state: "closed"});
+              }
+              return;
+            }
+            const age = Number.isFinite(ageHours) ? `${ageHours.toFixed(1)} hours` : "missing";
+            const body = `The latest successful SARKA production heartbeat is ${age}. Check the Update forecasts workflow and GitHub Actions scheduling.`;
+            if (existing) await github.rest.issues.createComment({...context.repo, issue_number: existing.number, body});
+            else await github.rest.issues.create({...context.repo, title, body, assignees: [context.repo.owner]});

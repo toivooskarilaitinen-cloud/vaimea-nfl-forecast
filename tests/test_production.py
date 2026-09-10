@@ -172,3 +172,25 @@ def test_starter_sheet_must_match_exact_draft_cutoff(tmp_path):
 def test_confirmation_requires_explicit_approve():
     with pytest.raises(QualityError):
         confirm_starters({"games": {"g": {}}}, "owner", "yes")
+
+
+def test_manual_qb_override_is_used_in_review_and_matches_recomputed_probability(tmp_path):
+    preseason = _preseason()
+    sea = next(row for row in preseason["teams"] if row["team"] == "SEA")
+    sea.update({"player_id": "manual", "player_name": "Manual QB", "manual_override": True})
+    season_input = _season_input()
+    season_input["schedule"][0]["probability_home_qb_id"] = "manual"
+    draft, starters, request = prepare_review_package(
+        season_input,
+        _games(),
+        _quality(),
+        preseason,
+        tmp_path,
+        now=pd.Timestamp("2026-09-09T20:30:00Z"),
+    )
+    opener = next(row for row in draft["forecasts"] if row["game_id"] == "2026_01_NE_SEA")
+    assert opener["home_qb_id"] == "manual"
+    assert opener["home_qb_name"] == "Manual QB"
+    assert starters["games"]["2026_01_NE_SEA"]["home_source"] == "human_override"
+    request_game = next(row for row in request["games"] if row["game_id"] == "2026_01_NE_SEA")
+    assert request_game["qb_probability_match"] is True

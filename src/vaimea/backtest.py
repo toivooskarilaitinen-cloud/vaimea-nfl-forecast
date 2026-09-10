@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 
 from .features import game_context, qb_strength, team_strength
-from .model import FEATURES, _brier, _log_loss, fit
+from .model import FEATURES, TEMPERATURE_SLOPE, _brier, _log_loss, apply_temperature, fit
 
 SCHEDULE_URL = (
     "https://github.com/nflverse/nflverse-data/releases/download/schedules/games.parquet"
@@ -177,7 +177,9 @@ def run_backtest(
         raise ValueError("Backtest needs at least 100 prior games and a non-empty target season")
 
     model = fit(train)
-    test["probability"] = model.predict_proba(test[FEATURES])[:, 1]
+    test["probability"] = apply_temperature(
+        model.predict_proba(test[FEATURES])[:, 1], TEMPERATURE_SLOPE
+    )
     y = test.home_win.to_numpy()
     probability = test.probability.to_numpy()
     historical_home_rate = float(train.home_win.mean())
@@ -205,6 +207,7 @@ def run_backtest(
             "qb_starter_proxy": "most dropbacks in team's latest completed game",
             "injuries": "not used",
             "market_lines": "not used",
+            "temperature_slope": TEMPERATURE_SLOPE,
         },
         "metrics": {
             "games": len(test),

@@ -17,11 +17,12 @@ from .operations import (
     make_review,
     preseason_checklist,
     recovery_audit,
+    set_qb_override,
     suggest_starters,
 )
-from .production import write_review_package
+from .production import load_games, write_review_package
 from .publish import build_history
-from .quality import QualityError, gate_pbp
+from .quality import QualityError, gate_pbp, missing_mature_results
 from .season_history import (
     archive_snapshot,
     audit_history,
@@ -32,7 +33,7 @@ from .season_history import (
 app = typer.Typer(no_args_is_help=True)
 SEASONS = typer.Option(..., help="NFL season; repeat the option to fetch several")
 BACKTEST_SEASON = typer.Option(2025, help="Completed NFL season to replay")
-BACKTEST_OUTPUT = typer.Option(Path("public/data/backtest-2025.json"))
+BACKTEST_OUTPUT = typer.Option(Path("public/data/backtest-2025-v011-calibrated.json"))
 BACKTEST_CACHE = typer.Option(Path("data/backtest-cache"))
 
 
@@ -125,6 +126,22 @@ def confirm_starters_command(
     payload = confirm_starters(payload, reviewer, confirmation)
     atomic_json(starters, payload)
     typer.echo(starters)
+
+
+@app.command("set-qb")
+def set_qb(
+    team: str = typer.Option(..., help="NFL team code"),
+    player_id: str = typer.Option(..., help="nflverse player id"),
+    player_name: str = typer.Option(..., help="Displayed player name"),
+    reviewer: str = typer.Option(..., help="Human reviewer name"),
+    confirmation: str = typer.Option(..., help="Type RECOMPUTE"),
+    review_path: Path = Path("data/operator/preseason-qb-review.json"),
+):
+    """Set a reviewed QB override used by the next probability computation."""
+    payload = set_qb_override(
+        review_path, team, player_id, player_name, reviewer, confirmation
+    )
+    typer.echo(json.dumps(payload, indent=2))
 
 
 @app.command("draft")
@@ -239,6 +256,7 @@ def recover(
 def quality_check(
     clean_dir: Path = Path("data/clean"),
     output: Path = Path("public/data/data-quality.json"),
+    season_input: Path = Path("data/season-runs/input.json"),
 ):
     """Stop publication when the newest clean nflverse snapshot is incomplete."""
     snapshots = sorted(path for path in clean_dir.iterdir() if path.is_dir()) if clean_dir.exists() else []
@@ -248,9 +266,11 @@ def quality_check(
     if not files:
         raise QualityError("latest clean snapshot contains no play-by-play files")
     reports = []
+    frames = []
     newest_season = max(int(pd.read_parquet(path, columns=["season"]).season.max()) for path in files)
     for path in files:
         frame = pd.read_parquet(path)
+        frames.append(frame)
         report = gate_pbp(frame)
         teams = set(frame.home_team.dropna()) | set(frame.away_team.dropna())
         season = int(frame.season.max())
@@ -269,6 +289,15 @@ def quality_check(
                 **report,
             }
         )
+    target_season = int(json.loads(season_input.read_text(encoding="utf-8"))["season"])
+    all_pbp = pd.concat(frames, ignore_index=True)
+    now = pd.Timestamp.now(tz="UTC")
+    missing_results = missing_mature_results(load_games(), all_pbp, target_season, now)
+    if missing_results:
+        raise QualityError(
+            "completed games are missing from PBP after the 96-hour grace period: "
+            + ", ".join(missing_results)
+        )
     payload = {
         "status": "passed",
         "checked_at": datetime.now(UTC).isoformat(),
@@ -279,6 +308,7 @@ def quality_check(
             "teams": max(report["teams"] for report in reports),
             "qb_coverage": min(report["qb_coverage"] for report in reports),
             "source_week": max(report["latest_week"] for report in reports),
+            "mature_results_missing": 0,
         },
         "files": reports,
     }
