@@ -1,9 +1,10 @@
 {
+  "baseline_rule": "fixed 2021-2024 training-sample home-win rate; never estimated from 2026 outcomes",
   "baselines": {
-    "constant_home_rate": {
-      "brier": 9.98402083170343e-31,
+    "historical_home_rate_2021_2024": {
+      "brier": 0.20313429875024794,
       "games": 1,
-      "log_loss": 9.992007221626415e-16
+      "log_loss": 0.5991182309116689
     }
   },
   "calibration": [
@@ -39,7 +40,7 @@
       "winner": "SEA"
     }
   ],
-  "generated_at": "2026-09-10T15:58:24.478441+00:00",
+  "generated_at": "2026-09-10T20:17:43.414174+00:00",
   "model": {
     "brier": 0.16110358812195452,
     "games": 1,

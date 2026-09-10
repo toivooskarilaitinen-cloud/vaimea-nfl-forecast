@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-10T14:26:41+00:00",
+  "as_of": "2026-09-10T20:13:27+00:00",
   "model_version": "0.1.1",
   "playoff_format": "NFL_14_team_reseed_v1",
   "playoff_matchups": [
@@ -6949,7 +6949,7 @@
     }
   ],
   "provenance": {
-    "available_at_cutoff": "2026-09-10T14:26:41+00:00",
+    "available_at_cutoff": "2026-09-10T20:13:27+00:00",
     "current_season_updates": true,
     "feature_history_seasons": [
       2018,
@@ -7290,8 +7290,8 @@
       "game_id": "2026_02_SEA_ARI",
       "gameday": "2026-09-20",
       "home_team": "ARI",
-      "home_win_probability": 0.3473378896469559,
-      "probability_away_qb_id": "00-0034869",
+      "home_win_probability": 0.5028515248915096,
+      "probability_away_qb_id": "00-0035704",
       "probability_home_qb_id": "00-0033119",
       "week": 2
     },

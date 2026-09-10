@@ -1,7 +1,8 @@
 {
-  "generated_at": "2026-09-10T14:26:41.388256+00:00",
+  "generated_at": "2026-09-10T20:13:26.845373+00:00",
   "forecast_status": "official",
-  "data_fetched_at": "2026-09-09T16:40:53.506028+00:00",
+  "data_fetched_at": "2026-09-10T20:13:26.325994+00:00",
+  "official_forecast_data_fetched_at": "2026-09-09T16:40:53.506028+00:00",
   "source_week": 1,
   "model_version": "0.1.1",
   "cutoff": "2026-09-09T16:45:47.531412+00:00",
