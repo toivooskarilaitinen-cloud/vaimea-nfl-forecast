@@ -1,0 +1,55 @@
+{
+  "baselines": {
+    "constant_home_rate": {
+      "brier": 9.98402083170343e-31,
+      "games": 1,
+      "log_loss": 9.992007221626415e-16
+    }
+  },
+  "calibration": [
+    {
+      "bin": "(0.5, 0.6]",
+      "n": 1,
+      "observed": 1.0,
+      "predicted": 0.5986228854033223
+    }
+  ],
+  "calibration_note": "Monitoring only. The frozen in-season model is not refitted from this report.",
+  "forecasts": [
+    {
+      "approved_at": "2026-09-09T16:51:18.503300+00:00",
+      "approved_by": "Toivo-Oskari Laitinen",
+      "away_score": 10,
+      "away_team": "NE",
+      "brier": 0.16110358812195452,
+      "favorite_correct": true,
+      "final_lock_at": "2026-09-09T22:50:00+00:00",
+      "forecast_cutoff": "2026-09-09T16:45:47.531412+00:00",
+      "game_id": "2026_01_NE_SEA",
+      "gameday": "2026-09-09",
+      "home_score": 13,
+      "home_team": "SEA",
+      "home_win": 1,
+      "home_win_probability": 0.5986228854033223,
+      "kickoff": "2026-09-10T00:20:00+00:00",
+      "log_loss": 0.5131234527485347,
+      "model_version": "0.1.1",
+      "predicted_winner": "SEA",
+      "week": 1,
+      "winner": "SEA"
+    }
+  ],
+  "generated_at": "2026-09-10T15:58:24.478441+00:00",
+  "model": {
+    "brier": 0.16110358812195452,
+    "games": 1,
+    "log_loss": 0.5131234527485347
+  },
+  "rolling": {
+    "brier": 0.16110358812195452,
+    "games": 1,
+    "log_loss": 0.5131234527485347
+  },
+  "selection_rule": "latest official forecast approved no later than T-90",
+  "standard_error_at_50pct": 0.5
+}

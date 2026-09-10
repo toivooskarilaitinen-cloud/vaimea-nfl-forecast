@@ -13,7 +13,22 @@ fetch('./public/data/movers.json',{cache:'no-store'}).then(r=>r.ok?r.json():Prom
 function renderReview(data){const panel=document.querySelector('#reviewPanel');if(!panel)return;panel.hidden=false;const games=Array.isArray(data.games)?data.games:[];document.querySelector('#reviewGames').innerHTML=games.map(game=>`<article class="review-game"><strong>${esc(game.away_team)} @ ${esc(game.home_team)}</strong><span>${esc(game.away_qb_id)} / ${esc(game.home_qb_id)}</span><span>${fmt(game.home_win_probability)} koti</span></article>`).join('')||'<p>Ei valmisteltua ottelulistaa.</p>';const issues=[...(data.errors||[]),...(data.warnings||[])];document.querySelector('#reviewIssues').innerHTML=issues.map(item=>`<li>${esc(item)}</li>`).join('')||'<li>Kaikki julkaisuportit kunnossa.</li>';}
 fetch('./public/data/review.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(renderReview).catch(()=>{});
 
-function renderPerformance(data){if(!document.querySelector('#brierMetric'))return;document.querySelector('#brierMetric').textContent=Number(data.model.brier).toFixed(3);document.querySelector('#logLossMetric').textContent=Number(data.model.log_loss).toFixed(3);document.querySelector('#rollingMetric').textContent=Number(data.rolling.brier).toFixed(3);document.querySelector('#scoredGames').textContent=data.model.games;}
+function renderPerformance(data){
+  if(!document.querySelector('#brierMetric'))return;
+  const metric=value=>value===null||value===undefined?'—':Number(value).toFixed(3);
+  document.querySelector('#brierMetric').textContent=metric(data.model?.brier);
+  document.querySelector('#logLossMetric').textContent=metric(data.model?.log_loss);
+  document.querySelector('#rollingMetric').textContent=metric(data.rolling?.brier);
+  document.querySelector('#scoredGames').textContent=data.model?.games??0;
+  const history=document.querySelector('#forecastHistory');
+  if(!history)return;
+  const rows=Array.isArray(data.forecasts)?[...data.forecasts].reverse():[];
+  if(!rows.length)return;
+  history.innerHTML=`<div class="history-table-wrap"><table class="data-table track-record-table"><thead><tr><th>Ottelu</th><th>Lukittu ennuste</th><th>Tulos</th><th>Osuma</th><th>Brier</th></tr></thead><tbody>${rows.map(row=>{
+    const hp=Number(row.home_win_probability);const favorite=hp>=.5?row.home_team:row.away_team;const favoriteProbability=hp>=.5?hp:1-hp;const result=`${esc(row.away_team)} ${row.away_score}–${row.home_score} ${esc(row.home_team)}`;
+    return `<tr><td><strong>${esc(row.away_team)} @ ${esc(row.home_team)}</strong><small>Vko ${esc(row.week)} · ${new Date(row.kickoff).toLocaleDateString('fi-FI')}</small></td><td>${esc(favorite)} ${fmt(favoriteProbability)}</td><td>${result}</td><td><span class="result-mark ${row.favorite_correct?'hit':'miss'}">${row.favorite_correct?'OSUI':'OHI'}</span></td><td>${Number(row.brier).toFixed(3)}</td></tr>`;
+  }).join('')}</tbody></table></div>`;
+}
 fetch('./public/data/performance.json',{cache:'no-store'}).then(r=>r.ok?r.json():Promise.reject()).then(renderPerformance).catch(()=>{});
 
 function renderBacktest(data){
