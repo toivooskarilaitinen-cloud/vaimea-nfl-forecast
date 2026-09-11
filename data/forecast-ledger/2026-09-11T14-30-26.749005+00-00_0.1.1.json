@@ -13,59 +13,6 @@
   },
   "forecasts": [
     {
-      "away_qb_id": "00-0039851",
-      "away_qb_name": "Drake Maye",
-      "away_team": "NE",
-      "change_reason": "scheduled_production_snapshot",
-      "completed": false,
-      "final_lock_at": "2026-09-09T22:50:00+00:00",
-      "game_id": "2026_01_NE_SEA",
-      "gameday": "2026-09-09",
-      "home_qb_id": "00-0034869",
-      "home_qb_name": "Sam Darnold",
-      "home_team": "SEA",
-      "home_win_probability": 0.5986228854033223,
-      "kickoff": "2026-09-10T00:20:00+00:00",
-      "neutral_site": false,
-      "probability_away_qb_id": "00-0039851",
-      "probability_home_qb_id": "00-0034869",
-      "warnings": [
-        "tiebreaker_approximation"
-      ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T16:45:47.531412+00:00",
-      "snapshot_approved_at": "2026-09-09T16:51:18.503300+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "final"
-    },
-    {
-      "away_qb_id": "00-0037834",
-      "away_qb_name": "Brock Purdy",
-      "away_team": "SF",
-      "change_reason": "scheduled_production_snapshot",
-      "completed": false,
-      "final_lock_at": "2026-09-10T23:05:00+00:00",
-      "game_id": "2026_01_SF_LA",
-      "gameday": "2026-09-10",
-      "home_qb_id": "00-0026498",
-      "home_qb_name": "Matthew Stafford",
-      "home_team": "LA",
-      "home_win_probability": 0.5591657670482091,
-      "kickoff": "2026-09-11T00:35:00+00:00",
-      "neutral_site": true,
-      "probability_away_qb_id": "00-0037834",
-      "probability_home_qb_id": "00-0026498",
-      "warnings": [
-        "neutral_site_home_field_zero",
-        "tiebreaker_approximation"
-      ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-09T16:45:47.531412+00:00",
-      "snapshot_approved_at": "2026-09-09T16:51:18.503300+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "final"
-    },
-    {
       "away_qb_id": "00-0036212",
       "away_qb_name": "Tua Tagovailoa",
       "away_team": "ATL",
@@ -85,11 +32,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0034796",
@@ -111,11 +54,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0034857",
@@ -137,11 +76,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0039918",
@@ -163,11 +98,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0033537",
@@ -189,11 +120,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0040743",
@@ -215,11 +142,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0030565",
@@ -241,11 +164,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0034855",
@@ -267,11 +186,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0033119",
@@ -293,11 +208,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0036264",
@@ -319,11 +230,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0038128",
@@ -345,11 +252,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0039910",
@@ -371,11 +274,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0033077",
@@ -397,11 +296,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     },
     {
       "away_qb_id": "00-0039732",
@@ -423,11 +318,7 @@
       "warnings": [
         "tiebreaker_approximation"
       ],
-      "week": 1,
-      "snapshot_cutoff": "2026-09-11T14:30:26.749005+00:00",
-      "snapshot_approved_at": "2026-09-11T17:29:11.856730+00:00",
-      "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "week": 1
     }
   ],
   "input_hashes": {
