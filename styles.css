@@ -33,3 +33,6 @@
 /* Product descriptor under the SARKA NFL wordmark. */
 .topbar .wordmark{position:relative;padding-bottom:10px}
 .topbar .wordmark::after{content:"Forecast";position:absolute;left:17px;bottom:0;color:var(--muted);font:300 8px Arial,Helvetica,sans-serif;letter-spacing:.27em;line-height:1;text-transform:uppercase;white-space:nowrap}
+.metric-strip.track-record-metrics{grid-template-columns:repeat(5,1fr)}
+@media(max-width:980px){.metric-strip.track-record-metrics{grid-template-columns:repeat(2,1fr)}.metric-strip.track-record-metrics div{border-bottom:1px solid var(--line)}.metric-strip.track-record-metrics div:nth-child(even){border-right:0}.metric-strip.track-record-metrics div:last-child{grid-column:1/-1;border-right:0;border-bottom:0}}
+@media(max-width:680px){.metric-strip.track-record-metrics{grid-template-columns:1fr}.metric-strip.track-record-metrics div:last-child{grid-column:auto}}
