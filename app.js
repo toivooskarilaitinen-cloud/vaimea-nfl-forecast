@@ -16,13 +16,16 @@ fetch('./public/data/review.json',{cache:'no-store'}).then(r=>r.ok?r.json():Prom
 function renderPerformance(data){
   if(!document.querySelector('#brierMetric'))return;
   const metric=value=>value===null||value===undefined?'—':Number(value).toFixed(3);
+  const forecasts=Array.isArray(data.forecasts)?data.forecasts:[];
+  const hits=forecasts.filter(row=>row.favorite_correct===true).length;
+  document.querySelector('#hitRateMetric').textContent=forecasts.length?`${(hits/forecasts.length*100).toLocaleString('fi-FI',{maximumFractionDigits:1})} %`:'—';
   document.querySelector('#brierMetric').textContent=metric(data.model?.brier);
   document.querySelector('#logLossMetric').textContent=metric(data.model?.log_loss);
   document.querySelector('#rollingMetric').textContent=metric(data.rolling?.brier);
   document.querySelector('#scoredGames').textContent=data.model?.games??0;
   const history=document.querySelector('#forecastHistory');
   if(!history)return;
-  const rows=Array.isArray(data.forecasts)?[...data.forecasts].reverse():[];
+  const rows=[...forecasts].reverse();
   if(!rows.length)return;
   history.innerHTML=`<div class="history-table-wrap"><table class="data-table track-record-table"><thead><tr><th>Ottelu</th><th>Lukittu ennuste</th><th>Tulos</th><th>Osuma</th><th>Brier</th></tr></thead><tbody>${rows.map(row=>{
     const hp=Number(row.home_win_probability);const favorite=hp>=.5?row.home_team:row.away_team;const favoriteProbability=hp>=.5?hp:1-hp;const result=`${esc(row.away_team)} ${row.away_score}–${row.home_score} ${esc(row.home_team)}`;
