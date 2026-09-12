@@ -1,13 +1,14 @@
 {
   "errors": [],
-  "files": 2,
+  "files": 3,
   "hashes": {
     "2026-09-09T15-05-33.071102+00-00_0.1.1.json": "63004bc8aa3f020adbec7966444b632b60dde45d6a945edfa32465c05503f93f",
-    "2026-09-09T16-45-47.531412+00-00_0.1.1.json": "cd9c7d32e995dd99deadb08f260de9d60f8149fc1f73c6bd688b468ddaf99713"
+    "2026-09-09T16-45-47.531412+00-00_0.1.1.json": "cd9c7d32e995dd99deadb08f260de9d60f8149fc1f73c6bd688b468ddaf99713",
+    "2026-09-11T14-30-26.749005+00-00_0.1.1.json": "d28b18c0bf5b1a4cbd01f84c34dfabccdd3bd83d625f4bda4636b7f21412783b"
   },
   "season_history": {
     "errors": [],
-    "snapshots": 3,
+    "snapshots": 4,
     "status": "ok"
   },
   "status": "ok"
