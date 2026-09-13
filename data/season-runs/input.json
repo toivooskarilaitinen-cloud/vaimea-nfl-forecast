@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-12T13:37:19+00:00",
+  "as_of": "2026-09-13T14:23:59+00:00",
   "model_version": "0.1.1",
   "playoff_format": "NFL_14_team_reseed_v1",
   "playoff_matchups": [
@@ -6949,7 +6949,7 @@
     }
   ],
   "provenance": {
-    "available_at_cutoff": "2026-09-12T13:37:19+00:00",
+    "available_at_cutoff": "2026-09-13T14:23:59+00:00",
     "current_season_updates": true,
     "feature_history_seasons": [
       2018,
