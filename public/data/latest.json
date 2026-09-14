@@ -89,7 +89,7 @@
       "snapshot_cutoff": "2026-09-12T13:42:08.924121+00:00",
       "snapshot_approved_at": "2026-09-12T20:19:07.634915+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0034796",
@@ -115,7 +115,7 @@
       "snapshot_cutoff": "2026-09-12T13:42:08.924121+00:00",
       "snapshot_approved_at": "2026-09-12T20:19:07.634915+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0034857",
@@ -141,7 +141,7 @@
       "snapshot_cutoff": "2026-09-12T13:42:08.924121+00:00",
       "snapshot_approved_at": "2026-09-12T20:19:07.634915+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0039918",
@@ -167,7 +167,7 @@
       "snapshot_cutoff": "2026-09-12T13:42:08.924121+00:00",
       "snapshot_approved_at": "2026-09-12T20:19:07.634915+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0033537",
@@ -193,7 +193,7 @@
       "snapshot_cutoff": "2026-09-12T13:42:08.924121+00:00",
       "snapshot_approved_at": "2026-09-12T20:19:07.634915+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0040743",
@@ -219,7 +219,7 @@
       "snapshot_cutoff": "2026-09-12T13:42:08.924121+00:00",
       "snapshot_approved_at": "2026-09-12T20:19:07.634915+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0030565",
@@ -245,7 +245,7 @@
       "snapshot_cutoff": "2026-09-12T13:42:08.924121+00:00",
       "snapshot_approved_at": "2026-09-12T20:19:07.634915+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0034855",
@@ -271,7 +271,7 @@
       "snapshot_cutoff": "2026-09-12T13:42:08.924121+00:00",
       "snapshot_approved_at": "2026-09-12T20:19:07.634915+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0033119",
@@ -297,7 +297,7 @@
       "snapshot_cutoff": "2026-09-12T13:42:08.924121+00:00",
       "snapshot_approved_at": "2026-09-12T20:19:07.634915+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0036264",
@@ -323,7 +323,7 @@
       "snapshot_cutoff": "2026-09-12T13:42:08.924121+00:00",
       "snapshot_approved_at": "2026-09-12T20:19:07.634915+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0038128",
@@ -349,7 +349,7 @@
       "snapshot_cutoff": "2026-09-12T13:42:08.924121+00:00",
       "snapshot_approved_at": "2026-09-12T20:19:07.634915+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0039910",
@@ -375,7 +375,7 @@
       "snapshot_cutoff": "2026-09-12T13:42:08.924121+00:00",
       "snapshot_approved_at": "2026-09-12T20:19:07.634915+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0033077",
@@ -401,7 +401,7 @@
       "snapshot_cutoff": "2026-09-12T13:42:08.924121+00:00",
       "snapshot_approved_at": "2026-09-12T20:19:07.634915+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0039732",
