@@ -2,9 +2,9 @@
   "baseline_rule": "fixed 2021-2024 training-sample home-win rate; never estimated from 2026 outcomes",
   "baselines": {
     "historical_home_rate_2021_2024": {
-      "brier": 0.24257091846855783,
-      "games": 15,
-      "log_loss": 0.6782485282436371
+      "brier": 0.24010612973616344,
+      "games": 16,
+      "log_loss": 0.673302884660389
     }
   },
   "calibration": [
@@ -22,9 +22,9 @@
     },
     {
       "bin": "(0.6, 0.7]",
-      "n": 3,
+      "n": 4,
       "observed": 1.0,
-      "predicted": 0.6314262081565147
+      "predicted": 0.6261817649798058
     }
   ],
   "calibration_note": "Monitoring only. The frozen in-season model is not refitted from this report.",
@@ -358,19 +358,41 @@
       "predicted_winner": "DAL",
       "week": 1,
       "winner": "NYG"
+    },
+    {
+      "approved_at": "2026-09-12T20:19:07.634915+00:00",
+      "approved_by": "Toivo-Oskari Laitinen",
+      "away_score": 10,
+      "away_team": "DEN",
+      "brier": 0.15175042144360285,
+      "favorite_correct": true,
+      "final_lock_at": "2026-09-14T22:45:00+00:00",
+      "forecast_cutoff": "2026-09-12T13:42:08.924121+00:00",
+      "game_id": "2026_01_DEN_KC",
+      "gameday": "2026-09-14",
+      "home_score": 31,
+      "home_team": "KC",
+      "home_win": 1,
+      "home_win_probability": 0.6104484354496791,
+      "kickoff": "2026-09-15T00:15:00+00:00",
+      "log_loss": 0.49356145181645084,
+      "model_version": "0.1.1",
+      "predicted_winner": "KC",
+      "week": 1,
+      "winner": "KC"
     }
   ],
-  "generated_at": "2026-09-14T16:26:57.915604+00:00",
+  "generated_at": "2026-09-15T15:03:30.149728+00:00",
   "model": {
-    "brier": 0.2160715295471568,
-    "games": 15,
-    "log_loss": 0.6239333920774712
+    "brier": 0.21205146029068472,
+    "games": 16,
+    "log_loss": 0.6157851458111574
   },
   "rolling": {
-    "brier": 0.2160715295471568,
-    "games": 15,
-    "log_loss": 0.6239333920774712
+    "brier": 0.21205146029068472,
+    "games": 16,
+    "log_loss": 0.6157851458111574
   },
   "selection_rule": "latest official forecast approved no later than T-90",
-  "standard_error_at_50pct": 0.12909944487358055
+  "standard_error_at_50pct": 0.125
 }
