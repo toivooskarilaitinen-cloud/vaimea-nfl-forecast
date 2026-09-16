@@ -1,8 +1,8 @@
 {
-  "approved_at": "2026-09-15T15:12:43.058026+00:00",
+  "approved_at": "2026-09-16T15:09:03.108663+00:00",
   "approved_by": "Toivo-Oskari Laitinen",
-  "cutoff": "2026-09-15T15:09:18.929582+00:00",
-  "data_fetched_at": "2026-09-15T15:04:24.773550+00:00",
+  "cutoff": "2026-09-16T15:04:08.144782+00:00",
+  "data_fetched_at": "2026-09-16T14:59:19.606869+00:00",
   "data_quality": {
     "games": 2243,
     "mature_results_missing": 0,
@@ -441,7 +441,7 @@
       "home_qb_id": "00-0034857",
       "home_qb_name": "Josh Allen",
       "home_team": "BUF",
-      "home_win_probability": 0.5633097581906904,
+      "home_win_probability": 0.5615237641668303,
       "kickoff": "2026-09-18T00:15:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0033106",
@@ -450,8 +450,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -467,7 +467,7 @@
       "home_qb_id": "00-0036212",
       "home_qb_name": "Tua Tagovailoa",
       "home_team": "ATL",
-      "home_win_probability": 0.6296405534918729,
+      "home_win_probability": 0.6289086906861546,
       "kickoff": "2026-09-20T17:00:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0039150",
@@ -476,8 +476,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -493,7 +493,7 @@
       "home_qb_id": "00-0039163",
       "home_qb_name": "C.J. Stroud",
       "home_team": "HOU",
-      "home_win_probability": 0.39620655291121404,
+      "home_win_probability": 0.3977361052639944,
       "kickoff": "2026-09-20T17:00:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0036442",
@@ -502,8 +502,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -519,7 +519,7 @@
       "home_qb_id": "00-0034855",
       "home_qb_name": "Baker Mayfield",
       "home_team": "TB",
-      "home_win_probability": 0.686382434844425,
+      "home_win_probability": 0.6848589296968529,
       "kickoff": "2026-09-20T17:00:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0033537",
@@ -528,8 +528,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -545,7 +545,7 @@
       "home_qb_id": "00-0030565",
       "home_qb_name": "Geno Smith",
       "home_team": "NYJ",
-      "home_win_probability": 0.5277501610140635,
+      "home_win_probability": 0.5236463808138774,
       "kickoff": "2026-09-20T17:00:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0036264",
@@ -554,8 +554,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -571,7 +571,7 @@
       "home_qb_id": "00-0039918",
       "home_qb_name": "Caleb Williams",
       "home_team": "CHI",
-      "home_win_probability": 0.47367645668604696,
+      "home_win_probability": 0.4727494344982831,
       "kickoff": "2026-09-20T17:00:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0035228",
@@ -580,8 +580,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -597,7 +597,7 @@
       "home_qb_id": "00-0034796",
       "home_qb_name": "Lamar Jackson",
       "home_team": "BAL",
-      "home_win_probability": 0.684851775845772,
+      "home_win_probability": 0.682707965421347,
       "kickoff": "2026-09-20T17:00:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0040743",
@@ -606,8 +606,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -623,7 +623,7 @@
       "home_qb_id": "00-0040676",
       "home_qb_name": "Cam Ward",
       "home_team": "TEN",
-      "home_win_probability": 0.31315720870880537,
+      "home_win_probability": 0.3160395537881642,
       "kickoff": "2026-09-20T17:00:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0036389",
@@ -632,8 +632,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -649,7 +649,7 @@
       "home_qb_id": "00-0039851",
       "home_qb_name": "Drake Maye",
       "home_team": "NE",
-      "home_win_probability": 0.6984307071164215,
+      "home_win_probability": 0.6967911172317751,
       "kickoff": "2026-09-20T17:00:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0023459",
@@ -658,8 +658,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -675,7 +675,7 @@
       "home_qb_id": "00-0039732",
       "home_qb_name": "Bo Nix",
       "home_team": "DEN",
-      "home_win_probability": 0.4905278655284802,
+      "home_win_probability": 0.4269415824277369,
       "kickoff": "2026-09-20T20:05:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0036971",
@@ -684,8 +684,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -701,7 +701,7 @@
       "home_qb_id": "00-0036355",
       "home_qb_name": "Justin Herbert",
       "home_team": "LAC",
-      "home_win_probability": 0.5009819087231971,
+      "home_win_probability": 0.504827988557321,
       "kickoff": "2026-09-20T20:05:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0029604",
@@ -710,8 +710,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -727,7 +727,7 @@
       "home_qb_id": "00-0037834",
       "home_qb_name": "Brock Purdy",
       "home_team": "SF",
-      "home_win_probability": 0.5891771048696817,
+      "home_win_probability": 0.5854239562370195,
       "kickoff": "2026-09-20T20:25:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0038128",
@@ -736,8 +736,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -753,7 +753,7 @@
       "home_qb_id": "00-0033119",
       "home_qb_name": "Jacoby Brissett",
       "home_team": "ARI",
-      "home_win_probability": 0.5762475097312699,
+      "home_win_probability": 0.5768741510408338,
       "kickoff": "2026-09-20T20:25:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0035704",
@@ -762,8 +762,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -779,7 +779,7 @@
       "home_qb_id": "00-0033077",
       "home_qb_name": "Dak Prescott",
       "home_team": "DAL",
-      "home_win_probability": 0.5513652857163936,
+      "home_win_probability": 0.5507670814845699,
       "kickoff": "2026-09-20T20:25:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0039910",
@@ -788,8 +788,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -805,7 +805,7 @@
       "home_qb_id": "00-0033873",
       "home_qb_name": "Patrick Mahomes",
       "home_team": "KC",
-      "home_win_probability": 0.6094797312943173,
+      "home_win_probability": 0.652392455481957,
       "kickoff": "2026-09-21T00:20:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0035710",
@@ -814,8 +814,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     },
@@ -831,7 +831,7 @@
       "home_qb_id": "00-0026498",
       "home_qb_name": "Matthew Stafford",
       "home_team": "LA",
-      "home_win_probability": 0.5567148020772869,
+      "home_win_probability": 0.5593931910655504,
       "kickoff": "2026-09-22T00:15:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0040691",
@@ -840,8 +840,8 @@
         "tiebreaker_approximation"
       ],
       "week": 2,
-      "snapshot_cutoff": "2026-09-15T15:09:18.929582+00:00",
-      "snapshot_approved_at": "2026-09-15T15:12:43.058026+00:00",
+      "snapshot_cutoff": "2026-09-16T15:04:08.144782+00:00",
+      "snapshot_approved_at": "2026-09-16T15:09:03.108663+00:00",
       "model_version": "0.1.1",
       "lock_status": "updateable"
     }
@@ -849,13 +849,13 @@
   "input_hashes": {
     "schedule_rows": "a96eba5e58148e5fe7bbb29254288b8a33f4fb437ac3a477496d430999628232",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "b0048f258430711f1043ca741f34fafdcf34d26148354a3a7e9d6c9127b60339"
+    "season_forecast_input": "f36fc4e88e3bf7e1c7a5d67adf81b5335311c46d06b25b47347a8a09a2d0e79b"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",
   "quality": {
-    "checked_at": "2026-09-15T15:12:43.058026+00:00",
-    "data_age_hours": 0.14,
+    "checked_at": "2026-09-16T15:09:03.108663+00:00",
+    "data_age_hours": 0.16,
     "errors": [],
     "warnings": [
       "2026_02_CAR_ATL: tiebreaker_approximation",
@@ -878,10 +878,10 @@
   },
   "random_seed": 20260826,
   "reproducibility": {
-    "approvals_sha256": "a03c88da38d3b495c5e9c5365bb2ec823acc3afb0618e91275b944ccdbcc2dbc",
+    "approvals_sha256": "9ed9c66efc1dade2ad8a740955c407adb84adbcdf515e9d588d827b1e6433c60",
     "config_sha256": "237ac858e131a87881bb3d7e417d98a92c18d9078ff70e2aba9cc77bb3a82465",
-    "draft_sha256": "6b93d122e5e6f276a48b72b85d7ec0ce698401a7d2a7a78fea24b301ef89db59",
-    "git_commit": "aab009f75f4f07a747fe8412430f605270413175",
+    "draft_sha256": "5badc8937e955f25930a5c920ed2a4ea876096614af4c0275c4cad0af3a4c7de",
+    "git_commit": "a1be3291f0a356b4893da097d4fc5c2a64b31c91",
     "python": "3.12.14",
     "random_seed": 20260826
   },

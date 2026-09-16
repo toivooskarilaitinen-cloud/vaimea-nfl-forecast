@@ -1,8 +1,17 @@
 {
-  "checked_at": "2026-09-16T15:09:02.723969+00:00",
-  "data_age_hours": 0.16,
-  "errors": [],
-  "games": [
+  "approved_at": "2026-09-16T15:09:03.108663+00:00",
+  "approved_by": "Toivo-Oskari Laitinen",
+  "cutoff": "2026-09-16T15:04:08.144782+00:00",
+  "data_fetched_at": "2026-09-16T14:59:19.606869+00:00",
+  "data_quality": {
+    "games": 2243,
+    "mature_results_missing": 0,
+    "pbp_rows": 392114,
+    "qb_coverage": 1.0,
+    "source_week": 22,
+    "teams": 32
+  },
+  "forecasts": [
     {
       "away_qb_id": "00-0033106",
       "away_qb_name": "Jared Goff",
@@ -356,24 +365,46 @@
       "week": 2
     }
   ],
+  "input_hashes": {
+    "schedule_rows": "a96eba5e58148e5fe7bbb29254288b8a33f4fb437ac3a477496d430999628232",
+    "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+    "season_forecast_input": "f36fc4e88e3bf7e1c7a5d67adf81b5335311c46d06b25b47347a8a09a2d0e79b"
+  },
+  "kind": "forecast_draft",
+  "model_version": "0.1.1",
+  "quality": {
+    "checked_at": "2026-09-16T15:09:03.108663+00:00",
+    "data_age_hours": 0.16,
+    "errors": [],
+    "warnings": [
+      "2026_02_CAR_ATL: tiebreaker_approximation",
+      "2026_02_CIN_HOU: tiebreaker_approximation",
+      "2026_02_CLE_TB: tiebreaker_approximation",
+      "2026_02_DET_BUF: tiebreaker_approximation",
+      "2026_02_GB_NYJ: tiebreaker_approximation",
+      "2026_02_IND_KC: tiebreaker_approximation",
+      "2026_02_JAX_DEN: tiebreaker_approximation",
+      "2026_02_LV_LAC: tiebreaker_approximation",
+      "2026_02_MIA_SF: tiebreaker_approximation",
+      "2026_02_MIN_CHI: tiebreaker_approximation",
+      "2026_02_NO_BAL: tiebreaker_approximation",
+      "2026_02_NYG_LA: tiebreaker_approximation",
+      "2026_02_PHI_TEN: tiebreaker_approximation",
+      "2026_02_PIT_NE: tiebreaker_approximation",
+      "2026_02_SEA_ARI: tiebreaker_approximation",
+      "2026_02_WAS_DAL: tiebreaker_approximation"
+    ]
+  },
+  "random_seed": 20260826,
+  "reproducibility": {
+    "approvals_sha256": "9ed9c66efc1dade2ad8a740955c407adb84adbcdf515e9d588d827b1e6433c60",
+    "config_sha256": "237ac858e131a87881bb3d7e417d98a92c18d9078ff70e2aba9cc77bb3a82465",
+    "draft_sha256": "5badc8937e955f25930a5c920ed2a4ea876096614af4c0275c4cad0af3a4c7de",
+    "git_commit": "a1be3291f0a356b4893da097d4fc5c2a64b31c91",
+    "python": "3.12.14",
+    "random_seed": 20260826
+  },
   "source_week": 2,
-  "status": "ready",
-  "warnings": [
-    "2026_02_CAR_ATL: tiebreaker_approximation",
-    "2026_02_CIN_HOU: tiebreaker_approximation",
-    "2026_02_CLE_TB: tiebreaker_approximation",
-    "2026_02_DET_BUF: tiebreaker_approximation",
-    "2026_02_GB_NYJ: tiebreaker_approximation",
-    "2026_02_IND_KC: tiebreaker_approximation",
-    "2026_02_JAX_DEN: tiebreaker_approximation",
-    "2026_02_LV_LAC: tiebreaker_approximation",
-    "2026_02_MIA_SF: tiebreaker_approximation",
-    "2026_02_MIN_CHI: tiebreaker_approximation",
-    "2026_02_NO_BAL: tiebreaker_approximation",
-    "2026_02_NYG_LA: tiebreaker_approximation",
-    "2026_02_PHI_TEN: tiebreaker_approximation",
-    "2026_02_PIT_NE: tiebreaker_approximation",
-    "2026_02_SEA_ARI: tiebreaker_approximation",
-    "2026_02_WAS_DAL: tiebreaker_approximation"
-  ]
+  "status": "official",
+  "tiebreaker_mode": "approximation_v0.1"
 }
