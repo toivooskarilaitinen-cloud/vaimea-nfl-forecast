@@ -1,0 +1,270 @@
+{
+  "archived_at": "2026-09-19T08:50:26.530585+00:00",
+  "as_of": "2026-09-19T08:45:37+00:00",
+  "forecast_fingerprint": "33508d1ef24f70e16b335932cdf3e002fdef4fdd4f7d382b45710533304528db",
+  "kind": "season_probability_snapshot",
+  "model_version": "0.1.1",
+  "random_seed": 20260826,
+  "season": 2026,
+  "simulation_count": 100000,
+  "teams": [
+    {
+      "conference_probability": 0.03285,
+      "division_probability": 0.1513,
+      "expected_wins": 8.42993,
+      "playoff_probability": 0.3554,
+      "super_bowl_probability": 0.0137,
+      "team": "ARI"
+    },
+    {
+      "conference_probability": 0.04282,
+      "division_probability": 0.29544,
+      "expected_wins": 8.01965,
+      "playoff_probability": 0.38459,
+      "super_bowl_probability": 0.01836,
+      "team": "ATL"
+    },
+    {
+      "conference_probability": 0.20112,
+      "division_probability": 0.51151,
+      "expected_wins": 11.19328,
+      "playoff_probability": 0.87385,
+      "super_bowl_probability": 0.11613,
+      "team": "BAL"
+    },
+    {
+      "conference_probability": 0.21082,
+      "division_probability": 0.59175,
+      "expected_wins": 11.09926,
+      "playoff_probability": 0.84964,
+      "super_bowl_probability": 0.12548,
+      "team": "BUF"
+    },
+    {
+      "conference_probability": 0.00661,
+      "division_probability": 0.09033,
+      "expected_wins": 6.40892,
+      "playoff_probability": 0.1257,
+      "super_bowl_probability": 0.0022,
+      "team": "CAR"
+    },
+    {
+      "conference_probability": 0.02946,
+      "division_probability": 0.13,
+      "expected_wins": 8.13481,
+      "playoff_probability": 0.31071,
+      "super_bowl_probability": 0.01191,
+      "team": "CHI"
+    },
+    {
+      "conference_probability": 0.16346,
+      "division_probability": 0.4227,
+      "expected_wins": 10.82695,
+      "playoff_probability": 0.82462,
+      "super_bowl_probability": 0.09067,
+      "team": "CIN"
+    },
+    {
+      "conference_probability": 0.00124,
+      "division_probability": 0.00738,
+      "expected_wins": 5.8355,
+      "playoff_probability": 0.05686,
+      "super_bowl_probability": 0.00039,
+      "team": "CLE"
+    },
+    {
+      "conference_probability": 0.04195,
+      "division_probability": 0.14122,
+      "expected_wins": 8.34276,
+      "playoff_probability": 0.3414,
+      "super_bowl_probability": 0.01865,
+      "team": "DAL"
+    },
+    {
+      "conference_probability": 0.00457,
+      "division_probability": 0.04861,
+      "expected_wins": 6.49005,
+      "playoff_probability": 0.11649,
+      "super_bowl_probability": 0.00152,
+      "team": "DEN"
+    },
+    {
+      "conference_probability": 0.12871,
+      "division_probability": 0.38419,
+      "expected_wins": 9.71029,
+      "playoff_probability": 0.63864,
+      "super_bowl_probability": 0.06479,
+      "team": "DET"
+    },
+    {
+      "conference_probability": 0.05042,
+      "division_probability": 0.15361,
+      "expected_wins": 8.44802,
+      "playoff_probability": 0.365,
+      "super_bowl_probability": 0.02387,
+      "team": "GB"
+    },
+    {
+      "conference_probability": 0.01975,
+      "division_probability": 0.21256,
+      "expected_wins": 7.69965,
+      "playoff_probability": 0.32461,
+      "super_bowl_probability": 0.00803,
+      "team": "HOU"
+    },
+    {
+      "conference_probability": 0.01788,
+      "division_probability": 0.20025,
+      "expected_wins": 7.59696,
+      "playoff_probability": 0.3038,
+      "super_bowl_probability": 0.00714,
+      "team": "IND"
+    },
+    {
+      "conference_probability": 0.0684,
+      "division_probability": 0.55717,
+      "expected_wins": 9.34392,
+      "playoff_probability": 0.65949,
+      "super_bowl_probability": 0.03217,
+      "team": "JAX"
+    },
+    {
+      "conference_probability": 0.11593,
+      "division_probability": 0.57632,
+      "expected_wins": 9.84897,
+      "playoff_probability": 0.73335,
+      "super_bowl_probability": 0.06147,
+      "team": "KC"
+    },
+    {
+      "conference_probability": 0.02505,
+      "division_probability": 0.0871,
+      "expected_wins": 7.74408,
+      "playoff_probability": 0.24393,
+      "super_bowl_probability": 0.01082,
+      "team": "LA"
+    },
+    {
+      "conference_probability": 0.0083,
+      "division_probability": 0.07728,
+      "expected_wins": 6.69221,
+      "playoff_probability": 0.16028,
+      "super_bowl_probability": 0.00336,
+      "team": "LAC"
+    },
+    {
+      "conference_probability": 0.03831,
+      "division_probability": 0.29779,
+      "expected_wins": 8.75318,
+      "playoff_probability": 0.49106,
+      "super_bowl_probability": 0.01682,
+      "team": "LV"
+    },
+    {
+      "conference_probability": 0.02678,
+      "division_probability": 0.07717,
+      "expected_wins": 7.80452,
+      "playoff_probability": 0.28896,
+      "super_bowl_probability": 0.01323,
+      "team": "MIA"
+    },
+    {
+      "conference_probability": 0.0959,
+      "division_probability": 0.3322,
+      "expected_wins": 9.42039,
+      "playoff_probability": 0.58891,
+      "super_bowl_probability": 0.04605,
+      "team": "MIN"
+    },
+    {
+      "conference_probability": 0.0621,
+      "division_probability": 0.16355,
+      "expected_wins": 8.79112,
+      "playoff_probability": 0.48424,
+      "super_bowl_probability": 0.03316,
+      "team": "NE"
+    },
+    {
+      "conference_probability": 0.03404,
+      "division_probability": 0.26627,
+      "expected_wins": 7.90547,
+      "playoff_probability": 0.35127,
+      "super_bowl_probability": 0.01396,
+      "team": "NO"
+    },
+    {
+      "conference_probability": 0.06106,
+      "division_probability": 0.26317,
+      "expected_wins": 9.10359,
+      "playoff_probability": 0.51664,
+      "super_bowl_probability": 0.02629,
+      "team": "NYG"
+    },
+    {
+      "conference_probability": 0.04692,
+      "division_probability": 0.16753,
+      "expected_wins": 8.94391,
+      "playoff_probability": 0.4885,
+      "super_bowl_probability": 0.02277,
+      "team": "NYJ"
+    },
+    {
+      "conference_probability": 0.12585,
+      "division_probability": 0.4497,
+      "expected_wins": 9.99283,
+      "playoff_probability": 0.69029,
+      "super_bowl_probability": 0.05949,
+      "team": "PHI"
+    },
+    {
+      "conference_probability": 0.01353,
+      "division_probability": 0.05841,
+      "expected_wins": 7.98453,
+      "playoff_probability": 0.29643,
+      "super_bowl_probability": 0.00524,
+      "team": "PIT"
+    },
+    {
+      "conference_probability": 0.12318,
+      "division_probability": 0.3804,
+      "expected_wins": 9.84617,
+      "playoff_probability": 0.64448,
+      "super_bowl_probability": 0.06099,
+      "team": "SEA"
+    },
+    {
+      "conference_probability": 0.11398,
+      "division_probability": 0.3812,
+      "expected_wins": 9.70428,
+      "playoff_probability": 0.64863,
+      "super_bowl_probability": 0.05387,
+      "team": "SF"
+    },
+    {
+      "conference_probability": 0.04855,
+      "division_probability": 0.34796,
+      "expected_wins": 8.27617,
+      "playoff_probability": 0.44193,
+      "super_bowl_probability": 0.01985,
+      "team": "TB"
+    },
+    {
+      "conference_probability": 0.00089,
+      "division_probability": 0.03002,
+      "expected_wins": 5.26673,
+      "playoff_probability": 0.04782,
+      "super_bowl_probability": 0.00019,
+      "team": "TEN"
+    },
+    {
+      "conference_probability": 0.03957,
+      "division_probability": 0.14591,
+      "expected_wins": 8.3419,
+      "playoff_probability": 0.35248,
+      "super_bowl_probability": 0.01743,
+      "team": "WAS"
+    }
+  ],
+  "tiebreaker_mode": "approximation_v0.1",
+  "week": 2
+}
