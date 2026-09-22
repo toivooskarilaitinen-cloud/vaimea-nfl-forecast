@@ -387,7 +387,7 @@
     "snapshot_cutoff": "2026-09-19T14:00:39.171083+00:00",
     "snapshot_approved_at": "2026-09-20T07:45:30.504691+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": 0.002532919841988557,
     "move_reason": "scheduled_production_snapshot"
   },

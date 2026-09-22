@@ -2,9 +2,9 @@
   "baseline_rule": "fixed 2021-2024 training-sample home-win rate; never estimated from 2026 outcomes",
   "baselines": {
     "historical_home_rate_2021_2024": {
-      "brier": 0.2508398871191712,
-      "games": 31,
-      "log_loss": 0.6948403647809849
+      "brier": 0.24934908748264234,
+      "games": 32,
+      "log_loss": 0.691849048097569
     }
   },
   "calibration": [
@@ -22,9 +22,9 @@
     },
     {
       "bin": "(0.5, 0.6]",
-      "n": 13,
-      "observed": 0.46153846153846156,
-      "predicted": 0.5513731080665242
+      "n": 14,
+      "observed": 0.5,
+      "predicted": 0.5521268939837395
     },
     {
       "bin": "(0.6, 0.7]",
@@ -716,19 +716,41 @@
       "predicted_winner": "KC",
       "week": 2,
       "winner": "KC"
+    },
+    {
+      "approved_at": "2026-09-20T07:45:30.504691+00:00",
+      "approved_by": "Toivo-Oskari Laitinen",
+      "away_score": 6,
+      "away_team": "NYG",
+      "brier": 0.19190873230459385,
+      "favorite_correct": true,
+      "final_lock_at": "2026-09-21T22:45:00+00:00",
+      "forecast_cutoff": "2026-09-19T14:00:39.171083+00:00",
+      "game_id": "2026_02_NYG_LA",
+      "gameday": "2026-09-21",
+      "home_score": 28,
+      "home_team": "LA",
+      "home_win": 1,
+      "home_win_probability": 0.561926110907539,
+      "kickoff": "2026-09-22T00:15:00+00:00",
+      "log_loss": 0.5763849129855642,
+      "model_version": "0.1.1",
+      "predicted_winner": "LA",
+      "week": 2,
+      "winner": "LA"
     }
   ],
-  "generated_at": "2026-09-21T16:33:10.829363+00:00",
+  "generated_at": "2026-09-22T14:57:32.562421+00:00",
   "model": {
-    "brier": 0.2323364457085056,
-    "games": 31,
-    "log_loss": 0.6574503943115259
+    "brier": 0.23107307966463336,
+    "games": 32,
+    "log_loss": 0.6549170980200896
   },
   "rolling": {
-    "brier": 0.2323364457085056,
-    "games": 31,
-    "log_loss": 0.6574503943115259
+    "brier": 0.23107307966463336,
+    "games": 32,
+    "log_loss": 0.6549170980200896
   },
   "selection_rule": "latest official forecast approved no later than T-90",
-  "standard_error_at_50pct": 0.08980265101338746
+  "standard_error_at_50pct": 0.08838834764831843
 }
