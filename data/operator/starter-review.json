@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-09-23T16:47:29.565241+00:00",
-  "draft_sha256": "b7c80f1aef2ec4115e7356db0589ff63b4727deb41c34d91f0315b2f5cf332d8",
+  "cutoff": "2026-09-24T15:11:09.787975+00:00",
+  "draft_sha256": "d57559d46c64839afc6efc8cf5ae51d4e1498a58e75f2be706031afbcf7c3815",
   "games": {
     "2026_03_ARI_SF": {
       "approved": false,
@@ -137,8 +137,8 @@
       "away_qb_id": "00-0036389",
       "away_qb_name": "Jalen Hurts",
       "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0038416",
-      "home_qb_name": "Tyson Bagent",
+      "home_qb_id": "00-0028986",
+      "home_qb_name": "Case Keenum",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
@@ -157,8 +157,8 @@
       "away_qb_id": "00-0040676",
       "away_qb_name": "Cam Ward",
       "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0040691",
-      "home_qb_name": "Jaxson Dart",
+      "home_qb_id": "00-0031503",
+      "home_qb_name": "Jameis Winston",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     }

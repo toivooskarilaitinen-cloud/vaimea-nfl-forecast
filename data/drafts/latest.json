@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-09-23T16:47:29.565241+00:00",
-  "data_fetched_at": "2026-09-23T16:45:04.515503+00:00",
+  "cutoff": "2026-09-24T15:11:09.787975+00:00",
+  "data_fetched_at": "2026-09-24T15:06:25.772212+00:00",
   "data_quality": {
     "games": 2259,
     "mature_results_missing": 0,
@@ -190,14 +190,14 @@
       "final_lock_at": "2026-09-27T15:30:00+00:00",
       "game_id": "2026_03_TEN_NYG",
       "gameday": "2026-09-27",
-      "home_qb_id": "00-0040691",
-      "home_qb_name": "Jaxson Dart",
+      "home_qb_id": "00-0031503",
+      "home_qb_name": "Jameis Winston",
       "home_team": "NYG",
-      "home_win_probability": 0.6027883865590814,
+      "home_win_probability": 0.5241995611622093,
       "kickoff": "2026-09-27T17:00:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0040676",
-      "probability_home_qb_id": "00-0040691",
+      "probability_home_qb_id": "00-0031503",
       "week": 3
     },
     {
@@ -304,21 +304,21 @@
       "final_lock_at": "2026-09-28T22:45:00+00:00",
       "game_id": "2026_03_PHI_CHI",
       "gameday": "2026-09-28",
-      "home_qb_id": "00-0038416",
-      "home_qb_name": "Tyson Bagent",
+      "home_qb_id": "00-0028986",
+      "home_qb_name": "Case Keenum",
       "home_team": "CHI",
-      "home_win_probability": 0.45014496473499604,
+      "home_win_probability": 0.4405501369534621,
       "kickoff": "2026-09-29T00:15:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0036389",
-      "probability_home_qb_id": "00-0038416",
+      "probability_home_qb_id": "00-0028986",
       "week": 3
     }
   ],
   "input_hashes": {
-    "schedule_rows": "110acfc896bc927f850c9c239e116a94777f7523734f9c5bfbf8363052d6341f",
+    "schedule_rows": "a3ac82807d0dc1629239ced07ad9c16b97ddfa683549f5c5dc2eb2c3b5dab00c",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "909be0382464b5d14c3d155113ce2ec38bd5050e169eca7cc2ee6a7e1537384a"
+    "season_forecast_input": "16ce51cff4dc3c986fc97a8a488174dba24f6eb810854f831810f28489da65b0"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",
