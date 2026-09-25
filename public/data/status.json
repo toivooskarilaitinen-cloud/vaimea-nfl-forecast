@@ -1,14 +1,13 @@
 {
-  "generated_at": "2026-09-25T10:04:48.378310+00:00",
+  "generated_at": "2026-09-25T10:11:08.249492+00:00",
   "forecast_status": "official",
   "data_fetched_at": "2026-09-25T10:04:47.891618+00:00",
-  "official_forecast_data_fetched_at": "2026-09-22T14:54:14.775114+00:00",
+  "official_forecast_data_fetched_at": "2026-09-25T10:04:47.891618+00:00",
   "source_week": 3,
   "model_version": "0.1.1",
-  "cutoff": "2026-09-22T14:57:39.088626+00:00",
+  "cutoff": "2026-09-25T10:08:55.683254+00:00",
   "warnings": [
     "2026_03_ARI_SF: tiebreaker_approximation",
-    "2026_03_ATL_GB: tiebreaker_approximation",
     "2026_03_BAL_DAL: neutral_site_home_field_zero",
     "2026_03_BAL_DAL: tiebreaker_approximation",
     "2026_03_CAR_CLE: tiebreaker_approximation",
@@ -25,5 +24,5 @@
     "2026_03_SEA_WAS: tiebreaker_approximation",
     "2026_03_TEN_NYG: tiebreaker_approximation"
   ],
-  "ledger_entries": 8
+  "ledger_entries": 9
 }
