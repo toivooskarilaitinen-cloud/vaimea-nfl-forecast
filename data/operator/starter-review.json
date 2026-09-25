@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-09-24T15:11:09.787975+00:00",
-  "draft_sha256": "d57559d46c64839afc6efc8cf5ae51d4e1498a58e75f2be706031afbcf7c3815",
+  "cutoff": "2026-09-25T10:08:55.683254+00:00",
+  "draft_sha256": "a9d5e8d0817c11bb307349a21416eff337e736319b65635a75cb07dab3bd9050",
   "games": {
     "2026_03_ARI_SF": {
       "approved": false,
@@ -9,16 +9,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0037834",
       "home_qb_name": "Brock Purdy",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_03_ATL_GB": {
-      "approved": false,
-      "away_qb_id": "00-0039917",
-      "away_qb_name": "Michael Penix Jr.",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0036264",
-      "home_qb_name": "Jordan Love",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },

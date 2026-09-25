@@ -1,16 +1,6 @@
 {
-  "approval_deadline": "2026-09-24T22:45:00+00:00",
+  "approval_deadline": "2026-09-27T15:30:00+00:00",
   "games": [
-    {
-      "away_qb_name": "Michael Penix Jr.",
-      "away_team": "ATL",
-      "final_lock_at": "2026-09-24T22:45:00+00:00",
-      "game_id": "2026_03_ATL_GB",
-      "home_qb_name": "Jordan Love",
-      "home_team": "GB",
-      "home_win_probability": 0.6908504547676871,
-      "qb_probability_match": true
-    },
     {
       "away_qb_name": "Bryce Young",
       "away_team": "CAR",
@@ -162,7 +152,7 @@
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-09-24T15:11:09.787975+00:00",
+  "generated_at": "2026-09-25T10:08:55.683254+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 3,

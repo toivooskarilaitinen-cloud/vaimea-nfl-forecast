@@ -2,9 +2,9 @@
   "baseline_rule": "fixed 2021-2024 training-sample home-win rate; never estimated from 2026 outcomes",
   "baselines": {
     "historical_home_rate_2021_2024": {
-      "brier": 0.24934908748264234,
-      "games": 32,
-      "log_loss": 0.691849048097569
+      "brier": 0.250936262045169,
+      "games": 33,
+      "log_loss": 0.6950337428292059
     }
   },
   "calibration": [
@@ -28,9 +28,9 @@
     },
     {
       "bin": "(0.6, 0.7]",
-      "n": 9,
-      "observed": 0.6666666666666666,
-      "predicted": 0.6481108039498832
+      "n": 10,
+      "observed": 0.6,
+      "predicted": 0.6530222269643817
     }
   ],
   "calibration_note": "Monitoring only. The frozen in-season model is not refitted from this report.",
@@ -738,19 +738,41 @@
       "predicted_winner": "LA",
       "week": 2,
       "winner": "LA"
+    },
+    {
+      "approved_at": "2026-09-22T18:25:04.820067+00:00",
+      "approved_by": "Toivo-Oskari Laitinen",
+      "away_score": 35,
+      "away_team": "ATL",
+      "brier": 0.48612274816859036,
+      "favorite_correct": false,
+      "final_lock_at": "2026-09-24T22:45:00+00:00",
+      "forecast_cutoff": "2026-09-22T14:57:39.088626+00:00",
+      "game_id": "2026_03_ATL_GB",
+      "gameday": "2026-09-24",
+      "home_score": 14,
+      "home_team": "GB",
+      "home_win": 0,
+      "home_win_probability": 0.6972250340948684,
+      "kickoff": "2026-09-25T00:15:00+00:00",
+      "log_loss": 1.194765436182967,
+      "model_version": "0.1.1",
+      "predicted_winner": "GB",
+      "week": 3,
+      "winner": "ATL"
     }
   ],
-  "generated_at": "2026-09-24T15:10:59.804119+00:00",
+  "generated_at": "2026-09-25T10:08:47.342874+00:00",
   "model": {
-    "brier": 0.23107307966463336,
-    "games": 32,
-    "log_loss": 0.6549170980200896
+    "brier": 0.2388018574980866,
+    "games": 33,
+    "log_loss": 0.6712761385704797
   },
   "rolling": {
-    "brier": 0.23107307966463336,
-    "games": 32,
-    "log_loss": 0.6549170980200896
+    "brier": 0.2388018574980866,
+    "games": 33,
+    "log_loss": 0.6712761385704797
   },
   "selection_rule": "latest official forecast approved no later than T-90",
-  "standard_error_at_50pct": 0.08838834764831843
+  "standard_error_at_50pct": 0.08703882797784893
 }

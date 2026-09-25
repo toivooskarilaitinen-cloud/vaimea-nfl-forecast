@@ -1,34 +1,15 @@
 {
-  "cutoff": "2026-09-24T15:11:09.787975+00:00",
-  "data_fetched_at": "2026-09-24T15:06:25.772212+00:00",
+  "cutoff": "2026-09-25T10:08:55.683254+00:00",
+  "data_fetched_at": "2026-09-25T10:04:47.891618+00:00",
   "data_quality": {
-    "games": 2259,
+    "games": 2260,
     "mature_results_missing": 0,
-    "pbp_rows": 394847,
+    "pbp_rows": 395020,
     "qb_coverage": 1.0,
     "source_week": 22,
     "teams": 32
   },
   "forecasts": [
-    {
-      "away_qb_id": "00-0039917",
-      "away_qb_name": "Michael Penix Jr.",
-      "away_team": "ATL",
-      "change_reason": "scheduled_production_snapshot",
-      "completed": false,
-      "final_lock_at": "2026-09-24T22:45:00+00:00",
-      "game_id": "2026_03_ATL_GB",
-      "gameday": "2026-09-24",
-      "home_qb_id": "00-0036264",
-      "home_qb_name": "Jordan Love",
-      "home_team": "GB",
-      "home_win_probability": 0.6908504547676871,
-      "kickoff": "2026-09-25T00:15:00+00:00",
-      "neutral_site": false,
-      "probability_away_qb_id": "00-0039917",
-      "probability_home_qb_id": "00-0036264",
-      "week": 3
-    },
     {
       "away_qb_id": "00-0039150",
       "away_qb_name": "Bryce Young",
@@ -318,7 +299,7 @@
   "input_hashes": {
     "schedule_rows": "a3ac82807d0dc1629239ced07ad9c16b97ddfa683549f5c5dc2eb2c3b5dab00c",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "16ce51cff4dc3c986fc97a8a488174dba24f6eb810854f831810f28489da65b0"
+    "season_forecast_input": "3d68283749b036c4c1bb72fcbcacd9aad5ec18ed2b7fba2df17b6e1f85af2e6b"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",
