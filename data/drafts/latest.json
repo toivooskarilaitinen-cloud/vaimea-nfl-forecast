@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-09-26T14:34:45.162593+00:00",
-  "data_fetched_at": "2026-09-26T14:30:05.697603+00:00",
+  "cutoff": "2026-09-27T15:15:06.818345+00:00",
+  "data_fetched_at": "2026-09-27T15:10:26.032563+00:00",
   "data_quality": {
     "games": 2260,
     "mature_results_missing": 0,
@@ -285,21 +285,21 @@
       "final_lock_at": "2026-09-28T22:45:00+00:00",
       "game_id": "2026_03_PHI_CHI",
       "gameday": "2026-09-28",
-      "home_qb_id": "00-0028986",
-      "home_qb_name": "Case Keenum",
+      "home_qb_id": "00-0038416",
+      "home_qb_name": "Tyson Bagent",
       "home_team": "CHI",
-      "home_win_probability": 0.44327918040151304,
+      "home_win_probability": 0.45288165796162605,
       "kickoff": "2026-09-29T00:15:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0036389",
-      "probability_home_qb_id": "00-0028986",
+      "probability_home_qb_id": "00-0038416",
       "week": 3
     }
   ],
   "input_hashes": {
-    "schedule_rows": "a3ac82807d0dc1629239ced07ad9c16b97ddfa683549f5c5dc2eb2c3b5dab00c",
+    "schedule_rows": "0de7bdacefc5c5dfbc86aa2fb48e950fe07df6ca907c16e86313889907da51be",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "61c0bad123dff783c4e45379c3f83e776438b962c274f0f564dc793d931ae75e"
+    "season_forecast_input": "4d745e8f43bc63356e3b67536b707a33b6926aa9813584027d55c299d9a1d032"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",

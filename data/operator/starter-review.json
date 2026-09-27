@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-09-26T14:34:45.162593+00:00",
-  "draft_sha256": "32ae735df723e996e79da501645c5d7c19989752e3d6a53aaa2a5d9a937113b1",
+  "cutoff": "2026-09-27T15:15:06.818345+00:00",
+  "draft_sha256": "c7c0286fa5163ef2bfb68fb826705bca1cae56ce8eceae4eff2f4628a4a13a58",
   "games": {
     "2026_03_ARI_SF": {
       "approved": false,
@@ -127,8 +127,8 @@
       "away_qb_id": "00-0036389",
       "away_qb_name": "Jalen Hurts",
       "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0028986",
-      "home_qb_name": "Case Keenum",
+      "home_qb_id": "00-0038416",
+      "home_qb_name": "Tyson Bagent",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },

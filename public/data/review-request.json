@@ -146,13 +146,13 @@
       "away_team": "PHI",
       "final_lock_at": "2026-09-28T22:45:00+00:00",
       "game_id": "2026_03_PHI_CHI",
-      "home_qb_name": "Case Keenum",
+      "home_qb_name": "Tyson Bagent",
       "home_team": "CHI",
-      "home_win_probability": 0.44327918040151304,
+      "home_win_probability": 0.45288165796162605,
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-09-26T14:34:45.162593+00:00",
+  "generated_at": "2026-09-27T15:15:06.818345+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 3,

@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-09-26T14:30:06+00:00",
+  "as_of": "2026-09-27T15:10:27+00:00",
   "model_version": "0.1.1",
   "playoff_format": "NFL_14_team_reseed_v1",
   "playoff_matchups": [
@@ -6949,7 +6949,7 @@
     }
   ],
   "provenance": {
-    "available_at_cutoff": "2026-09-26T14:30:06+00:00",
+    "available_at_cutoff": "2026-09-27T15:10:27+00:00",
     "current_season_updates": true,
     "feature_history_seasons": [
       2018,
@@ -7500,9 +7500,9 @@
       "game_id": "2026_03_PHI_CHI",
       "gameday": "2026-09-28",
       "home_team": "CHI",
-      "home_win_probability": 0.44327918040151304,
+      "home_win_probability": 0.45288165796162605,
       "probability_away_qb_id": "00-0036389",
-      "probability_home_qb_id": "00-0028986",
+      "probability_home_qb_id": "00-0038416",
       "week": 3
     },
     {
