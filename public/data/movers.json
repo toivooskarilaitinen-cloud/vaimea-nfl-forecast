@@ -51,7 +51,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": -0.14762066057751522,
     "move_reason": "scheduled_production_snapshot"
   },
@@ -79,7 +79,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": -0.06803251964011559,
     "move_reason": "scheduled_production_snapshot"
   },
@@ -275,7 +275,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": 0.007540979127278469,
     "move_reason": "scheduled_production_snapshot"
   },
@@ -331,7 +331,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": -0.006416414373294321,
     "move_reason": "scheduled_production_snapshot"
   },
@@ -359,7 +359,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": 0.005692587219366052,
     "move_reason": "scheduled_production_snapshot"
   },
@@ -388,7 +388,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": -0.0056788364681016335,
     "move_reason": "scheduled_production_snapshot"
   },
@@ -444,7 +444,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": 0.0048731751278367486,
     "move_reason": "scheduled_production_snapshot"
   },
@@ -500,7 +500,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": -0.0037579823684001923,
     "move_reason": "scheduled_production_snapshot"
   },
@@ -584,7 +584,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": 0.002741027371002236,
     "move_reason": "scheduled_production_snapshot"
   },
@@ -752,7 +752,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": -0.0020813841579174763,
     "move_reason": "scheduled_production_snapshot"
   },
@@ -948,7 +948,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": 0.0015764458923742675,
     "move_reason": "scheduled_production_snapshot"
   },
@@ -1088,7 +1088,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": 0.0009105466240090232,
     "move_reason": "scheduled_production_snapshot"
   },
@@ -1144,7 +1144,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": -0.0003667585452615807,
     "move_reason": "scheduled_production_snapshot"
   },
@@ -1285,7 +1285,7 @@
     "snapshot_cutoff": "2026-09-25T10:08:55.683254+00:00",
     "snapshot_approved_at": "2026-09-25T10:11:07.660369+00:00",
     "model_version": "0.1.1",
-    "lock_status": "updateable",
+    "lock_status": "final",
     "move": -6.335661804390824e-05,
     "move_reason": "scheduled_production_snapshot"
   },
