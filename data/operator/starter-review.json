@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-09-29T16:36:12.543922+00:00",
-  "draft_sha256": "5b3a7756bcb4cd57143b53e036946d6098677afcbc7599760375f24061339f28",
+  "cutoff": "2026-09-30T16:28:36.276696+00:00",
+  "draft_sha256": "2780f0e0156207e8597c7371b38107a978ccf3a2bd89d7c661755c55d7b126b4",
   "games": {
     "2026_04_ARI_NYG": {
       "approved": false,
@@ -57,8 +57,8 @@
       "away_qb_id": "00-0036264",
       "away_qb_name": "Jordan Love",
       "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0034855",
-      "home_qb_name": "Baker Mayfield",
+      "home_qb_id": "00-0041251",
+      "home_qb_name": "Jalon Daniels",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },

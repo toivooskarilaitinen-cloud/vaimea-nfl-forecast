@@ -8,7 +8,7 @@
       "game_id": "2026_04_PIT_CLE",
       "home_qb_name": "Deshaun Watson",
       "home_team": "CLE",
-      "home_win_probability": 0.520384188895693,
+      "home_win_probability": 0.519977701704511,
       "qb_probability_match": true
     },
     {
@@ -18,7 +18,7 @@
       "game_id": "2026_04_IND_WAS",
       "home_qb_name": "Jayden Daniels",
       "home_team": "WAS",
-      "home_win_probability": 0.5205784879179559,
+      "home_win_probability": 0.5209775809916148,
       "qb_probability_match": true
     },
     {
@@ -28,7 +28,7 @@
       "game_id": "2026_04_ARI_NYG",
       "home_qb_name": "Jameis Winston",
       "home_team": "NYG",
-      "home_win_probability": 0.49221624439953854,
+      "home_win_probability": 0.4921728463214547,
       "qb_probability_match": true
     },
     {
@@ -38,7 +38,7 @@
       "game_id": "2026_04_DAL_HOU",
       "home_qb_name": "C.J. Stroud",
       "home_team": "HOU",
-      "home_win_probability": 0.4278205478332106,
+      "home_win_probability": 0.44217947752184106,
       "qb_probability_match": true
     },
     {
@@ -46,9 +46,9 @@
       "away_team": "GB",
       "final_lock_at": "2026-10-04T15:30:00+00:00",
       "game_id": "2026_04_GB_TB",
-      "home_qb_name": "Baker Mayfield",
+      "home_qb_name": "Jalon Daniels",
       "home_team": "TB",
-      "home_win_probability": 0.4688322274746809,
+      "home_win_probability": 0.43897336841668433,
       "qb_probability_match": true
     },
     {
@@ -58,7 +58,7 @@
       "game_id": "2026_04_JAX_CIN",
       "home_qb_name": "Joe Burrow",
       "home_team": "CIN",
-      "home_win_probability": 0.5959496248479137,
+      "home_win_probability": 0.5991401615919791,
       "qb_probability_match": true
     },
     {
@@ -68,7 +68,7 @@
       "game_id": "2026_04_LA_PHI",
       "home_qb_name": "Jalen Hurts",
       "home_team": "PHI",
-      "home_win_probability": 0.555239238771395,
+      "home_win_probability": 0.4848241620477359,
       "qb_probability_match": true
     },
     {
@@ -78,7 +78,7 @@
       "game_id": "2026_04_NE_BUF",
       "home_qb_name": "Josh Allen",
       "home_team": "BUF",
-      "home_win_probability": 0.6200589505969315,
+      "home_win_probability": 0.6161105522178323,
       "qb_probability_match": true
     },
     {
@@ -88,7 +88,7 @@
       "game_id": "2026_04_NYJ_CHI",
       "home_qb_name": "Case Keenum",
       "home_team": "CHI",
-      "home_win_probability": 0.5179231185526427,
+      "home_win_probability": 0.5997309604676726,
       "qb_probability_match": true
     },
     {
@@ -98,7 +98,7 @@
       "game_id": "2026_04_TEN_BAL",
       "home_qb_name": "Lamar Jackson",
       "home_team": "BAL",
-      "home_win_probability": 0.7637518971056043,
+      "home_win_probability": 0.7622289276816631,
       "qb_probability_match": true
     },
     {
@@ -108,7 +108,7 @@
       "game_id": "2026_04_MIA_MIN",
       "home_qb_name": "Kyler Murray",
       "home_team": "MIN",
-      "home_win_probability": 0.5646998727474513,
+      "home_win_probability": 0.5622053564890145,
       "qb_probability_match": true
     },
     {
@@ -118,7 +118,7 @@
       "game_id": "2026_04_DEN_SF",
       "home_qb_name": "Brock Purdy",
       "home_team": "SF",
-      "home_win_probability": 0.6591051184591176,
+      "home_win_probability": 0.6574234224633226,
       "qb_probability_match": true
     },
     {
@@ -128,7 +128,7 @@
       "game_id": "2026_04_KC_LV",
       "home_qb_name": "Kirk Cousins",
       "home_team": "LV",
-      "home_win_probability": 0.4730754464532313,
+      "home_win_probability": 0.4733650606588592,
       "qb_probability_match": true
     },
     {
@@ -138,7 +138,7 @@
       "game_id": "2026_04_LAC_SEA",
       "home_qb_name": "Drew Lock",
       "home_team": "SEA",
-      "home_win_probability": 0.5231498645148891,
+      "home_win_probability": 0.5204101338705365,
       "qb_probability_match": true
     },
     {
@@ -148,7 +148,7 @@
       "game_id": "2026_04_DET_CAR",
       "home_qb_name": "Bryce Young",
       "home_team": "CAR",
-      "home_win_probability": 0.3884659809120513,
+      "home_win_probability": 0.38971392420066053,
       "qb_probability_match": true
     },
     {
@@ -158,11 +158,11 @@
       "game_id": "2026_04_ATL_NO",
       "home_qb_name": "Tyler Shough",
       "home_team": "NO",
-      "home_win_probability": 0.5291116890259612,
+      "home_win_probability": 0.5317490714789377,
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-09-29T16:36:12.543922+00:00",
+  "generated_at": "2026-09-30T16:28:36.276696+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 4,
