@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-10-01T11:12:21.697746+00:00",
-  "draft_sha256": "7d476ac13dd1bf77b9d9d46c39f75d1209dd48b422e894561650ef90c2216321",
+  "cutoff": "2026-10-02T16:21:42.486546+00:00",
+  "draft_sha256": "a1fe5a6271fb34d39e8fda3cf48918eb26e663e5f7642988366392724231ebc9",
   "games": {
     "2026_04_ARI_NYG": {
       "approved": false,
@@ -9,6 +9,16 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0031503",
       "home_qb_name": "Jameis Winston",
+      "home_source": "nflverse_nfldata_games",
+      "status": "needs_review"
+    },
+    "2026_04_IND_WAS": {
+      "approved": false,
+      "away_qb_id": "00-0035710",
+      "away_qb_name": "Daniel Jones",
+      "away_source": "nflverse_nfldata_games",
+      "home_qb_id": "00-0032268",
+      "home_qb_name": "Marcus Mariota",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     }
