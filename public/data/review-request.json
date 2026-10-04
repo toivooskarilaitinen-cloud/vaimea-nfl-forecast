@@ -1,16 +1,6 @@
 {
-  "approval_deadline": "2026-10-04T12:00:00+00:00",
+  "approval_deadline": "2026-10-04T15:30:00+00:00",
   "games": [
-    {
-      "away_qb_name": "Daniel Jones",
-      "away_team": "IND",
-      "final_lock_at": "2026-10-04T12:00:00+00:00",
-      "game_id": "2026_04_IND_WAS",
-      "home_qb_name": "Marcus Mariota",
-      "home_team": "WAS",
-      "home_win_probability": 0.5341924955942614,
-      "qb_probability_match": true
-    },
     {
       "away_qb_name": "Jacoby Brissett",
       "away_team": "ARI",
@@ -152,7 +142,7 @@
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-10-03T14:48:39.411953+00:00",
+  "generated_at": "2026-10-04T15:25:38.751849+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 4,

@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-10-03T14:48:39.411953+00:00",
-  "data_fetched_at": "2026-10-03T14:43:59.209952+00:00",
+  "cutoff": "2026-10-04T15:25:38.751849+00:00",
+  "data_fetched_at": "2026-10-04T15:23:15.699494+00:00",
   "data_quality": {
     "games": 2276,
     "mature_results_missing": 0,
@@ -10,25 +10,6 @@
     "teams": 32
   },
   "forecasts": [
-    {
-      "away_qb_id": "00-0035710",
-      "away_qb_name": "Daniel Jones",
-      "away_team": "IND",
-      "change_reason": "scheduled_production_snapshot",
-      "completed": false,
-      "final_lock_at": "2026-10-04T12:00:00+00:00",
-      "game_id": "2026_04_IND_WAS",
-      "gameday": "2026-10-04",
-      "home_qb_id": "00-0032268",
-      "home_qb_name": "Marcus Mariota",
-      "home_team": "WAS",
-      "home_win_probability": 0.5341924955942614,
-      "kickoff": "2026-10-04T13:30:00+00:00",
-      "neutral_site": true,
-      "probability_away_qb_id": "00-0035710",
-      "probability_home_qb_id": "00-0032268",
-      "week": 4
-    },
     {
       "away_qb_id": "00-0033119",
       "away_qb_name": "Jacoby Brissett",
@@ -299,7 +280,7 @@
   "input_hashes": {
     "schedule_rows": "5ae3a765713ff19077c0951d175a410356ced83f787ec22e1f92915465f03e42",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "3b9869e3a03e446fd0b61d473926d39a9fff63baf5001dad5824a33f4eed8aa2"
+    "season_forecast_input": "d22ee99cdbcd1e6972dedf7556adb7eb26b1b89e99f3fd64093cb212ea80a1fb"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",

@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-10-03T14:48:39.411953+00:00",
-  "draft_sha256": "aa342b3699d52c9e1afd879b9312b71bedd7bf9955a24870c5b61fc487d404c4",
+  "cutoff": "2026-10-04T15:25:38.751849+00:00",
+  "draft_sha256": "0fb43fb8140e3d9b1ab5cf57b36e0d22ba80d6f6163f1fbf9a6867ed9abce318",
   "games": {
     "2026_04_ARI_NYG": {
       "approved": false,
@@ -59,16 +59,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0041251",
       "home_qb_name": "Jalon Daniels",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_04_IND_WAS": {
-      "approved": false,
-      "away_qb_id": "00-0035710",
-      "away_qb_name": "Daniel Jones",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0032268",
-      "home_qb_name": "Marcus Mariota",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
