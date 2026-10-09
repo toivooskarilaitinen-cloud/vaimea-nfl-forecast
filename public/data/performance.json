@@ -2,9 +2,9 @@
   "baseline_rule": "fixed 2021-2024 training-sample home-win rate; never estimated from 2026 outcomes",
   "baselines": {
     "historical_home_rate_2021_2024": {
-      "brier": 0.24626810156714937,
-      "games": 64,
-      "log_loss": 0.6856669936185091
+      "brier": 0.24712129766682436,
+      "games": 65,
+      "log_loss": 0.6873789471665565
     }
   },
   "calibration": [
@@ -28,9 +28,9 @@
     },
     {
       "bin": "(0.6, 0.7]",
-      "n": 14,
-      "observed": 0.6428571428571429,
-      "predicted": 0.6529128490441742
+      "n": 15,
+      "observed": 0.6,
+      "predicted": 0.6515525626607903
     },
     {
       "bin": "(0.7, 0.8]",
@@ -1448,19 +1448,41 @@
       "predicted_winner": "NO",
       "week": 4,
       "winner": "ATL"
+    },
+    {
+      "approved_at": "2026-10-08T16:08:40.869036+00:00",
+      "approved_by": "Toivo-Oskari Laitinen",
+      "away_score": 24,
+      "away_team": "TB",
+      "brier": 0.4000670699893293,
+      "favorite_correct": false,
+      "final_lock_at": "2026-10-08T22:45:00+00:00",
+      "forecast_cutoff": "2026-10-07T17:30:55.893169+00:00",
+      "game_id": "2026_05_TB_DAL",
+      "gameday": "2026-10-08",
+      "home_score": 16,
+      "home_team": "DAL",
+      "home_win": 0,
+      "home_win_probability": 0.6325085532934154,
+      "kickoff": "2026-10-09T00:15:00+00:00",
+      "log_loss": 1.0010552348678925,
+      "model_version": "0.1.1",
+      "predicted_winner": "DAL",
+      "week": 5,
+      "winner": "TB"
     }
   ],
-  "generated_at": "2026-10-08T17:28:29.059400+00:00",
+  "generated_at": "2026-10-09T17:04:45.076743+00:00",
   "model": {
-    "brier": 0.23922352087326,
-    "games": 64,
-    "log_loss": 0.6708433671071414
+    "brier": 0.24169803701350723,
+    "games": 65,
+    "log_loss": 0.675923549688076
   },
   "rolling": {
-    "brier": 0.23922352087326,
-    "games": 64,
-    "log_loss": 0.6708433671071414
+    "brier": 0.24169803701350723,
+    "games": 65,
+    "log_loss": 0.675923549688076
   },
   "selection_rule": "latest official forecast approved no later than T-90",
-  "standard_error_at_50pct": 0.0625
+  "standard_error_at_50pct": 0.062017367294604234
 }
