@@ -1729,7 +1729,7 @@
       "snapshot_cutoff": "2026-10-07T17:30:55.893169+00:00",
       "snapshot_approved_at": "2026-10-08T16:08:40.869036+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0038416",
@@ -1755,7 +1755,7 @@
       "snapshot_cutoff": "2026-10-07T17:30:55.893169+00:00",
       "snapshot_approved_at": "2026-10-08T16:08:40.869036+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0036442",
@@ -1781,7 +1781,7 @@
       "snapshot_cutoff": "2026-10-07T17:30:55.893169+00:00",
       "snapshot_approved_at": "2026-10-08T16:08:40.869036+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0033537",
@@ -1807,7 +1807,7 @@
       "snapshot_cutoff": "2026-10-07T17:30:55.893169+00:00",
       "snapshot_approved_at": "2026-10-08T16:08:40.869036+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0039163",
@@ -1833,7 +1833,7 @@
       "snapshot_cutoff": "2026-10-07T17:30:55.893169+00:00",
       "snapshot_approved_at": "2026-10-08T16:08:40.869036+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0035710",
@@ -1859,7 +1859,7 @@
       "snapshot_cutoff": "2026-10-07T17:30:55.893169+00:00",
       "snapshot_approved_at": "2026-10-08T16:08:40.869036+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0029604",
@@ -1885,7 +1885,7 @@
       "snapshot_cutoff": "2026-10-07T17:30:55.893169+00:00",
       "snapshot_approved_at": "2026-10-08T16:08:40.869036+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0035228",
@@ -1911,7 +1911,7 @@
       "snapshot_cutoff": "2026-10-07T17:30:55.893169+00:00",
       "snapshot_approved_at": "2026-10-08T16:08:40.869036+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0031503",
@@ -1937,7 +1937,7 @@
       "snapshot_cutoff": "2026-10-07T17:30:55.893169+00:00",
       "snapshot_approved_at": "2026-10-08T16:08:40.869036+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0039732",
