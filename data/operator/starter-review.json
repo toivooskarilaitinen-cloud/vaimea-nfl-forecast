@@ -1,17 +1,7 @@
 {
-  "cutoff": "2026-10-11T16:24:38.595026+00:00",
-  "draft_sha256": "e6b6db1e6424885494d83074223a86b7646a73c86d2344729abaecf85bc396ec",
+  "cutoff": "2026-10-12T19:50:51.903223+00:00",
+  "draft_sha256": "c7f5f95abf435d28b37b170572dea595cc52fe1b06c9777db3bdae63db9b27f6",
   "games": {
-    "2026_05_BAL_ATL": {
-      "approved": false,
-      "away_qb_id": "00-0035993",
-      "away_qb_name": "Tyler Huntley",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0039917",
-      "home_qb_name": "Michael Penix Jr.",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
     "2026_05_BUF_LA": {
       "approved": false,
       "away_qb_id": "00-0034857",
@@ -19,36 +9,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0026498",
       "home_qb_name": "Matthew Stafford",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_05_DEN_LAC": {
-      "approved": false,
-      "away_qb_id": "00-0039732",
-      "away_qb_name": "Bo Nix",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0036355",
-      "home_qb_name": "Justin Herbert",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_05_DET_ARI": {
-      "approved": false,
-      "away_qb_id": "00-0033106",
-      "away_qb_name": "Jared Goff",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0033119",
-      "home_qb_name": "Jacoby Brissett",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_05_SF_SEA": {
-      "approved": false,
-      "away_qb_id": "00-0037834",
-      "away_qb_name": "Brock Purdy",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0035704",
-      "home_qb_name": "Drew Lock",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     }
