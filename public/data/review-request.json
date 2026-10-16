@@ -1,16 +1,6 @@
 {
-  "approval_deadline": "2026-10-15T22:45:00+00:00",
+  "approval_deadline": "2026-10-18T12:00:00+00:00",
   "games": [
-    {
-      "away_qb_name": "Drew Lock",
-      "away_team": "SEA",
-      "final_lock_at": "2026-10-15T22:45:00+00:00",
-      "game_id": "2026_06_SEA_DEN",
-      "home_qb_name": "Bo Nix",
-      "home_team": "DEN",
-      "home_win_probability": 0.6126484357084417,
-      "qb_probability_match": true
-    },
     {
       "away_qb_name": "C.J. Stroud",
       "away_team": "HOU",
@@ -28,7 +18,7 @@
       "game_id": "2026_06_BAL_CLE",
       "home_qb_name": "Deshaun Watson",
       "home_team": "CLE",
-      "home_win_probability": 0.33934112253758864,
+      "home_win_probability": 0.3393411225375887,
       "qb_probability_match": true
     },
     {
@@ -88,7 +78,7 @@
       "game_id": "2026_06_TEN_IND",
       "home_qb_name": "Daniel Jones",
       "home_team": "IND",
-      "home_win_probability": 0.6867752862050931,
+      "home_win_probability": 0.6867752862050932,
       "qb_probability_match": true
     },
     {
@@ -142,7 +132,7 @@
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-10-15T15:06:02.300293+00:00",
+  "generated_at": "2026-10-16T14:53:55.531600+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 6,

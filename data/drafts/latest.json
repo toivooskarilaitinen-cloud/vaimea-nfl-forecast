@@ -1,34 +1,15 @@
 {
-  "cutoff": "2026-10-15T15:06:02.300293+00:00",
-  "data_fetched_at": "2026-10-15T15:01:29.859263+00:00",
+  "cutoff": "2026-10-16T14:53:55.531600+00:00",
+  "data_fetched_at": "2026-10-16T14:51:25.257245+00:00",
   "data_quality": {
-    "games": 2306,
+    "games": 2307,
     "mature_results_missing": 0,
-    "pbp_rows": 403200,
+    "pbp_rows": 403389,
     "qb_coverage": 1.0,
     "source_week": 22,
     "teams": 32
   },
   "forecasts": [
-    {
-      "away_qb_id": "00-0035704",
-      "away_qb_name": "Drew Lock",
-      "away_team": "SEA",
-      "change_reason": "scheduled_production_snapshot",
-      "completed": false,
-      "final_lock_at": "2026-10-15T22:45:00+00:00",
-      "game_id": "2026_06_SEA_DEN",
-      "gameday": "2026-10-15",
-      "home_qb_id": "00-0039732",
-      "home_qb_name": "Bo Nix",
-      "home_team": "DEN",
-      "home_win_probability": 0.6126484357084417,
-      "kickoff": "2026-10-16T00:15:00+00:00",
-      "neutral_site": false,
-      "probability_away_qb_id": "00-0035704",
-      "probability_home_qb_id": "00-0039732",
-      "week": 6
-    },
     {
       "away_qb_id": "00-0039163",
       "away_qb_name": "C.J. Stroud",
@@ -60,7 +41,7 @@
       "home_qb_id": "00-0033537",
       "home_qb_name": "Deshaun Watson",
       "home_team": "CLE",
-      "home_win_probability": 0.33934112253758864,
+      "home_win_probability": 0.3393411225375887,
       "kickoff": "2026-10-18T17:00:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0034796",
@@ -174,7 +155,7 @@
       "home_qb_id": "00-0035710",
       "home_qb_name": "Daniel Jones",
       "home_team": "IND",
-      "home_win_probability": 0.6867752862050931,
+      "home_win_probability": 0.6867752862050932,
       "kickoff": "2026-10-18T17:00:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0040676",
@@ -280,7 +261,7 @@
   "input_hashes": {
     "schedule_rows": "dc05a4b2955b3c2b6f2902bd8fe1c05d062dbed841ee5bc7bb7621cb255425df",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "fa27e1744f9a6bf823122cd485636b8be2b937b074dc407c09176c86398c5a6e"
+    "season_forecast_input": "4f6eaaa0f8049340c96a98d0e420f0ad1c7f59e74d0118ec7b7f1e86e3771781"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",
