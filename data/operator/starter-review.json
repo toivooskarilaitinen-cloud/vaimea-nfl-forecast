@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-10-16T14:53:55.531600+00:00",
-  "draft_sha256": "1b9385e474913543e2523d2dbe5191609ea9ba438eb655e16ea8bd1c73969d22",
+  "cutoff": "2026-10-17T13:48:14.986880+00:00",
+  "draft_sha256": "12ebb7f446eadeffc4911b99608130214c03ae5cf93f952e9fea8f453cdcce16",
   "games": {
     "2026_06_ARI_LA": {
       "approved": false,
@@ -37,8 +37,8 @@
       "away_qb_id": "00-0039150",
       "away_qb_name": "Bryce Young",
       "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0036389",
-      "home_qb_name": "Jalen Hurts",
+      "home_qb_id": "00-0038400",
+      "home_qb_name": "Tanner McKee",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
