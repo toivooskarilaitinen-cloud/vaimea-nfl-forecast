@@ -1,16 +1,6 @@
 {
-  "approval_deadline": "2026-10-18T12:00:00+00:00",
+  "approval_deadline": "2026-10-18T15:30:00+00:00",
   "games": [
-    {
-      "away_qb_name": "C.J. Stroud",
-      "away_team": "HOU",
-      "final_lock_at": "2026-10-18T12:00:00+00:00",
-      "game_id": "2026_06_HOU_JAX",
-      "home_qb_name": "Trevor Lawrence",
-      "home_team": "JAX",
-      "home_win_probability": 0.49859684773914,
-      "qb_probability_match": true
-    },
     {
       "away_qb_name": "Lamar Jackson",
       "away_team": "BAL",
@@ -32,13 +22,13 @@
       "qb_probability_match": true
     },
     {
-      "away_qb_name": "Tyson Bagent",
+      "away_qb_name": "Caleb Williams",
       "away_team": "CHI",
       "final_lock_at": "2026-10-18T15:30:00+00:00",
       "game_id": "2026_06_CHI_ATL",
       "home_qb_name": "Michael Penix Jr.",
       "home_team": "ATL",
-      "home_win_probability": 0.5537312376130935,
+      "home_win_probability": 0.5920497209848722,
       "qb_probability_match": true
     },
     {
@@ -132,7 +122,7 @@
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-10-17T13:48:14.986880+00:00",
+  "generated_at": "2026-10-18T14:04:05.723335+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 6,

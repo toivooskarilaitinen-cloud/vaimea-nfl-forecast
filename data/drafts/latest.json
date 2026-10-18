@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-10-17T13:48:14.986880+00:00",
-  "data_fetched_at": "2026-10-17T13:43:37.288429+00:00",
+  "cutoff": "2026-10-18T14:04:05.723335+00:00",
+  "data_fetched_at": "2026-10-18T14:01:41.658961+00:00",
   "data_quality": {
     "games": 2307,
     "mature_results_missing": 0,
@@ -10,25 +10,6 @@
     "teams": 32
   },
   "forecasts": [
-    {
-      "away_qb_id": "00-0039163",
-      "away_qb_name": "C.J. Stroud",
-      "away_team": "HOU",
-      "change_reason": "scheduled_production_snapshot",
-      "completed": false,
-      "final_lock_at": "2026-10-18T12:00:00+00:00",
-      "game_id": "2026_06_HOU_JAX",
-      "gameday": "2026-10-18",
-      "home_qb_id": "00-0036971",
-      "home_qb_name": "Trevor Lawrence",
-      "home_team": "JAX",
-      "home_win_probability": 0.49859684773914,
-      "kickoff": "2026-10-18T13:30:00+00:00",
-      "neutral_site": true,
-      "probability_away_qb_id": "00-0039163",
-      "probability_home_qb_id": "00-0036971",
-      "week": 6
-    },
     {
       "away_qb_id": "00-0034796",
       "away_qb_name": "Lamar Jackson",
@@ -68,8 +49,8 @@
       "week": 6
     },
     {
-      "away_qb_id": "00-0038416",
-      "away_qb_name": "Tyson Bagent",
+      "away_qb_id": "00-0039918",
+      "away_qb_name": "Caleb Williams",
       "away_team": "CHI",
       "change_reason": "scheduled_production_snapshot",
       "completed": false,
@@ -79,10 +60,10 @@
       "home_qb_id": "00-0039917",
       "home_qb_name": "Michael Penix Jr.",
       "home_team": "ATL",
-      "home_win_probability": 0.5537312376130935,
+      "home_win_probability": 0.5920497209848722,
       "kickoff": "2026-10-18T17:00:00+00:00",
       "neutral_site": false,
-      "probability_away_qb_id": "00-0038416",
+      "probability_away_qb_id": "00-0039918",
       "probability_home_qb_id": "00-0039917",
       "week": 6
     },
@@ -259,9 +240,9 @@
     }
   ],
   "input_hashes": {
-    "schedule_rows": "0ded8153a0fb2a4f8b736e9edddddde68b1b09fcf03e6c344b3fab979202f915",
+    "schedule_rows": "7fd032d60d17b12c081fd987bb8274aaa5413a74c8a742bc52a360a1d5c530dc",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "b06cc86ec29a53cca862819f290ca3d64e5d2148d8bbdaf9b6192ec19177b0e1"
+    "season_forecast_input": "a0a6433d9a8981c7bb792e9bb1878bb66081d5d7a97e316eac57e5005af14c9e"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",

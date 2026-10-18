@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-10-17T13:48:14.986880+00:00",
-  "draft_sha256": "12ebb7f446eadeffc4911b99608130214c03ae5cf93f952e9fea8f453cdcce16",
+  "cutoff": "2026-10-18T14:04:05.723335+00:00",
+  "draft_sha256": "fe14cbc906812321195e08de3eb145a7274d074781673eeacf17a14b436412e0",
   "games": {
     "2026_06_ARI_LA": {
       "approved": false,
@@ -44,8 +44,8 @@
     },
     "2026_06_CHI_ATL": {
       "approved": false,
-      "away_qb_id": "00-0038416",
-      "away_qb_name": "Tyson Bagent",
+      "away_qb_id": "00-0039918",
+      "away_qb_name": "Caleb Williams",
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0039917",
       "home_qb_name": "Michael Penix Jr.",
@@ -59,16 +59,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0036264",
       "home_qb_name": "Jordan Love",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_06_HOU_JAX": {
-      "approved": false,
-      "away_qb_id": "00-0039163",
-      "away_qb_name": "C.J. Stroud",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0036971",
-      "home_qb_name": "Trevor Lawrence",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
