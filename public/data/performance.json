@@ -2,9 +2,9 @@
   "baseline_rule": "fixed 2021-2024 training-sample home-win rate; never estimated from 2026 outcomes",
   "baselines": {
     "historical_home_rate_2021_2024": {
-      "brier": 0.2518761882897321,
-      "games": 89,
-      "log_loss": 0.6969197219961241
+      "brier": 0.25133461173929333,
+      "games": 90,
+      "log_loss": 0.6958330387618523
     }
   },
   "calibration": [
@@ -28,9 +28,9 @@
     },
     {
       "bin": "(0.6, 0.7]",
-      "n": 20,
-      "observed": 0.6,
-      "predicted": 0.6533417861716451
+      "n": 21,
+      "observed": 0.6190476190476191,
+      "predicted": 0.6511365780339675
     },
     {
       "bin": "(0.7, 0.8]",
@@ -1998,19 +1998,41 @@
       "predicted_winner": "GB",
       "week": 6,
       "winner": "GB"
+    },
+    {
+      "approved_at": "2026-10-18T15:13:47.545112+00:00",
+      "approved_by": "Toivo-Oskari Laitinen",
+      "away_score": 17,
+      "away_team": "WAS",
+      "brier": 0.15442352264034181,
+      "favorite_correct": true,
+      "final_lock_at": "2026-10-19T22:45:00+00:00",
+      "forecast_cutoff": "2026-10-18T14:04:05.723335+00:00",
+      "game_id": "2026_06_WAS_SF",
+      "gameday": "2026-10-19",
+      "home_score": 23,
+      "home_team": "SF",
+      "home_win": 1,
+      "home_win_probability": 0.6070324152804181,
+      "kickoff": "2026-10-20T00:15:00+00:00",
+      "log_loss": 0.4991730869095888,
+      "model_version": "0.1.1",
+      "predicted_winner": "SF",
+      "week": 6,
+      "winner": "SF"
     }
   ],
-  "generated_at": "2026-10-19T17:03:03.994296+00:00",
+  "generated_at": "2026-10-20T15:08:27.490468+00:00",
   "model": {
-    "brier": 0.24149984508022482,
-    "games": 89,
-    "log_loss": 0.6758211958884551
+    "brier": 0.24053233038644836,
+    "games": 90,
+    "log_loss": 0.6738584391220233
   },
   "rolling": {
-    "brier": 0.24149984508022482,
-    "games": 89,
-    "log_loss": 0.6758211958884551
+    "brier": 0.24053233038644836,
+    "games": 90,
+    "log_loss": 0.6738584391220233
   },
   "selection_rule": "latest official forecast approved no later than T-90",
-  "standard_error_at_50pct": 0.052999894000318
+  "standard_error_at_50pct": 0.05270462766947299
 }
