@@ -62,13 +62,13 @@
       "qb_probability_match": true
     },
     {
-      "away_qb_name": "Jameis Winston",
+      "away_qb_name": "J.J. McCarthy",
       "away_team": "NYG",
       "final_lock_at": "2026-10-25T15:30:00+00:00",
       "game_id": "2026_07_NYG_HOU",
       "home_qb_name": "C.J. Stroud",
       "home_team": "HOU",
-      "home_win_probability": 0.6370693481939994,
+      "home_win_probability": 0.6596208517589144,
       "qb_probability_match": true
     },
     {
@@ -142,7 +142,7 @@
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-10-21T15:19:14.693108+00:00",
+  "generated_at": "2026-10-22T15:21:53.102556+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 7,

@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-10-21T15:19:14.693108+00:00",
-  "data_fetched_at": "2026-10-21T15:14:30.445088+00:00",
+  "cutoff": "2026-10-22T15:21:53.102556+00:00",
+  "data_fetched_at": "2026-10-22T15:16:51.144145+00:00",
   "data_quality": {
     "games": 2320,
     "mature_results_missing": 0,
@@ -125,8 +125,8 @@
       "week": 7
     },
     {
-      "away_qb_id": "00-0031503",
-      "away_qb_name": "Jameis Winston",
+      "away_qb_id": "00-0039923",
+      "away_qb_name": "J.J. McCarthy",
       "away_team": "NYG",
       "change_reason": "scheduled_production_snapshot",
       "completed": false,
@@ -136,10 +136,10 @@
       "home_qb_id": "00-0039163",
       "home_qb_name": "C.J. Stroud",
       "home_team": "HOU",
-      "home_win_probability": 0.6370693481939994,
+      "home_win_probability": 0.6596208517589144,
       "kickoff": "2026-10-25T17:00:00+00:00",
       "neutral_site": false,
-      "probability_away_qb_id": "00-0031503",
+      "probability_away_qb_id": "00-0039923",
       "probability_home_qb_id": "00-0039163",
       "week": 7
     },
@@ -278,9 +278,9 @@
     }
   ],
   "input_hashes": {
-    "schedule_rows": "0905062f7cd4d5928cfc1978190e9389b90c3179b53edefa30a223a65ef03a65",
+    "schedule_rows": "0c79b76b1fd626aafef753eee107e7075e664f824e861fe812172923d8d4a02c",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "02d310c8e8ccaf09d375203dabff598de3e9cd0805d111a4610224cf97babe5b"
+    "season_forecast_input": "bdf03efa242d02b6a0baa9d21a2c507430166f2cc6bb44c17ed9acc3315dba21"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",

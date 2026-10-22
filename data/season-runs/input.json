@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-21T15:14:31+00:00",
+  "as_of": "2026-10-22T15:16:52+00:00",
   "model_version": "0.1.1",
   "playoff_format": "NFL_14_team_reseed_v1",
   "playoff_matchups": [
@@ -6949,7 +6949,7 @@
     }
   ],
   "provenance": {
-    "available_at_cutoff": "2026-10-21T15:14:31+00:00",
+    "available_at_cutoff": "2026-10-22T15:16:52+00:00",
     "current_season_updates": true,
     "feature_history_seasons": [
       2018,
@@ -8072,8 +8072,8 @@
       "game_id": "2026_07_NYG_HOU",
       "gameday": "2026-10-25",
       "home_team": "HOU",
-      "home_win_probability": 0.6370693481939994,
-      "probability_away_qb_id": "00-0031503",
+      "home_win_probability": 0.6596208517589144,
+      "probability_away_qb_id": "00-0039923",
       "probability_home_qb_id": "00-0039163",
       "week": 7
     },
@@ -8182,9 +8182,9 @@
       "game_id": "2026_08_ATL_TB",
       "gameday": "2026-11-01",
       "home_team": "TB",
-      "home_win_probability": 0.47758256044695874,
-      "probability_away_qb_id": "00-0036212",
-      "probability_home_qb_id": "00-0034855",
+      "home_win_probability": 0.4922903545276302,
+      "probability_away_qb_id": "00-0039917",
+      "probability_home_qb_id": "00-0041251",
       "week": 8
     },
     {
@@ -8193,8 +8193,8 @@
       "game_id": "2026_08_BAL_BUF",
       "gameday": "2026-11-01",
       "home_team": "BUF",
-      "home_win_probability": 0.5674172623473731,
-      "probability_away_qb_id": "00-0034796",
+      "home_win_probability": 0.6709537609992662,
+      "probability_away_qb_id": "00-0035993",
       "probability_home_qb_id": "00-0034857",
       "week": 8
     },
@@ -8303,9 +8303,9 @@
       "game_id": "2026_08_CHI_SEA",
       "gameday": "2026-11-02",
       "home_team": "SEA",
-      "home_win_probability": 0.5665327629660379,
+      "home_win_probability": 0.46235658315724987,
       "probability_away_qb_id": "00-0039918",
-      "probability_home_qb_id": "00-0034869",
+      "probability_home_qb_id": "00-0035704",
       "week": 8
     },
     {
@@ -10135,5 +10135,5 @@
     }
   ],
   "tiebreaker_mode": "approximation_v0.1",
-  "week": 6
+  "week": 7
 }

@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-10-21T15:19:14.693108+00:00",
-  "draft_sha256": "690dc8cecdfedf186bf9cd0e4e2bc927417e9642ed6421dc0773acbee66c454c",
+  "cutoff": "2026-10-22T15:21:53.102556+00:00",
+  "draft_sha256": "82964b3eae70498dccb2e9067ff919d72e36bd10698f5657cb2b20985d34d80d",
   "games": {
     "2026_07_CIN_BAL": {
       "approved": false,
@@ -104,8 +104,8 @@
     },
     "2026_07_NYG_HOU": {
       "approved": false,
-      "away_qb_id": "00-0031503",
-      "away_qb_name": "Jameis Winston",
+      "away_qb_id": "00-0039923",
+      "away_qb_name": "J.J. McCarthy",
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0039163",
       "home_qb_name": "C.J. Stroud",
