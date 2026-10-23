@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-10-22T15:21:53.102556+00:00",
-  "draft_sha256": "82964b3eae70498dccb2e9067ff919d72e36bd10698f5657cb2b20985d34d80d",
+  "cutoff": "2026-10-23T15:09:11.442847+00:00",
+  "draft_sha256": "4ba03edd03535fbf6856680bf7e82f3b287d06e75c9642aa6666f884e86e513d",
   "games": {
     "2026_07_CIN_BAL": {
       "approved": false,
@@ -67,8 +67,8 @@
       "away_qb_id": "00-0033873",
       "away_qb_name": "Patrick Mahomes",
       "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0035704",
-      "home_qb_name": "Drew Lock",
+      "home_qb_id": "00-0034869",
+      "home_qb_name": "Sam Darnold",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
@@ -89,16 +89,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0030565",
       "home_qb_name": "Geno Smith",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_07_NE_CHI": {
-      "approved": false,
-      "away_qb_id": "00-0039851",
-      "away_qb_name": "Drake Maye",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0039918",
-      "home_qb_name": "Caleb Williams",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },

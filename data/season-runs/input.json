@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-22T15:16:52+00:00",
+  "as_of": "2026-10-23T15:04:10+00:00",
   "model_version": "0.1.1",
   "playoff_format": "NFL_14_team_reseed_v1",
   "playoff_matchups": [
@@ -6949,7 +6949,7 @@
     }
   ],
   "provenance": {
-    "available_at_cutoff": "2026-10-22T15:16:52+00:00",
+    "available_at_cutoff": "2026-10-23T15:04:10+00:00",
     "current_season_updates": true,
     "feature_history_seasons": [
       2018,
@@ -8002,11 +8002,11 @@
     },
     {
       "away_team": "NE",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_07_NE_CHI",
       "gameday": "2026-10-22",
       "home_team": "CHI",
-      "home_win_probability": 0.42072186054248933,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0039851",
       "probability_home_qb_id": "00-0039918",
       "week": 7
@@ -8138,9 +8138,9 @@
       "game_id": "2026_07_KC_SEA",
       "gameday": "2026-10-25",
       "home_team": "SEA",
-      "home_win_probability": 0.41770699692409413,
+      "home_win_probability": 0.5215826516532743,
       "probability_away_qb_id": "00-0033873",
-      "probability_home_qb_id": "00-0035704",
+      "probability_home_qb_id": "00-0034869",
       "week": 7
     },
     {
@@ -8303,9 +8303,9 @@
       "game_id": "2026_08_CHI_SEA",
       "gameday": "2026-11-02",
       "home_team": "SEA",
-      "home_win_probability": 0.46235658315724987,
+      "home_win_probability": 0.5665327629660379,
       "probability_away_qb_id": "00-0039918",
-      "probability_home_qb_id": "00-0035704",
+      "probability_home_qb_id": "00-0034869",
       "week": 8
     },
     {

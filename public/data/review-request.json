@@ -1,16 +1,6 @@
 {
-  "approval_deadline": "2026-10-22T22:45:00+00:00",
+  "approval_deadline": "2026-10-25T12:00:00+00:00",
   "games": [
-    {
-      "away_qb_name": "Drake Maye",
-      "away_team": "NE",
-      "final_lock_at": "2026-10-22T22:45:00+00:00",
-      "game_id": "2026_07_NE_CHI",
-      "home_qb_name": "Caleb Williams",
-      "home_team": "CHI",
-      "home_win_probability": 0.42072186054248933,
-      "qb_probability_match": true
-    },
     {
       "away_qb_name": "Aaron Rodgers",
       "away_team": "PIT",
@@ -126,9 +116,9 @@
       "away_team": "KC",
       "final_lock_at": "2026-10-25T22:50:00+00:00",
       "game_id": "2026_07_KC_SEA",
-      "home_qb_name": "Drew Lock",
+      "home_qb_name": "Sam Darnold",
       "home_team": "SEA",
-      "home_win_probability": 0.41770699692409413,
+      "home_win_probability": 0.5215826516532743,
       "qb_probability_match": true
     },
     {
@@ -142,7 +132,7 @@
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-10-22T15:21:53.102556+00:00",
+  "generated_at": "2026-10-23T15:09:11.442847+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 7,
