@@ -1,16 +1,6 @@
 {
-  "approval_deadline": "2026-10-25T12:00:00+00:00",
+  "approval_deadline": "2026-10-25T15:30:00+00:00",
   "games": [
-    {
-      "away_qb_name": "Aaron Rodgers",
-      "away_team": "PIT",
-      "final_lock_at": "2026-10-25T12:00:00+00:00",
-      "game_id": "2026_07_PIT_NO",
-      "home_qb_name": "Tyler Shough",
-      "home_team": "NO",
-      "home_win_probability": 0.520244028048895,
-      "qb_probability_match": true
-    },
     {
       "away_qb_name": "Joe Burrow",
       "away_team": "CIN",
@@ -132,7 +122,7 @@
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-10-24T14:06:32.950448+00:00",
+  "generated_at": "2026-10-25T15:02:27.919532+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 7,

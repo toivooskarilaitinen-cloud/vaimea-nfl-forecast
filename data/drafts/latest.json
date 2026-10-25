@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-10-24T14:06:32.950448+00:00",
-  "data_fetched_at": "2026-10-24T14:01:14.473119+00:00",
+  "cutoff": "2026-10-25T15:02:27.919532+00:00",
+  "data_fetched_at": "2026-10-25T14:57:16.269371+00:00",
   "data_quality": {
     "games": 2321,
     "mature_results_missing": 0,
@@ -10,25 +10,6 @@
     "teams": 32
   },
   "forecasts": [
-    {
-      "away_qb_id": "00-0023459",
-      "away_qb_name": "Aaron Rodgers",
-      "away_team": "PIT",
-      "change_reason": "scheduled_production_snapshot",
-      "completed": false,
-      "final_lock_at": "2026-10-25T12:00:00+00:00",
-      "game_id": "2026_07_PIT_NO",
-      "gameday": "2026-10-25",
-      "home_qb_id": "00-0040743",
-      "home_qb_name": "Tyler Shough",
-      "home_team": "NO",
-      "home_win_probability": 0.520244028048895,
-      "kickoff": "2026-10-25T13:30:00+00:00",
-      "neutral_site": true,
-      "probability_away_qb_id": "00-0023459",
-      "probability_home_qb_id": "00-0040743",
-      "week": 7
-    },
     {
       "away_qb_id": "00-0036442",
       "away_qb_name": "Joe Burrow",
@@ -261,7 +242,7 @@
   "input_hashes": {
     "schedule_rows": "d90890be5de041890aa27768e4db9a14b8b4c2480a08b27ce2d8610422d5382d",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "67030bc78dd39e1aac5dfb560a39283120ccb3586668cd32086823d2f35c55c7"
+    "season_forecast_input": "46cb483685643765602b2fcada736d18641b808767247e716e55b3853edfab4e"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",

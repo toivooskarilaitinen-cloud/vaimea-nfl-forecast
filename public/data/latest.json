@@ -2406,7 +2406,7 @@
       "snapshot_cutoff": "2026-10-23T15:09:11.442847+00:00",
       "snapshot_approved_at": "2026-10-24T08:20:12.048451+00:00",
       "model_version": "0.1.1",
-      "lock_status": "updateable"
+      "lock_status": "final"
     },
     {
       "away_qb_id": "00-0036442",
