@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-25T14:57:17+00:00",
+  "as_of": "2026-10-26T17:20:54+00:00",
   "model_version": "0.1.1",
   "playoff_format": "NFL_14_team_reseed_v1",
   "playoff_matchups": [
@@ -294,7 +294,7 @@
       "away_team": "GB",
       "bye_home_win_probability": 0.5430160415633376,
       "home_team": "ATL",
-      "home_win_probability": 0.5060731518741501,
+      "home_win_probability": 0.5060731518741503,
       "neutral_win_probability": 0.4645105285378217
     },
     {
@@ -1097,7 +1097,7 @@
     },
     {
       "away_team": "ATL",
-      "bye_home_win_probability": 0.5474872194738291,
+      "bye_home_win_probability": 0.547487219473829,
       "home_team": "CHI",
       "home_win_probability": 0.5105800054399087,
       "neutral_win_probability": 0.46899870151921436
@@ -2401,7 +2401,7 @@
       "away_team": "ATL",
       "bye_home_win_probability": 0.612274852668958,
       "home_team": "GB",
-      "home_win_probability": 0.5765649383133901,
+      "home_win_probability": 0.57656493831339,
       "neutral_win_probability": 0.5354894714621784
     },
     {
@@ -5874,7 +5874,7 @@
       "bye_home_win_probability": 0.5576198972955809,
       "home_team": "SEA",
       "home_win_probability": 0.5208157860656857,
-      "neutral_win_probability": 0.4792171042655927
+      "neutral_win_probability": 0.4792171042655926
     },
     {
       "away_team": "BAL",
@@ -6949,7 +6949,7 @@
     }
   ],
   "provenance": {
-    "available_at_cutoff": "2026-10-25T14:57:17+00:00",
+    "available_at_cutoff": "2026-10-26T17:20:54+00:00",
     "current_season_updates": true,
     "feature_history_seasons": [
       2018,
@@ -8013,132 +8013,132 @@
     },
     {
       "away_team": "PIT",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_07_PIT_NO",
       "gameday": "2026-10-25",
       "home_team": "NO",
-      "home_win_probability": 0.520244028048895,
+      "home_win_probability": 0.0,
       "probability_away_qb_id": "00-0023459",
       "probability_home_qb_id": "00-0040743",
       "week": 7
     },
     {
       "away_team": "CIN",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_07_CIN_BAL",
       "gameday": "2026-10-25",
       "home_team": "BAL",
-      "home_win_probability": 0.4014462611620564,
+      "home_win_probability": 0.0,
       "probability_away_qb_id": "00-0036442",
       "probability_home_qb_id": "00-0035993",
       "week": 7
     },
     {
       "away_team": "CLE",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_07_CLE_TEN",
       "gameday": "2026-10-25",
       "home_team": "TEN",
-      "home_win_probability": 0.49980750633707455,
+      "home_win_probability": 0.0,
       "probability_away_qb_id": "00-0033537",
       "probability_home_qb_id": "00-0040676",
       "week": 7
     },
     {
       "away_team": "IND",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_07_IND_MIN",
       "gameday": "2026-10-25",
       "home_team": "MIN",
-      "home_win_probability": 0.6250373999797956,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0035710",
       "probability_home_qb_id": "00-0035228",
       "week": 7
     },
     {
       "away_team": "MIA",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_07_MIA_NYJ",
       "gameday": "2026-10-25",
       "home_team": "NYJ",
-      "home_win_probability": 0.530724266332521,
+      "home_win_probability": 0.0,
       "probability_away_qb_id": "00-0038128",
       "probability_home_qb_id": "00-0030565",
       "week": 7
     },
     {
       "away_team": "NYG",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_07_NYG_HOU",
       "gameday": "2026-10-25",
       "home_team": "HOU",
-      "home_win_probability": 0.6569816137444294,
+      "home_win_probability": 0.0,
       "probability_away_qb_id": "00-0039923",
       "probability_home_qb_id": "00-0039163",
       "week": 7
     },
     {
       "away_team": "SF",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_07_SF_ATL",
       "gameday": "2026-10-25",
       "home_team": "ATL",
-      "home_win_probability": 0.38977178372872867,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0037834",
       "probability_home_qb_id": "00-0039917",
       "week": 7
     },
     {
       "away_team": "TB",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_07_TB_CAR",
       "gameday": "2026-10-25",
       "home_team": "CAR",
-      "home_win_probability": 0.6634313547411835,
-      "probability_away_qb_id": "00-0041251",
+      "home_win_probability": 0.0,
+      "probability_away_qb_id": "00-0034855",
       "probability_home_qb_id": "00-0039150",
       "week": 7
     },
     {
       "away_team": "DEN",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_07_DEN_ARI",
       "gameday": "2026-10-25",
       "home_team": "ARI",
-      "home_win_probability": 0.5010502861236079,
+      "home_win_probability": 0.0,
       "probability_away_qb_id": "00-0039732",
       "probability_home_qb_id": "00-0033119",
       "week": 7
     },
     {
       "away_team": "GB",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_07_GB_DET",
       "gameday": "2026-10-25",
       "home_team": "DET",
-      "home_win_probability": 0.6117794314821058,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0036264",
       "probability_home_qb_id": "00-0033106",
       "week": 7
     },
     {
       "away_team": "LA",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_07_LA_LV",
       "gameday": "2026-10-25",
       "home_team": "LV",
-      "home_win_probability": 0.48896520052592407,
+      "home_win_probability": 0.0,
       "probability_away_qb_id": "00-0026498",
       "probability_home_qb_id": "00-0029604",
       "week": 7
     },
     {
       "away_team": "KC",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_07_KC_SEA",
       "gameday": "2026-10-25",
       "home_team": "SEA",
-      "home_win_probability": 0.5229159995682657,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0033873",
       "probability_home_qb_id": "00-0034869",
       "week": 7
@@ -8182,9 +8182,9 @@
       "game_id": "2026_08_ATL_TB",
       "gameday": "2026-11-01",
       "home_team": "TB",
-      "home_win_probability": 0.485969951493548,
+      "home_win_probability": 0.5730018108666464,
       "probability_away_qb_id": "00-0039917",
-      "probability_home_qb_id": "00-0041251",
+      "probability_home_qb_id": "00-0034855",
       "week": 8
     },
     {
