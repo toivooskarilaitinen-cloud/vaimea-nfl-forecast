@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-10-27T16:41:01.064315+00:00",
-  "data_fetched_at": "2026-10-27T16:35:37.224145+00:00",
+  "cutoff": "2026-10-27T18:34:24.899674+00:00",
+  "data_fetched_at": "2026-10-27T18:29:08.242391+00:00",
   "data_quality": {
     "games": 2334,
     "mature_results_missing": 0,
@@ -280,7 +280,7 @@
   "input_hashes": {
     "schedule_rows": "99aab70e6f82798e85eef7cb4f8f45ee7be0b1c79b3f793e548202fab7b34344",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "9d251ec344f6554136e60cbfd7321778eccde767adfd2f6cb29782ca5816024a"
+    "season_forecast_input": "23be119f840bb29a2d8de72a2be995919925dd8fd030b2f0a2d480e3836a197f"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",
