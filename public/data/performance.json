@@ -2,9 +2,9 @@
   "baseline_rule": "fixed 2021-2024 training-sample home-win rate; never estimated from 2026 outcomes",
   "baselines": {
     "historical_home_rate_2021_2024": {
-      "brier": 0.25339665721476046,
-      "games": 102,
-      "log_loss": 0.699970570648491
+      "brier": 0.25386587265972416,
+      "games": 103,
+      "log_loss": 0.7009120600037637
     }
   },
   "calibration": [
@@ -22,9 +22,9 @@
     },
     {
       "bin": "(0.5, 0.6]",
-      "n": 41,
-      "observed": 0.4634146341463415,
-      "predicted": 0.5457682323675207
+      "n": 42,
+      "observed": 0.4523809523809524,
+      "predicted": 0.5460175250438932
     },
     {
       "bin": "(0.6, 0.7]",
@@ -2284,19 +2284,41 @@
       "predicted_winner": "SEA",
       "week": 7,
       "winner": "SEA"
+    },
+    {
+      "approved_at": "2026-10-24T08:20:12.048451+00:00",
+      "approved_by": "Toivo-Oskari Laitinen",
+      "away_score": 38,
+      "away_team": "DAL",
+      "brier": 0.30940129644405445,
+      "favorite_correct": false,
+      "final_lock_at": "2026-10-26T22:45:00+00:00",
+      "forecast_cutoff": "2026-10-23T15:09:11.442847+00:00",
+      "game_id": "2026_07_DAL_PHI",
+      "gameday": "2026-10-26",
+      "home_score": 21,
+      "home_team": "PHI",
+      "home_win": 0,
+      "home_win_probability": 0.5562385247751673,
+      "kickoff": "2026-10-27T00:15:00+00:00",
+      "log_loss": 0.8124680788652721,
+      "model_version": "0.1.1",
+      "predicted_winner": "PHI",
+      "week": 7,
+      "winner": "DAL"
     }
   ],
-  "generated_at": "2026-10-26T17:25:59.710416+00:00",
+  "generated_at": "2026-10-27T16:40:50.489664+00:00",
   "model": {
-    "brier": 0.24387232721572819,
-    "games": 102,
-    "log_loss": 0.6808391110574544
+    "brier": 0.24450853080046922,
+    "games": 103,
+    "log_loss": 0.6821170622012195
   },
   "rolling": {
-    "brier": 0.24401207432843702,
+    "brier": 0.24531659001393888,
     "games": 100,
-    "log_loss": 0.6811337951191434
+    "log_loss": 0.6837589211579739
   },
   "selection_rule": "latest official forecast approved no later than T-90",
-  "standard_error_at_50pct": 0.04950737714883372
+  "standard_error_at_50pct": 0.04926646390821466
 }
