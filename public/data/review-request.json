@@ -8,7 +8,7 @@
       "game_id": "2026_08_CAR_GB",
       "home_qb_name": "Jordan Love",
       "home_team": "GB",
-      "home_win_probability": 0.704644503041974,
+      "home_win_probability": 0.700571348183178,
       "qb_probability_match": true
     },
     {
@@ -18,7 +18,7 @@
       "game_id": "2026_08_ARI_DAL",
       "home_qb_name": "Dak Prescott",
       "home_team": "DAL",
-      "home_win_probability": 0.635051824637732,
+      "home_win_probability": 0.6990158490729028,
       "qb_probability_match": true
     },
     {
@@ -28,7 +28,7 @@
       "game_id": "2026_08_ATL_TB",
       "home_qb_name": "Baker Mayfield",
       "home_team": "TB",
-      "home_win_probability": 0.6410226094197721,
+      "home_win_probability": 0.6441120511555154,
       "qb_probability_match": true
     },
     {
@@ -38,7 +38,7 @@
       "game_id": "2026_08_BAL_BUF",
       "home_qb_name": "Josh Allen",
       "home_team": "BUF",
-      "home_win_probability": 0.6859551289077063,
+      "home_win_probability": 0.6839245076345701,
       "qb_probability_match": true
     },
     {
@@ -48,7 +48,7 @@
       "game_id": "2026_08_CLE_PIT",
       "home_qb_name": "Aaron Rodgers",
       "home_team": "PIT",
-      "home_win_probability": 0.5535252572585884,
+      "home_win_probability": 0.5520676304393878,
       "qb_probability_match": true
     },
     {
@@ -58,7 +58,7 @@
       "game_id": "2026_08_IND_JAX",
       "home_qb_name": "Trevor Lawrence",
       "home_team": "JAX",
-      "home_win_probability": 0.6177554352564929,
+      "home_win_probability": 0.6170832437519173,
       "qb_probability_match": true
     },
     {
@@ -68,7 +68,7 @@
       "game_id": "2026_08_LV_NYJ",
       "home_qb_name": "Geno Smith",
       "home_team": "NYJ",
-      "home_win_probability": 0.6031360270861302,
+      "home_win_probability": 0.6002766473980468,
       "qb_probability_match": true
     },
     {
@@ -78,7 +78,7 @@
       "game_id": "2026_08_MIN_DET",
       "home_qb_name": "Jared Goff",
       "home_team": "DET",
-      "home_win_probability": 0.6494171463725861,
+      "home_win_probability": 0.6498248034586105,
       "qb_probability_match": true
     },
     {
@@ -88,7 +88,7 @@
       "game_id": "2026_08_TEN_CIN",
       "home_qb_name": "Joe Burrow",
       "home_team": "CIN",
-      "home_win_probability": 0.7830329215757367,
+      "home_win_probability": 0.7810323965958784,
       "qb_probability_match": true
     },
     {
@@ -98,7 +98,7 @@
       "game_id": "2026_08_LAC_LA",
       "home_qb_name": "Matthew Stafford",
       "home_team": "LA",
-      "home_win_probability": 0.6135791889568097,
+      "home_win_probability": 0.6103500677330796,
       "qb_probability_match": true
     },
     {
@@ -108,7 +108,7 @@
       "game_id": "2026_08_KC_DEN",
       "home_qb_name": "Bo Nix",
       "home_team": "DEN",
-      "home_win_probability": 0.5485080256322034,
+      "home_win_probability": 0.5429404106562093,
       "qb_probability_match": true
     },
     {
@@ -118,7 +118,7 @@
       "game_id": "2026_08_NE_MIA",
       "home_qb_name": "Malik Willis",
       "home_team": "MIA",
-      "home_win_probability": 0.42588874263231086,
+      "home_win_probability": 0.4250771095961396,
       "qb_probability_match": true
     },
     {
@@ -128,7 +128,7 @@
       "game_id": "2026_08_PHI_WAS",
       "home_qb_name": "Jayden Daniels",
       "home_team": "WAS",
-      "home_win_probability": 0.5763688999979762,
+      "home_win_probability": 0.6187268220805716,
       "qb_probability_match": true
     },
     {
@@ -138,11 +138,11 @@
       "game_id": "2026_08_CHI_SEA",
       "home_qb_name": "Sam Darnold",
       "home_team": "SEA",
-      "home_win_probability": 0.596324347108294,
+      "home_win_probability": 0.5951887184127039,
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-10-27T18:34:24.899674+00:00",
+  "generated_at": "2026-10-28T17:12:19.787437+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 8,
