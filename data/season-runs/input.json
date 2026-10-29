@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-10-28T17:09:35+00:00",
+  "as_of": "2026-10-29T17:24:57+00:00",
   "model_version": "0.1.1",
   "playoff_format": "NFL_14_team_reseed_v1",
   "playoff_matchups": [
@@ -301,7 +301,7 @@
       "away_team": "HOU",
       "bye_home_win_probability": 0.6953130547633296,
       "home_team": "ATL",
-      "home_win_probability": 0.6630421179214767,
+      "home_win_probability": 0.6630421179214769,
       "neutral_win_probability": 0.624897839913595
     },
     {
@@ -1176,7 +1176,7 @@
       "away_team": "IND",
       "bye_home_win_probability": 0.6147272725884322,
       "home_team": "CHI",
-      "home_win_probability": 0.5790879527188797,
+      "home_win_probability": 0.5790879527188798,
       "neutral_win_probability": 0.5380611434628456
     },
     {
@@ -2618,7 +2618,7 @@
       "away_team": "ATL",
       "bye_home_win_probability": 0.45123000894983173,
       "home_team": "HOU",
-      "home_win_probability": 0.4148626855289075,
+      "home_win_probability": 0.41486268552890737,
       "neutral_win_probability": 0.37510216008640485
     },
     {
@@ -2717,7 +2717,7 @@
       "bye_home_win_probability": 0.47132349188026385,
       "home_team": "HOU",
       "home_win_probability": 0.4346193027798123,
-      "neutral_win_probability": 0.39424104551705447
+      "neutral_win_probability": 0.39424104551705436
     },
     {
       "away_team": "LAC",
@@ -2770,7 +2770,7 @@
     },
     {
       "away_team": "NYJ",
-      "bye_home_win_probability": 0.5291281397293203,
+      "bye_home_win_probability": 0.5291281397293202,
       "home_team": "HOU",
       "home_win_probability": 0.4921126201326226,
       "neutral_win_probability": 0.4506504537606245
@@ -2805,10 +2805,10 @@
     },
     {
       "away_team": "TB",
-      "bye_home_win_probability": 0.4369070883909546,
+      "bye_home_win_probability": 0.4369070883909545,
       "home_team": "HOU",
       "home_win_probability": 0.4008509213854328,
-      "neutral_win_probability": 0.3616034063506827
+      "neutral_win_probability": 0.36160340635068267
     },
     {
       "away_team": "TEN",
@@ -3008,10 +3008,10 @@
     },
     {
       "away_team": "SEA",
-      "bye_home_win_probability": 0.4699533154322303,
+      "bye_home_win_probability": 0.46995331543223007,
       "home_team": "IND",
       "home_win_probability": 0.433268382434614,
-      "neutral_win_probability": 0.3929284073192214
+      "neutral_win_probability": 0.3929284073192213
     },
     {
       "away_team": "SF",
@@ -3634,7 +3634,7 @@
       "bye_home_win_probability": 0.6256794824982068,
       "home_team": "LA",
       "home_win_probability": 0.5903781945037422,
-      "neutral_win_probability": 0.5495959305117551
+      "neutral_win_probability": 0.5495959305117553
     },
     {
       "away_team": "NYJ",
@@ -5185,7 +5185,7 @@
     },
     {
       "away_team": "SF",
-      "bye_home_win_probability": 0.5204350117781104,
+      "bye_home_win_probability": 0.5204350117781101,
       "home_team": "NYG",
       "home_win_probability": 0.48340330774561296,
       "neutral_win_probability": 0.4420362822072872
@@ -5521,7 +5521,7 @@
     },
     {
       "away_team": "IND",
-      "bye_home_win_probability": 0.607038924576433,
+      "bye_home_win_probability": 0.6070389245764333,
       "home_team": "PHI",
       "home_win_probability": 0.5711845154989675,
       "neutral_win_probability": 0.5300125703942477
@@ -5738,7 +5738,7 @@
     },
     {
       "away_team": "IND",
-      "bye_home_win_probability": 0.5696108484923432,
+      "bye_home_win_probability": 0.5696108484923433,
       "home_team": "PIT",
       "home_win_probability": 0.5329688026042886,
       "neutral_win_probability": 0.4913948560093664
@@ -6245,7 +6245,7 @@
       "bye_home_win_probability": 0.6335761678123948,
       "home_team": "SF",
       "home_win_probability": 0.5985417601637344,
-      "neutral_win_probability": 0.5579637177927127
+      "neutral_win_probability": 0.5579637177927128
     },
     {
       "away_team": "NYJ",
@@ -6893,7 +6893,7 @@
     },
     {
       "away_team": "NYG",
-      "bye_home_win_probability": 0.5965615867694897,
+      "bye_home_win_probability": 0.5965615867694899,
       "home_team": "WAS",
       "home_win_probability": 0.560443425250951,
       "neutral_win_probability": 0.5191084541725299
@@ -6949,7 +6949,7 @@
     }
   ],
   "provenance": {
-    "available_at_cutoff": "2026-10-28T17:09:35+00:00",
+    "available_at_cutoff": "2026-10-29T17:24:57+00:00",
     "current_season_updates": true,
     "feature_history_seasons": [
       2018,
@@ -10135,5 +10135,5 @@
     }
   ],
   "tiebreaker_mode": "approximation_v0.1",
-  "week": 7
+  "week": 8
 }
