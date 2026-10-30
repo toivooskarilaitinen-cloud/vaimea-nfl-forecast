@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-10-29T17:28:44.328650+00:00",
-  "draft_sha256": "d2f65a7ab34c2d9e4f6797132aa5b09ce00173a7a7c084bbab219d6ffee93b93",
+  "cutoff": "2026-10-30T17:05:54.916007+00:00",
+  "draft_sha256": "47fa4c5af5230f5881cdee7ff75e85e5630562a10058c60018cb56c15527dcea",
   "games": {
     "2026_08_ARI_DAL": {
       "approved": false,
@@ -29,16 +29,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0034857",
       "home_qb_name": "Josh Allen",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_08_CAR_GB": {
-      "approved": false,
-      "away_qb_id": "00-0039150",
-      "away_qb_name": "Bryce Young",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0036264",
-      "home_qb_name": "Jordan Love",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },

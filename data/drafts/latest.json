@@ -1,34 +1,15 @@
 {
-  "cutoff": "2026-10-29T17:28:44.328650+00:00",
-  "data_fetched_at": "2026-10-29T17:24:56.592666+00:00",
+  "cutoff": "2026-10-30T17:05:54.916007+00:00",
+  "data_fetched_at": "2026-10-30T17:00:23.596630+00:00",
   "data_quality": {
-    "games": 2334,
+    "games": 2335,
     "mature_results_missing": 0,
-    "pbp_rows": 408096,
+    "pbp_rows": 408284,
     "qb_coverage": 1.0,
     "source_week": 22,
     "teams": 32
   },
   "forecasts": [
-    {
-      "away_qb_id": "00-0039150",
-      "away_qb_name": "Bryce Young",
-      "away_team": "CAR",
-      "change_reason": "scheduled_production_snapshot",
-      "completed": false,
-      "final_lock_at": "2026-10-29T22:45:00+00:00",
-      "game_id": "2026_08_CAR_GB",
-      "gameday": "2026-10-29",
-      "home_qb_id": "00-0036264",
-      "home_qb_name": "Jordan Love",
-      "home_team": "GB",
-      "home_win_probability": 0.700571348183178,
-      "kickoff": "2026-10-30T00:15:00+00:00",
-      "neutral_site": false,
-      "probability_away_qb_id": "00-0039150",
-      "probability_home_qb_id": "00-0036264",
-      "week": 8
-    },
     {
       "away_qb_id": "00-0033119",
       "away_qb_name": "Jacoby Brissett",
@@ -280,7 +261,7 @@
   "input_hashes": {
     "schedule_rows": "99aab70e6f82798e85eef7cb4f8f45ee7be0b1c79b3f793e548202fab7b34344",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "f7c0155c6ed30ef8dd8ed1a52378482f4ec5bf0ba856342b33f57cfdd1cefafe"
+    "season_forecast_input": "c094fda430437ae08af519760fa009a4152778272e1038e4478904d5e3730243"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",
