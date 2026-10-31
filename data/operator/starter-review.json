@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-10-30T17:05:54.916007+00:00",
-  "draft_sha256": "47fa4c5af5230f5881cdee7ff75e85e5630562a10058c60018cb56c15527dcea",
+  "cutoff": "2026-10-31T16:08:24.511716+00:00",
+  "draft_sha256": "d5a0637d8e8beb581f7d7acf235120e9ef124c3bff5fa80b4e2213e3db0bb6d0",
   "games": {
     "2026_08_ARI_DAL": {
       "approved": false,
@@ -24,8 +24,8 @@
     },
     "2026_08_BAL_BUF": {
       "approved": false,
-      "away_qb_id": "00-0035993",
-      "away_qb_name": "Tyler Huntley",
+      "away_qb_id": "00-0034796",
+      "away_qb_name": "Lamar Jackson",
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0034857",
       "home_qb_name": "Josh Allen",
