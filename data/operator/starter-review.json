@@ -1,37 +1,7 @@
 {
-  "cutoff": "2026-10-31T16:08:24.511716+00:00",
-  "draft_sha256": "d5a0637d8e8beb581f7d7acf235120e9ef124c3bff5fa80b4e2213e3db0bb6d0",
+  "cutoff": "2026-11-01T17:11:37.839320+00:00",
+  "draft_sha256": "67ddd32519c627615a7d8f21345b7572e454e7eb7611ec6c358699b39f74bb8c",
   "games": {
-    "2026_08_ARI_DAL": {
-      "approved": false,
-      "away_qb_id": "00-0033119",
-      "away_qb_name": "Jacoby Brissett",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0033077",
-      "home_qb_name": "Dak Prescott",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_08_ATL_TB": {
-      "approved": false,
-      "away_qb_id": "00-0039917",
-      "away_qb_name": "Michael Penix Jr.",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0034855",
-      "home_qb_name": "Baker Mayfield",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_08_BAL_BUF": {
-      "approved": false,
-      "away_qb_id": "00-0034796",
-      "away_qb_name": "Lamar Jackson",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0034857",
-      "home_qb_name": "Josh Allen",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
     "2026_08_CHI_SEA": {
       "approved": false,
       "away_qb_id": "00-0039918",
@@ -39,26 +9,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0034869",
       "home_qb_name": "Sam Darnold",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_08_CLE_PIT": {
-      "approved": false,
-      "away_qb_id": "00-0033537",
-      "away_qb_name": "Deshaun Watson",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0023459",
-      "home_qb_name": "Aaron Rodgers",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_08_IND_JAX": {
-      "approved": false,
-      "away_qb_id": "00-0035710",
-      "away_qb_name": "Daniel Jones",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0036971",
-      "home_qb_name": "Trevor Lawrence",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
@@ -82,26 +32,6 @@
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
-    "2026_08_LV_NYJ": {
-      "approved": false,
-      "away_qb_id": "00-0029604",
-      "away_qb_name": "Kirk Cousins",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0030565",
-      "home_qb_name": "Geno Smith",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_08_MIN_DET": {
-      "approved": false,
-      "away_qb_id": "00-0035228",
-      "away_qb_name": "Kyler Murray",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0033106",
-      "home_qb_name": "Jared Goff",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
     "2026_08_NE_MIA": {
       "approved": false,
       "away_qb_id": "00-0039851",
@@ -119,16 +49,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0039910",
       "home_qb_name": "Jayden Daniels",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_08_TEN_CIN": {
-      "approved": false,
-      "away_qb_id": "00-0040676",
-      "away_qb_name": "Cam Ward",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0036442",
-      "home_qb_name": "Joe Burrow",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     }
