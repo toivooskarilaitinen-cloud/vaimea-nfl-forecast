@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-01T17:06:32+00:00",
+  "as_of": "2026-11-02T20:45:20+00:00",
   "model_version": "0.1.1",
   "playoff_format": "NFL_14_team_reseed_v1",
   "playoff_matchups": [
@@ -29,7 +29,7 @@
       "bye_home_win_probability": 0.6208902926487675,
       "home_team": "ARI",
       "home_win_probability": 0.5854366069618618,
-      "neutral_win_probability": 0.5445419080766679
+      "neutral_win_probability": 0.544541908076668
     },
     {
       "away_team": "CHI",
@@ -127,7 +127,7 @@
       "bye_home_win_probability": 0.5711184544787336,
       "home_team": "ARI",
       "home_win_probability": 0.5344998683437392,
-      "neutral_win_probability": 0.4929325452829219
+      "neutral_win_probability": 0.492932545282922
     },
     {
       "away_team": "MIA",
@@ -166,7 +166,7 @@
     },
     {
       "away_team": "NYJ",
-      "bye_home_win_probability": 0.5144460080103604,
+      "bye_home_win_probability": 0.5144460080103603,
       "home_team": "ARI",
       "home_win_probability": 0.4774162134143283,
       "neutral_win_probability": 0.4361289929933496
@@ -203,8 +203,8 @@
       "away_team": "TB",
       "bye_home_win_probability": 0.4305966671962928,
       "home_team": "ARI",
-      "home_win_probability": 0.394696240937987,
-      "neutral_win_probability": 0.3556935868178621
+      "home_win_probability": 0.39469624093798683,
+      "neutral_win_probability": 0.35569358681786206
     },
     {
       "away_team": "TEN",
@@ -257,7 +257,7 @@
     },
     {
       "away_team": "CIN",
-      "bye_home_win_probability": 0.5102936799695467,
+      "bye_home_win_probability": 0.5102936799695466,
       "home_team": "ATL",
       "home_win_probability": 0.47327144593465686,
       "neutral_win_probability": 0.43204632543274835
@@ -292,7 +292,7 @@
     },
     {
       "away_team": "GB",
-      "bye_home_win_probability": 0.5812144005333415,
+      "bye_home_win_probability": 0.5812144005333414,
       "home_team": "ATL",
       "home_win_probability": 0.5447707297574982,
       "neutral_win_probability": 0.5032682128787739
@@ -385,7 +385,7 @@
       "away_team": "NYJ",
       "bye_home_win_probability": 0.6511178108439054,
       "home_team": "ATL",
-      "home_win_probability": 0.6167460496826241,
+      "home_win_probability": 0.616746049682624,
       "neutral_win_probability": 0.5767067536558669
     },
     {
@@ -462,7 +462,7 @@
       "away_team": "CAR",
       "bye_home_win_probability": 0.7547351705751426,
       "home_team": "BAL",
-      "home_win_probability": 0.7262803292951754,
+      "home_win_probability": 0.7262803292951756,
       "neutral_win_probability": 0.6919690105852188
     },
     {
@@ -617,7 +617,7 @@
       "bye_home_win_probability": 0.711699587015491,
       "home_team": "BAL",
       "home_win_probability": 0.680366388858311,
-      "neutral_win_probability": 0.6431276974804992
+      "neutral_win_probability": 0.6431276974804994
     },
     {
       "away_team": "SEA",
@@ -658,7 +658,7 @@
       "away_team": "ARI",
       "bye_home_win_probability": 0.7182985558574803,
       "home_team": "BUF",
-      "home_win_probability": 0.6873675046145783,
+      "home_win_probability": 0.6873675046145782,
       "neutral_win_probability": 0.6505255043800539
     },
     {
@@ -691,7 +691,7 @@
     },
     {
       "away_team": "CIN",
-      "bye_home_win_probability": 0.5240749388455118,
+      "bye_home_win_probability": 0.5240749388455117,
       "home_team": "BUF",
       "home_win_probability": 0.4870472757939343,
       "neutral_win_probability": 0.4456374174241439
@@ -729,7 +729,7 @@
       "bye_home_win_probability": 0.5945854597944211,
       "home_team": "BUF",
       "home_win_probability": 0.5584213370292491,
-      "neutral_win_probability": 0.5170600697828106
+      "neutral_win_probability": 0.5170600697828105
     },
     {
       "away_team": "HOU",
@@ -742,7 +742,7 @@
       "away_team": "IND",
       "bye_home_win_probability": 0.7003087403202155,
       "home_team": "BUF",
-      "home_win_probability": 0.6683145162745884,
+      "home_win_probability": 0.6683145162745883,
       "neutral_win_probability": 0.6304344148127723
     },
     {
@@ -838,10 +838,10 @@
     },
     {
       "away_team": "SEA",
-      "bye_home_win_probability": 0.6058006149263657,
+      "bye_home_win_probability": 0.6058006149263656,
       "home_team": "BUF",
-      "home_win_probability": 0.5699132705425366,
-      "neutral_win_probability": 0.5287199768692514
+      "home_win_probability": 0.5699132705425367,
+      "neutral_win_probability": 0.5287199768692517
     },
     {
       "away_team": "SF",
@@ -876,7 +876,7 @@
       "bye_home_win_probability": 0.5339592329677775,
       "home_team": "CAR",
       "home_win_probability": 0.49696243955977865,
-      "neutral_win_probability": 0.45545809192333203
+      "neutral_win_probability": 0.4554580919233319
     },
     {
       "away_team": "ATL",
@@ -946,7 +946,7 @@
       "bye_home_win_probability": 0.3972260443564684,
       "home_team": "CAR",
       "home_win_probability": 0.3623373883970376,
-      "neutral_win_probability": 0.32481644742050014
+      "neutral_win_probability": 0.32481644742050003
     },
     {
       "away_team": "HOU",
@@ -959,7 +959,7 @@
       "away_team": "IND",
       "bye_home_win_probability": 0.5121919248061186,
       "home_team": "CAR",
-      "home_win_probability": 0.47516560151034776,
+      "home_win_probability": 0.47516560151034787,
       "neutral_win_probability": 0.43391140675097417
     },
     {
@@ -1001,8 +1001,8 @@
       "away_team": "MIA",
       "bye_home_win_probability": 0.4753857131394172,
       "home_team": "CAR",
-      "home_win_probability": 0.43862764146172006,
-      "neutral_win_probability": 0.39813922875505336
+      "home_win_probability": 0.43862764146171995,
+      "neutral_win_probability": 0.3981392287550532
     },
     {
       "away_team": "MIN",
@@ -1015,8 +1015,8 @@
       "away_team": "NE",
       "bye_home_win_probability": 0.37632783677245163,
       "home_team": "CAR",
-      "home_win_probability": 0.3422325545635472,
-      "neutral_win_probability": 0.3057951282876999
+      "home_win_probability": 0.3422325545635473,
+      "neutral_win_probability": 0.30579512828769995
     },
     {
       "away_team": "NO",
@@ -1065,7 +1065,7 @@
       "bye_home_win_probability": 0.40328840183366316,
       "home_team": "CAR",
       "home_win_probability": 0.36819252800145996,
-      "neutral_win_probability": 0.3303794102497781
+      "neutral_win_probability": 0.33037941024977824
     },
     {
       "away_team": "TB",
@@ -1083,7 +1083,7 @@
     },
     {
       "away_team": "WAS",
-      "bye_home_win_probability": 0.44211465819128815,
+      "bye_home_win_probability": 0.44211465819128803,
       "home_team": "CAR",
       "home_win_probability": 0.4059385490033393,
       "neutral_win_probability": 0.3664976076788204
@@ -1125,7 +1125,7 @@
     },
     {
       "away_team": "CIN",
-      "bye_home_win_probability": 0.42595355520418526,
+      "bye_home_win_probability": 0.4259535552041851,
       "home_team": "CHI",
       "home_win_probability": 0.3901749787433657,
       "neutral_win_probability": 0.3513597616753007
@@ -1149,7 +1149,7 @@
       "bye_home_win_probability": 0.5629708265761504,
       "home_team": "CHI",
       "home_win_probability": 0.5262336595819738,
-      "neutral_win_probability": 0.48463990465674056
+      "neutral_win_probability": 0.4846399046567405
     },
     {
       "away_team": "DET",
@@ -1198,7 +1198,7 @@
       "bye_home_win_probability": 0.5144312731736566,
       "home_team": "CHI",
       "home_win_probability": 0.47740149638540824,
-      "neutral_win_probability": 0.43611448655777174
+      "neutral_win_probability": 0.4361144865577717
     },
     {
       "away_team": "LAC",
@@ -1212,7 +1212,7 @@
       "bye_home_win_probability": 0.6255121800166142,
       "home_team": "CHI",
       "home_win_probability": 0.5902054480020995,
-      "neutral_win_probability": 0.5494191114639213
+      "neutral_win_probability": 0.5494191114639212
     },
     {
       "away_team": "MIA",
@@ -1345,7 +1345,7 @@
       "bye_home_win_probability": 0.7166196318101277,
       "home_team": "CIN",
       "home_win_probability": 0.6855849261640994,
-      "neutral_win_probability": 0.6486402383246994
+      "neutral_win_probability": 0.6486402383246995
     },
     {
       "away_team": "CLE",
@@ -1380,7 +1380,7 @@
       "bye_home_win_probability": 0.6459462720638643,
       "home_team": "CIN",
       "home_win_probability": 0.6113691154263067,
-      "neutral_win_probability": 0.5711586737593375
+      "neutral_win_probability": 0.5711586737593374
     },
     {
       "away_team": "HOU",
@@ -1393,8 +1393,8 @@
       "away_team": "IND",
       "bye_home_win_probability": 0.7440415556235418,
       "home_team": "CIN",
-      "home_win_probability": 0.7148148646730075,
-      "neutral_win_probability": 0.6797001605517582
+      "home_win_probability": 0.7148148646730077,
+      "neutral_win_probability": 0.6797001605517583
     },
     {
       "away_team": "JAX",
@@ -1426,7 +1426,7 @@
     },
     {
       "away_team": "LV",
-      "bye_home_win_probability": 0.7551145839944864,
+      "bye_home_win_probability": 0.7551145839944862,
       "home_team": "CIN",
       "home_win_probability": 0.7266878206917557,
       "neutral_win_probability": 0.6924059485230494
@@ -1475,7 +1475,7 @@
     },
     {
       "away_team": "PHI",
-      "bye_home_win_probability": 0.7204865405664418,
+      "bye_home_win_probability": 0.7204865405664417,
       "home_team": "CIN",
       "home_win_probability": 0.6896919460501746,
       "neutral_win_probability": 0.6529855797583053
@@ -1545,7 +1545,7 @@
     },
     {
       "away_team": "BUF",
-      "bye_home_win_probability": 0.42395349689791756,
+      "bye_home_win_probability": 0.4239534968979175,
       "home_team": "CLE",
       "home_win_probability": 0.38822930081424745,
       "neutral_win_probability": 0.3494967122167531
@@ -1692,7 +1692,7 @@
     },
     {
       "away_team": "PHI",
-      "bye_home_win_probability": 0.5268019828970342,
+      "bye_home_win_probability": 0.5268019828970341,
       "home_team": "CLE",
       "home_win_probability": 0.4897799288898063,
       "neutral_win_probability": 0.44834080525723896
@@ -1933,7 +1933,7 @@
       "bye_home_win_probability": 0.612306788093309,
       "home_team": "DAL",
       "home_win_probability": 0.5765977810570307,
-      "neutral_win_probability": 0.5355229335691896
+      "neutral_win_probability": 0.5355229335691897
     },
     {
       "away_team": "TB",
@@ -1979,7 +1979,7 @@
     },
     {
       "away_team": "BUF",
-      "bye_home_win_probability": 0.4953483906007174,
+      "bye_home_win_probability": 0.49534839060071717,
       "home_team": "DEN",
       "home_win_probability": 0.45839548409369824,
       "neutral_win_probability": 0.41743922445361176
@@ -1995,7 +1995,7 @@
       "away_team": "CHI",
       "bye_home_win_probability": 0.592943542968958,
       "home_team": "DEN",
-      "home_win_probability": 0.5567421438317361,
+      "home_win_probability": 0.5567421438317363,
       "neutral_win_probability": 0.5153600953432594
     },
     {
@@ -2177,7 +2177,7 @@
       "away_team": "ARI",
       "bye_home_win_probability": 0.7370548465650255,
       "home_team": "DET",
-      "home_win_probability": 0.7073441688649531,
+      "home_win_probability": 0.7073441688649533,
       "neutral_win_probability": 0.6717320349423701
     },
     {
@@ -2226,7 +2226,7 @@
       "away_team": "CLE",
       "bye_home_win_probability": 0.737035907158435,
       "home_team": "DET",
-      "home_win_probability": 0.7073239392279725,
+      "home_win_probability": 0.7073239392279727,
       "neutral_win_probability": 0.6717104861378315
     },
     {
@@ -2315,7 +2315,7 @@
     },
     {
       "away_team": "NE",
-      "bye_home_win_probability": 0.5961638402722521,
+      "bye_home_win_probability": 0.596163840272252,
       "home_team": "DET",
       "home_win_probability": 0.5600363314694223,
       "neutral_win_probability": 0.518695954613204
@@ -2380,7 +2380,7 @@
       "away_team": "TEN",
       "bye_home_win_probability": 0.7832434170522281,
       "home_team": "DET",
-      "home_win_probability": 0.7570312624607177,
+      "home_win_probability": 0.7570312624607178,
       "neutral_win_probability": 0.7251157029029814
     },
     {
@@ -2420,7 +2420,7 @@
     },
     {
       "away_team": "CAR",
-      "bye_home_win_probability": 0.7400852935044463,
+      "bye_home_win_probability": 0.7400852935044464,
       "home_team": "GB",
       "home_win_probability": 0.7105825762083786,
       "neutral_win_probability": 0.6751835525794998
@@ -2430,7 +2430,7 @@
       "bye_home_win_probability": 0.6550190386667836,
       "home_team": "GB",
       "home_win_probability": 0.6208077922103296,
-      "neutral_win_probability": 0.5809044851900206
+      "neutral_win_probability": 0.5809044851900204
     },
     {
       "away_team": "CIN",
@@ -2492,7 +2492,7 @@
       "away_team": "KC",
       "bye_home_win_probability": 0.6390779495611933,
       "home_team": "GB",
-      "home_win_probability": 0.6042409926596869,
+      "home_win_probability": 0.604240992659687,
       "neutral_win_probability": 0.5638192126120984
     },
     {
@@ -2590,7 +2590,7 @@
       "away_team": "TB",
       "bye_home_win_probability": 0.5679926698372947,
       "home_team": "GB",
-      "home_win_probability": 0.5313262111677477,
+      "home_win_probability": 0.5313262111677478,
       "neutral_win_probability": 0.48974603278409307
     },
     {
@@ -2598,7 +2598,7 @@
       "bye_home_win_probability": 0.7543080673615891,
       "home_team": "GB",
       "home_win_probability": 0.7258216757512399,
-      "neutral_win_probability": 0.6914772868848623
+      "neutral_win_probability": 0.6914772868848622
     },
     {
       "away_team": "WAS",
@@ -2630,7 +2630,7 @@
     },
     {
       "away_team": "BUF",
-      "bye_home_win_probability": 0.43958438413741185,
+      "bye_home_win_probability": 0.4395843841374117,
       "home_team": "HOU",
       "home_win_probability": 0.40346558257628873,
       "neutral_win_probability": 0.36411764394873364
@@ -2654,7 +2654,7 @@
       "bye_home_win_probability": 0.38671013533395404,
       "home_team": "HOU",
       "home_win_probability": 0.35220542117521847,
-      "neutral_win_probability": 0.31521502556302544
+      "neutral_win_probability": 0.3152150255630255
     },
     {
       "away_team": "CLE",
@@ -2681,7 +2681,7 @@
       "away_team": "DET",
       "bye_home_win_probability": 0.41641000157149,
       "home_team": "HOU",
-      "home_win_probability": 0.38090114194112007,
+      "home_win_probability": 0.38090114194112,
       "neutral_win_probability": 0.3424903629896542
     },
     {
@@ -2695,7 +2695,7 @@
       "away_team": "IND",
       "bye_home_win_probability": 0.5722977021956286,
       "home_team": "HOU",
-      "home_win_probability": 0.5356979473912266,
+      "home_win_probability": 0.5356979473912267,
       "neutral_win_probability": 0.4941363560624158
     },
     {
@@ -2758,12 +2758,12 @@
       "away_team": "NO",
       "bye_home_win_probability": 0.5673414012505502,
       "home_team": "HOU",
-      "home_win_probability": 0.5306653413347804,
+      "home_win_probability": 0.5306653413347805,
       "neutral_win_probability": 0.4890829108147208
     },
     {
       "away_team": "NYG",
-      "bye_home_win_probability": 0.5228171051262649,
+      "bye_home_win_probability": 0.522817105126265,
       "home_team": "HOU",
       "home_win_probability": 0.48578760042800584,
       "neutral_win_probability": 0.44439205697928885
@@ -2779,7 +2779,7 @@
       "away_team": "PHI",
       "bye_home_win_probability": 0.5426526924363335,
       "home_team": "HOU",
-      "home_win_probability": 0.5057071671607878,
+      "home_win_probability": 0.5057071671607879,
       "neutral_win_probability": 0.4641463560900097
     },
     {
@@ -2868,9 +2868,9 @@
     },
     {
       "away_team": "CIN",
-      "bye_home_win_probability": 0.3922875694943827,
+      "bye_home_win_probability": 0.39228756949438265,
       "home_team": "IND",
-      "home_win_probability": 0.35757535590286504,
+      "home_win_probability": 0.35757535590286493,
       "neutral_win_probability": 0.32029983944824175
     },
     {
@@ -2926,21 +2926,21 @@
       "away_team": "KC",
       "bye_home_win_probability": 0.5263631031988552,
       "home_team": "IND",
-      "home_win_probability": 0.48933999705415576,
+      "home_win_probability": 0.4893399970541559,
       "neutral_win_probability": 0.44790541940244216
     },
     {
       "away_team": "LA",
       "bye_home_win_probability": 0.4796149297046931,
       "home_team": "IND",
-      "home_win_probability": 0.44280586339886985,
+      "home_win_probability": 0.44280586339887,
       "neutral_win_probability": 0.4022081001892526
     },
     {
       "away_team": "LAC",
       "bye_home_win_probability": 0.5838172203901971,
       "home_team": "IND",
-      "home_win_probability": 0.5474236807651361,
+      "home_win_probability": 0.5474236807651363,
       "neutral_win_probability": 0.5059436798789169
     },
     {
@@ -2952,7 +2952,7 @@
     },
     {
       "away_team": "MIA",
-      "bye_home_win_probability": 0.5417459428287966,
+      "bye_home_win_probability": 0.5417459428287967,
       "home_team": "IND",
       "home_win_probability": 0.5047940130242754,
       "neutral_win_probability": 0.4632379168812388
@@ -3003,7 +3003,7 @@
       "away_team": "PIT",
       "bye_home_win_probability": 0.5890942424925069,
       "home_team": "IND",
-      "home_win_probability": 0.5528086933003581,
+      "home_win_probability": 0.5528086933003582,
       "neutral_win_probability": 0.5113817108872061
     },
     {
@@ -3017,7 +3017,7 @@
       "away_team": "SF",
       "bye_home_win_probability": 0.46857354205092644,
       "home_team": "IND",
-      "home_win_probability": 0.43190855085747637,
+      "home_win_probability": 0.43190855085747626,
       "neutral_win_probability": 0.39160769870832907
     },
     {
@@ -3057,7 +3057,7 @@
     },
     {
       "away_team": "BAL",
-      "bye_home_win_probability": 0.48081695259237567,
+      "bye_home_win_probability": 0.4808169525923756,
       "home_team": "JAX",
       "home_win_probability": 0.44399434404189747,
       "neutral_win_probability": 0.40336649869494856
@@ -3101,7 +3101,7 @@
       "away_team": "DAL",
       "bye_home_win_probability": 0.47097512614554204,
       "home_team": "JAX",
-      "home_win_probability": 0.43427578119198307,
+      "home_win_probability": 0.43427578119198296,
       "neutral_win_probability": 0.3939072033331697
     },
     {
@@ -3130,7 +3130,7 @@
       "bye_home_win_probability": 0.6201338407807542,
       "home_team": "JAX",
       "home_win_probability": 0.5846567357826491,
-      "neutral_win_probability": 0.5437450615000642
+      "neutral_win_probability": 0.5437450615000643
     },
     {
       "away_team": "IND",
@@ -3157,7 +3157,7 @@
       "away_team": "LAC",
       "bye_home_win_probability": 0.6202092639762407,
       "home_team": "JAX",
-      "home_win_probability": 0.5847344860611974,
+      "home_win_probability": 0.5847344860611976,
       "neutral_win_probability": 0.5438244947656263
     },
     {
@@ -3171,7 +3171,7 @@
       "away_team": "MIA",
       "bye_home_win_probability": 0.5791649885262257,
       "home_team": "JAX",
-      "home_win_probability": 0.5426832999897797,
+      "home_win_probability": 0.5426832999897796,
       "neutral_win_probability": 0.501164736235297
     },
     {
@@ -3199,7 +3199,7 @@
       "away_team": "NYG",
       "bye_home_win_probability": 0.5662974711440059,
       "home_team": "JAX",
-      "home_win_probability": 0.5296062894888633,
+      "home_win_probability": 0.5296062894888636,
       "neutral_win_probability": 0.4880205549867752
     },
     {
@@ -3256,7 +3256,7 @@
       "bye_home_win_probability": 0.5461926851306421,
       "home_team": "JAX",
       "home_win_probability": 0.5092745245852672,
-      "neutral_win_probability": 0.46769793938244614
+      "neutral_win_probability": 0.467697939382446
     },
     {
       "away_team": "ARI",
@@ -3326,7 +3326,7 @@
       "bye_home_win_probability": 0.5800645796430959,
       "home_team": "KC",
       "home_win_probability": 0.5435994213179816,
-      "neutral_win_probability": 0.5020877192169259
+      "neutral_win_probability": 0.5020877192169257
     },
     {
       "away_team": "DET",
@@ -3361,7 +3361,7 @@
       "bye_home_win_probability": 0.591906347784155,
       "home_team": "KC",
       "home_win_probability": 0.5556818274237785,
-      "neutral_win_probability": 0.5142871497765129
+      "neutral_win_probability": 0.5142871497765128
     },
     {
       "away_team": "LA",
@@ -3430,7 +3430,7 @@
       "away_team": "PHI",
       "bye_home_win_probability": 0.599556939542824,
       "home_team": "KC",
-      "home_win_probability": 0.5635107324181159,
+      "home_win_probability": 0.563510732418116,
       "neutral_win_probability": 0.5222183048027615
     },
     {
@@ -3554,7 +3554,7 @@
     },
     {
       "away_team": "GB",
-      "bye_home_win_probability": 0.5609815388332404,
+      "bye_home_win_probability": 0.5609815388332403,
       "home_team": "LA",
       "home_win_probability": 0.5242184736055693,
       "neutral_win_probability": 0.48262174147581316
@@ -3619,7 +3619,7 @@
       "away_team": "NE",
       "bye_home_win_probability": 0.5391743240459806,
       "home_team": "LA",
-      "home_win_probability": 0.5022055707720415,
+      "home_win_probability": 0.5022055707720416,
       "neutral_win_probability": 0.4606643379619949
     },
     {
@@ -3633,12 +3633,12 @@
       "away_team": "NYG",
       "bye_home_win_probability": 0.6250550682873701,
       "home_team": "LA",
-      "home_win_probability": 0.5897335062822743,
+      "home_win_probability": 0.5897335062822744,
       "neutral_win_probability": 0.5489360961017316
     },
     {
       "away_team": "NYJ",
-      "bye_home_win_probability": 0.632124595528662,
+      "bye_home_win_probability": 0.6321245955286617,
       "home_team": "LA",
       "home_win_probability": 0.5970396705915119,
       "neutral_win_probability": 0.5564223200226995
@@ -3704,7 +3704,7 @@
       "bye_home_win_probability": 0.4531440322663226,
       "home_team": "LAC",
       "home_win_probability": 0.41673959429856494,
-      "neutral_win_probability": 0.3769150570234882
+      "neutral_win_probability": 0.37691505702348815
     },
     {
       "away_team": "BAL",
@@ -3729,7 +3729,7 @@
     },
     {
       "away_team": "CHI",
-      "bye_home_win_probability": 0.537823876958606,
+      "bye_home_win_probability": 0.5378238769586059,
       "home_team": "LAC",
       "home_win_probability": 0.5008470821516399,
       "neutral_win_probability": 0.45931453569889213
@@ -3927,7 +3927,7 @@
       "away_team": "BAL",
       "bye_home_win_probability": 0.42855716831318647,
       "home_team": "LV",
-      "home_win_probability": 0.392709508007099,
+      "home_win_probability": 0.39270950800709886,
       "neutral_win_probability": 0.3537884297637689
     },
     {
@@ -3995,7 +3995,7 @@
     },
     {
       "away_team": "HOU",
-      "bye_home_win_probability": 0.5693368220650095,
+      "bye_home_win_probability": 0.5693368220650094,
       "home_team": "LV",
       "home_win_probability": 0.532690586174097,
       "neutral_win_probability": 0.4911155204227538
@@ -4012,7 +4012,7 @@
       "bye_home_win_probability": 0.5259060678549544,
       "home_team": "LV",
       "home_win_probability": 0.4888819269971203,
-      "neutral_win_probability": 0.44745215025246543
+      "neutral_win_probability": 0.4474521502524656
     },
     {
       "away_team": "KC",
@@ -4032,7 +4032,7 @@
       "away_team": "LAC",
       "bye_home_win_probability": 0.5694153280864023,
       "home_team": "LV",
-      "home_win_probability": 0.5327702902630845,
+      "home_win_probability": 0.5327702902630846,
       "neutral_win_probability": 0.4911955424770671
     },
     {
@@ -4053,7 +4053,7 @@
       "away_team": "NE",
       "bye_home_win_probability": 0.4259850274928434,
       "home_team": "LV",
-      "home_win_probability": 0.39020560442064645,
+      "home_win_probability": 0.3902056044206464,
       "neutral_win_probability": 0.35138909620480785
     },
     {
@@ -4088,7 +4088,7 @@
       "away_team": "PIT",
       "bye_home_win_probability": 0.5747419452940227,
       "home_team": "LV",
-      "home_win_probability": 0.5381825683885888,
+      "home_win_probability": 0.5381825683885887,
       "neutral_win_probability": 0.49663440065902403
     },
     {
@@ -4130,7 +4130,7 @@
       "away_team": "ARI",
       "bye_home_win_probability": 0.6339663844110089,
       "home_team": "MIA",
-      "home_win_probability": 0.5989456692298325,
+      "home_win_probability": 0.5989456692298324,
       "neutral_win_probability": 0.5583783301763403
     },
     {
@@ -4173,7 +4173,7 @@
       "bye_home_win_probability": 0.42790778889045755,
       "home_team": "MIA",
       "home_win_probability": 0.3920771782972276,
-      "neutral_win_probability": 0.35318232286097667
+      "neutral_win_probability": 0.35318232286097656
     },
     {
       "away_team": "CLE",
@@ -4271,7 +4271,7 @@
       "bye_home_win_probability": 0.4770312260194065,
       "home_team": "MIA",
       "home_win_probability": 0.44025269401622613,
-      "neutral_win_probability": 0.3997210866289774
+      "neutral_win_probability": 0.3997210866289773
     },
     {
       "away_team": "NO",
@@ -4341,7 +4341,7 @@
       "bye_home_win_probability": 0.5450376414090737,
       "home_team": "MIA",
       "home_win_probability": 0.5081101387850071,
-      "neutral_win_probability": 0.4665382389254224
+      "neutral_win_probability": 0.4665382389254223
     },
     {
       "away_team": "ARI",
@@ -4354,7 +4354,7 @@
       "away_team": "ATL",
       "bye_home_win_probability": 0.5101291420612893,
       "home_team": "MIN",
-      "home_win_probability": 0.4731073126533569,
+      "home_win_probability": 0.473107312653357,
       "neutral_win_probability": 0.43188476651755897
     },
     {
@@ -4418,7 +4418,7 @@
       "bye_home_win_probability": 0.4726894657785341,
       "home_team": "MIN",
       "home_win_probability": 0.43596662254889723,
-      "neutral_win_probability": 0.3955507657489331
+      "neutral_win_probability": 0.395550765748933
     },
     {
       "away_team": "GB",
@@ -4641,7 +4641,7 @@
       "away_team": "GB",
       "bye_home_win_probability": 0.5993638054748431,
       "home_team": "NE",
-      "home_win_probability": 0.563312875677311,
+      "home_win_probability": 0.5633128756773109,
       "neutral_win_probability": 0.5220176071645762
     },
     {
@@ -4677,7 +4677,7 @@
       "bye_home_win_probability": 0.615941248566495,
       "home_team": "NE",
       "home_win_probability": 0.5803375629564108,
-      "neutral_win_probability": 0.5393356620380052
+      "neutral_win_probability": 0.5393356620380051
     },
     {
       "away_team": "LAC",
@@ -4712,7 +4712,7 @@
       "bye_home_win_probability": 0.7002333881596693,
       "home_team": "NE",
       "home_win_probability": 0.6682349306816884,
-      "neutral_win_probability": 0.6303507673783569
+      "neutral_win_probability": 0.6303507673783568
     },
     {
       "away_team": "NYG",
@@ -4754,11 +4754,11 @@
       "bye_home_win_probability": 0.6054126581807756,
       "home_team": "NE",
       "home_win_probability": 0.569515092645897,
-      "neutral_win_probability": 0.528315225780128
+      "neutral_win_probability": 0.5283152257801279
     },
     {
       "away_team": "TB",
-      "bye_home_win_probability": 0.5894744909037536,
+      "bye_home_win_probability": 0.5894744909037535,
       "home_team": "NE",
       "home_win_probability": 0.5531970523013718,
       "neutral_win_probability": 0.5117742729565152
@@ -4789,14 +4789,14 @@
       "bye_home_win_probability": 0.4640670680753482,
       "home_team": "NO",
       "home_win_probability": 0.427471055514547,
-      "neutral_win_probability": 0.3873019729665469
+      "neutral_win_probability": 0.387301972966547
     },
     {
       "away_team": "BAL",
       "bye_home_win_probability": 0.4480572420667969,
       "home_team": "NO",
       "home_win_probability": 0.411753764569814,
-      "neutral_win_probability": 0.37210171965782063
+      "neutral_win_probability": 0.3721017196578206
     },
     {
       "away_team": "BUF",
@@ -4844,7 +4844,7 @@
       "away_team": "DEN",
       "bye_home_win_probability": 0.533480044723031,
       "home_team": "NO",
-      "home_win_probability": 0.49648108267543856,
+      "home_win_probability": 0.49648108267543845,
       "neutral_win_probability": 0.45498057558806626
     },
     {
@@ -4900,7 +4900,7 @@
       "away_team": "LAC",
       "bye_home_win_probability": 0.588721603708367,
       "home_team": "NO",
-      "home_win_probability": 0.5524281491879357,
+      "home_win_probability": 0.5524281491879358,
       "neutral_win_probability": 0.5109970978450629
     },
     {
@@ -4919,7 +4919,7 @@
     },
     {
       "away_team": "MIN",
-      "bye_home_win_probability": 0.5325004917786684,
+      "bye_home_win_probability": 0.5325004917786683,
       "home_team": "NO",
       "home_win_probability": 0.49549730997072033,
       "neutral_win_probability": 0.4540048893338544
@@ -4942,7 +4942,7 @@
       "away_team": "NYJ",
       "bye_home_win_probability": 0.5412283725462881,
       "home_team": "NO",
-      "home_win_probability": 0.504272897546661,
+      "home_win_probability": 0.5042728975466612,
       "neutral_win_probability": 0.46271961570003034
     },
     {
@@ -4961,9 +4961,9 @@
     },
     {
       "away_team": "SEA",
-      "bye_home_win_probability": 0.47897061772359867,
+      "bye_home_win_probability": 0.47897061772359856,
       "home_team": "NO",
-      "home_win_probability": 0.44216898382623493,
+      "home_win_probability": 0.44216898382623476,
       "neutral_win_probability": 0.40158752737229725
     },
     {
@@ -5006,7 +5006,7 @@
       "bye_home_win_probability": 0.50892417312436,
       "home_team": "NYG",
       "home_win_probability": 0.4719055507731052,
-      "neutral_win_probability": 0.4307021209394852
+      "neutral_win_probability": 0.4307021209394851
     },
     {
       "away_team": "BAL",
@@ -5087,7 +5087,7 @@
     },
     {
       "away_team": "IND",
-      "bye_home_win_probability": 0.6258813093587351,
+      "bye_home_win_probability": 0.625881309358735,
       "home_team": "NYG",
       "home_win_probability": 0.5905866004021038,
       "neutral_win_probability": 0.549809263348401
@@ -5192,7 +5192,7 @@
     },
     {
       "away_team": "TB",
-      "bye_home_win_probability": 0.5019379655631732,
+      "bye_home_win_probability": 0.5019379655631733,
       "home_team": "NYG",
       "home_win_probability": 0.4649463821904279,
       "neutral_win_probability": 0.4238628811073916
@@ -5248,7 +5248,7 @@
     },
     {
       "away_team": "CHI",
-      "bye_home_win_probability": 0.5853995669047418,
+      "bye_home_win_probability": 0.5853995669047416,
       "home_team": "NYJ",
       "home_win_probability": 0.5490375150510469,
       "neutral_win_probability": 0.5075723739942472
@@ -5293,7 +5293,7 @@
       "bye_home_win_probability": 0.5046228424343661,
       "home_team": "NYJ",
       "home_win_probability": 0.4676191647989002,
-      "neutral_win_probability": 0.4264877428957221
+      "neutral_win_probability": 0.42648774289572194
     },
     {
       "away_team": "HOU",
@@ -5362,8 +5362,8 @@
       "away_team": "NE",
       "bye_home_win_probability": 0.48259815035529563,
       "home_team": "NYJ",
-      "home_win_probability": 0.4457562496381221,
-      "neutral_win_probability": 0.4050846420563126
+      "home_win_probability": 0.445756249638122,
+      "neutral_win_probability": 0.4050846420563125
     },
     {
       "away_team": "NO",
@@ -5425,7 +5425,7 @@
       "away_team": "WAS",
       "bye_home_win_probability": 0.5505626906327553,
       "home_team": "NYJ",
-      "home_win_probability": 0.5136835026360409,
+      "home_win_probability": 0.5136835026360408,
       "neutral_win_probability": 0.4720932508198736
     },
     {
@@ -5514,7 +5514,7 @@
     },
     {
       "away_team": "HOU",
-      "bye_home_win_probability": 0.6126223745536302,
+      "bye_home_win_probability": 0.6126223745536301,
       "home_team": "PHI",
       "home_win_probability": 0.5769223506306614,
       "neutral_win_probability": 0.5358536439099904
@@ -5586,7 +5586,7 @@
       "away_team": "NO",
       "bye_home_win_probability": 0.6022079475323534,
       "home_team": "PHI",
-      "home_win_probability": 0.5662277251856392,
+      "home_win_probability": 0.5662277251856394,
       "neutral_win_probability": 0.5249756583565556
     },
     {
@@ -5636,7 +5636,7 @@
       "bye_home_win_probability": 0.6848419416758996,
       "home_team": "PHI",
       "home_win_probability": 0.6520170012687972,
-      "neutral_win_probability": 0.6133524573499386
+      "neutral_win_probability": 0.6133524573499385
     },
     {
       "away_team": "WAS",
@@ -5663,8 +5663,8 @@
       "away_team": "BAL",
       "bye_home_win_probability": 0.43185722849605224,
       "home_team": "PIT",
-      "home_win_probability": 0.39592478243217605,
-      "neutral_win_probability": 0.35687230251950064
+      "home_win_probability": 0.39592478243217594,
+      "neutral_win_probability": 0.3568723025195006
     },
     {
       "away_team": "BUF",
@@ -5782,7 +5782,7 @@
       "away_team": "MIA",
       "bye_home_win_probability": 0.5304220509053236,
       "home_team": "PIT",
-      "home_win_probability": 0.49341086401675505,
+      "home_win_probability": 0.49341086401675527,
       "neutral_win_probability": 0.4519366477813292
     },
     {
@@ -5832,7 +5832,7 @@
       "bye_home_win_probability": 0.4625896602797462,
       "home_team": "PIT",
       "home_win_probability": 0.4260175424123728,
-      "neutral_win_probability": 0.38589298466946664
+      "neutral_win_probability": 0.3858929846694665
     },
     {
       "away_team": "SF",
@@ -5894,7 +5894,7 @@
       "away_team": "CAR",
       "bye_home_win_probability": 0.7309941231242352,
       "home_team": "SEA",
-      "home_win_probability": 0.7008765543762238,
+      "home_win_probability": 0.7008765543762236,
       "neutral_win_probability": 0.664850302478882
     },
     {
@@ -5922,7 +5922,7 @@
       "away_team": "DAL",
       "bye_home_win_probability": 0.5376463970332048,
       "home_team": "SEA",
-      "home_win_probability": 0.5006685859620628,
+      "home_win_probability": 0.5006685859620629,
       "neutral_win_probability": 0.4591372261222426
     },
     {
@@ -5979,14 +5979,14 @@
       "bye_home_win_probability": 0.5835804183124287,
       "home_team": "SEA",
       "home_win_probability": 0.5471822322693429,
-      "neutral_win_probability": 0.5057000838656882
+      "neutral_win_probability": 0.5057000838656881
     },
     {
       "away_team": "LAC",
       "bye_home_win_probability": 0.6808189300734285,
       "home_team": "SEA",
       "home_win_probability": 0.6477904725065277,
-      "neutral_win_probability": 0.6089379772760043
+      "neutral_win_probability": 0.6089379772760042
     },
     {
       "away_team": "LV",
@@ -6049,7 +6049,7 @@
       "bye_home_win_probability": 0.6855285155043894,
       "home_team": "SEA",
       "home_win_probability": 0.6527388243666215,
-      "neutral_win_probability": 0.6141070153305336
+      "neutral_win_probability": 0.6141070153305335
     },
     {
       "away_team": "SF",
@@ -6060,10 +6060,10 @@
     },
     {
       "away_team": "TB",
-      "bye_home_win_probability": 0.5564893542483278,
+      "bye_home_win_probability": 0.5564893542483277,
       "home_team": "SEA",
       "home_win_probability": 0.519672205806804,
-      "neutral_win_probability": 0.47807373568174305
+      "neutral_win_probability": 0.47807373568174294
     },
     {
       "away_team": "TEN",
@@ -6179,7 +6179,7 @@
     },
     {
       "away_team": "JAX",
-      "bye_home_win_probability": 0.6464049410234739,
+      "bye_home_win_probability": 0.6464049410234738,
       "home_team": "SF",
       "home_win_probability": 0.6118456612930255,
       "neutral_win_probability": 0.5716499800607749
@@ -6340,7 +6340,7 @@
     },
     {
       "away_team": "CIN",
-      "bye_home_win_probability": 0.5172754011610216,
+      "bye_home_win_probability": 0.5172754011610214,
       "home_team": "TB",
       "home_win_probability": 0.48024337909472076,
       "neutral_win_probability": 0.4389170145275624
@@ -6357,7 +6357,7 @@
       "bye_home_win_probability": 0.5593766128737631,
       "home_team": "TB",
       "home_win_probability": 0.5225935254328137,
-      "neutral_win_probability": 0.48099538031760725
+      "neutral_win_probability": 0.48099538031760714
     },
     {
       "away_team": "DEN",
@@ -6462,7 +6462,7 @@
       "bye_home_win_probability": 0.6505876423714491,
       "home_team": "TB",
       "home_win_probability": 0.6161944376856732,
-      "neutral_win_probability": 0.5761371188926085
+      "neutral_win_probability": 0.5761371188926084
     },
     {
       "away_team": "NYJ",
@@ -6480,7 +6480,7 @@
     },
     {
       "away_team": "PIT",
-      "bye_home_win_probability": 0.7041331679696023,
+      "bye_home_win_probability": 0.7041331679696022,
       "home_team": "TB",
       "home_win_probability": 0.6723562105181229,
       "neutral_win_probability": 0.6346853803747192
@@ -6501,14 +6501,14 @@
     },
     {
       "away_team": "TEN",
-      "bye_home_win_probability": 0.7618309631627758,
+      "bye_home_win_probability": 0.761830963162776,
       "home_team": "TB",
       "home_win_probability": 0.7339091130825518,
-      "neutral_win_probability": 0.700159281706948
+      "neutral_win_probability": 0.7001592817069479
     },
     {
       "away_team": "WAS",
-      "bye_home_win_probability": 0.6318500450166636,
+      "bye_home_win_probability": 0.6318500450166635,
       "home_team": "TB",
       "home_win_probability": 0.5967556392211519,
       "neutral_win_probability": 0.5561309437187603
@@ -6525,7 +6525,7 @@
       "bye_home_win_probability": 0.37626772638025496,
       "home_team": "TEN",
       "home_win_probability": 0.3421749022474279,
-      "neutral_win_probability": 0.3057407610545554
+      "neutral_win_probability": 0.3057407610545555
     },
     {
       "away_team": "BAL",
@@ -6706,7 +6706,7 @@
       "away_team": "SEA",
       "bye_home_win_probability": 0.3904056189636529,
       "home_team": "TEN",
-      "home_win_probability": 0.3557624455947263,
+      "home_win_probability": 0.35576244559472625,
       "neutral_win_probability": 0.3185821964690338
     },
     {
@@ -6739,7 +6739,7 @@
     },
     {
       "away_team": "ATL",
-      "bye_home_win_probability": 0.5292570362876818,
+      "bye_home_win_probability": 0.5292570362876817,
       "home_team": "WAS",
       "home_win_probability": 0.4922419259209545,
       "neutral_win_probability": 0.45077853453394195
@@ -6949,7 +6949,7 @@
     }
   ],
   "provenance": {
-    "available_at_cutoff": "2026-11-01T17:06:32+00:00",
+    "available_at_cutoff": "2026-11-02T20:45:20+00:00",
     "current_season_updates": true,
     "feature_history_seasons": [
       2018,
@@ -8167,133 +8167,133 @@
     },
     {
       "away_team": "ARI",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_08_ARI_DAL",
       "gameday": "2026-11-01",
       "home_team": "DAL",
-      "home_win_probability": 0.6932759682114173,
+      "home_win_probability": 0.0,
       "probability_away_qb_id": "00-0033119",
       "probability_home_qb_id": "00-0033077",
       "week": 8
     },
     {
       "away_team": "ATL",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_08_ATL_TB",
       "gameday": "2026-11-01",
       "home_team": "TB",
-      "home_win_probability": 0.6371885943611362,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0039917",
       "probability_home_qb_id": "00-0034855",
       "week": 8
     },
     {
       "away_team": "BAL",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_08_BAL_BUF",
       "gameday": "2026-11-01",
       "home_team": "BUF",
-      "home_win_probability": 0.575746893213656,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0034796",
       "probability_home_qb_id": "00-0034857",
       "week": 8
     },
     {
       "away_team": "CLE",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_08_CLE_PIT",
       "gameday": "2026-11-01",
       "home_team": "PIT",
-      "home_win_probability": 0.5518448348315838,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0033537",
       "probability_home_qb_id": "00-0023459",
       "week": 8
     },
     {
       "away_team": "IND",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_08_IND_JAX",
       "gameday": "2026-11-01",
       "home_team": "JAX",
-      "home_win_probability": 0.6145930844328588,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0035710",
       "probability_home_qb_id": "00-0036971",
       "week": 8
     },
     {
       "away_team": "LV",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_08_LV_NYJ",
       "gameday": "2026-11-01",
       "home_team": "NYJ",
-      "home_win_probability": 0.5975113938037621,
+      "home_win_probability": 0.0,
       "probability_away_qb_id": "00-0029604",
       "probability_home_qb_id": "00-0030565",
       "week": 8
     },
     {
       "away_team": "MIN",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_08_MIN_DET",
       "gameday": "2026-11-01",
       "home_team": "DET",
-      "home_win_probability": 0.643486595286498,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0035228",
       "probability_home_qb_id": "00-0033106",
       "week": 8
     },
     {
       "away_team": "TEN",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_08_TEN_CIN",
       "gameday": "2026-11-01",
       "home_team": "CIN",
-      "home_win_probability": 0.7790443068313226,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0040676",
       "probability_home_qb_id": "00-0036442",
       "week": 8
     },
     {
       "away_team": "LAC",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_08_LAC_LA",
       "gameday": "2026-11-01",
       "home_team": "LA",
-      "home_win_probability": 0.6078641199341327,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0036355",
       "probability_home_qb_id": "00-0026498",
       "week": 8
     },
     {
       "away_team": "KC",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_08_KC_DEN",
       "gameday": "2026-11-01",
       "home_team": "DEN",
-      "home_win_probability": 0.5394527841743627,
+      "home_win_probability": 1.0,
       "probability_away_qb_id": "00-0033873",
       "probability_home_qb_id": "00-0039732",
       "week": 8
     },
     {
       "away_team": "NE",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_08_NE_MIA",
       "gameday": "2026-11-01",
       "home_team": "MIA",
-      "home_win_probability": 0.42466558127390386,
+      "home_win_probability": 0.0,
       "probability_away_qb_id": "00-0039851",
       "probability_home_qb_id": "00-0038128",
       "week": 8
     },
     {
       "away_team": "PHI",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_08_PHI_WAS",
       "gameday": "2026-11-01",
       "home_team": "WAS",
-      "home_win_probability": 0.616765935286156,
-      "probability_away_qb_id": "00-0036389",
+      "home_win_probability": 1.0,
+      "probability_away_qb_id": "00-0038400",
       "probability_home_qb_id": "00-0039910",
       "week": 8
     },
@@ -8314,9 +8314,9 @@
       "game_id": "2026_09_JAX_BAL",
       "gameday": "2026-11-05",
       "home_team": "BAL",
-      "home_win_probability": 0.6359776735144165,
+      "home_win_probability": 0.5255667802554526,
       "probability_away_qb_id": "00-0036971",
-      "probability_home_qb_id": "00-0034796",
+      "probability_home_qb_id": "00-0035993",
       "week": 9
     },
     {
@@ -8391,9 +8391,9 @@
       "game_id": "2026_09_NYG_PHI",
       "gameday": "2026-11-08",
       "home_team": "PHI",
-      "home_win_probability": 0.5740326464070435,
+      "home_win_probability": 0.49943936184200466,
       "probability_away_qb_id": "00-0039923",
-      "probability_home_qb_id": "00-0036389",
+      "probability_home_qb_id": "00-0038400",
       "week": 9
     },
     {
@@ -8633,7 +8633,7 @@
       "game_id": "2026_11_IND_HOU",
       "gameday": "2026-11-19",
       "home_team": "HOU",
-      "home_win_probability": 0.5356979473912266,
+      "home_win_probability": 0.5356979473912267,
       "probability_away_qb_id": "00-0035710",
       "probability_home_qb_id": "00-0039163",
       "week": 11
@@ -8743,7 +8743,7 @@
       "game_id": "2026_11_PIT_PHI",
       "gameday": "2026-11-22",
       "home_team": "PHI",
-      "home_win_probability": 0.6178488843019464,
+      "home_win_probability": 0.6178488843019465,
       "probability_away_qb_id": "00-0023459",
       "probability_home_qb_id": "00-0036389",
       "week": 11
@@ -8765,7 +8765,7 @@
       "game_id": "2026_11_CIN_WAS",
       "gameday": "2026-11-23",
       "home_team": "WAS",
-      "home_win_probability": 0.4400328041214987,
+      "home_win_probability": 0.44003280412149864,
       "probability_away_qb_id": "00-0036442",
       "probability_home_qb_id": "00-0039910",
       "week": 11
@@ -9194,7 +9194,7 @@
       "game_id": "2026_14_TEN_DET",
       "gameday": "2026-12-13",
       "home_team": "DET",
-      "home_win_probability": 0.7570312624607177,
+      "home_win_probability": 0.7570312624607178,
       "probability_away_qb_id": "00-0040676",
       "probability_home_qb_id": "00-0033106",
       "week": 14
@@ -9392,7 +9392,7 @@
       "game_id": "2026_15_NYJ_ARI",
       "gameday": "2026-12-20",
       "home_team": "ARI",
-      "home_win_probability": 0.5144460080103603,
+      "home_win_probability": 0.5144460080103604,
       "probability_away_qb_id": "00-0030565",
       "probability_home_qb_id": "00-0033119",
       "week": 15
@@ -9535,7 +9535,7 @@
       "game_id": "2026_16_LAC_MIA",
       "gameday": "2026-12-27",
       "home_team": "MIA",
-      "home_win_probability": 0.5680912972163643,
+      "home_win_probability": 0.5680912972163644,
       "probability_away_qb_id": "00-0036355",
       "probability_home_qb_id": "00-0038128",
       "week": 16
@@ -9546,7 +9546,7 @@
       "game_id": "2026_16_NE_NYJ",
       "gameday": "2026-12-27",
       "home_team": "NYJ",
-      "home_win_probability": 0.45099251605872226,
+      "home_win_probability": 0.45099251605872215,
       "probability_away_qb_id": "00-0039851",
       "probability_home_qb_id": "00-0030565",
       "week": 16

@@ -1,46 +1,6 @@
 {
-  "approval_deadline": "2026-11-01T19:35:00+00:00",
+  "approval_deadline": "2026-11-02T23:45:00+00:00",
   "games": [
-    {
-      "away_qb_name": "Justin Herbert",
-      "away_team": "LAC",
-      "final_lock_at": "2026-11-01T19:35:00+00:00",
-      "game_id": "2026_08_LAC_LA",
-      "home_qb_name": "Matthew Stafford",
-      "home_team": "LA",
-      "home_win_probability": 0.6078641199341327,
-      "qb_probability_match": true
-    },
-    {
-      "away_qb_name": "Patrick Mahomes",
-      "away_team": "KC",
-      "final_lock_at": "2026-11-01T19:55:00+00:00",
-      "game_id": "2026_08_KC_DEN",
-      "home_qb_name": "Bo Nix",
-      "home_team": "DEN",
-      "home_win_probability": 0.5394527841743627,
-      "qb_probability_match": true
-    },
-    {
-      "away_qb_name": "Drake Maye",
-      "away_team": "NE",
-      "final_lock_at": "2026-11-01T19:55:00+00:00",
-      "game_id": "2026_08_NE_MIA",
-      "home_qb_name": "Malik Willis",
-      "home_team": "MIA",
-      "home_win_probability": 0.42466558127390386,
-      "qb_probability_match": true
-    },
-    {
-      "away_qb_name": "Jalen Hurts",
-      "away_team": "PHI",
-      "final_lock_at": "2026-11-01T23:50:00+00:00",
-      "game_id": "2026_08_PHI_WAS",
-      "home_qb_name": "Jayden Daniels",
-      "home_team": "WAS",
-      "home_win_probability": 0.616765935286156,
-      "qb_probability_match": true
-    },
     {
       "away_qb_name": "Caleb Williams",
       "away_team": "CHI",
@@ -52,7 +12,7 @@
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-11-01T17:11:37.839320+00:00",
+  "generated_at": "2026-11-02T20:50:33.663870+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 8,

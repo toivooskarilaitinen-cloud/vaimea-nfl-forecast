@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-11-01T17:11:37.839320+00:00",
-  "draft_sha256": "67ddd32519c627615a7d8f21345b7572e454e7eb7611ec6c358699b39f74bb8c",
+  "cutoff": "2026-11-02T20:50:33.663870+00:00",
+  "draft_sha256": "c9c60c0c2f66a325c2db61d1f60cd0c0c0facc8e1d2016ee4a54054a86e77247",
   "games": {
     "2026_08_CHI_SEA": {
       "approved": false,
@@ -9,46 +9,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0034869",
       "home_qb_name": "Sam Darnold",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_08_KC_DEN": {
-      "approved": false,
-      "away_qb_id": "00-0033873",
-      "away_qb_name": "Patrick Mahomes",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0039732",
-      "home_qb_name": "Bo Nix",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_08_LAC_LA": {
-      "approved": false,
-      "away_qb_id": "00-0036355",
-      "away_qb_name": "Justin Herbert",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0026498",
-      "home_qb_name": "Matthew Stafford",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_08_NE_MIA": {
-      "approved": false,
-      "away_qb_id": "00-0039851",
-      "away_qb_name": "Drake Maye",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0038128",
-      "home_qb_name": "Malik Willis",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_08_PHI_WAS": {
-      "approved": false,
-      "away_qb_id": "00-0036389",
-      "away_qb_name": "Jalen Hurts",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0039910",
-      "home_qb_name": "Jayden Daniels",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     }
