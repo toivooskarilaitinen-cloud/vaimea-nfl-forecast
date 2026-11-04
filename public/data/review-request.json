@@ -8,7 +8,7 @@
       "game_id": "2026_09_JAX_BAL",
       "home_qb_name": "Tyler Huntley",
       "home_team": "BAL",
-      "home_win_probability": 0.42801239413237024,
+      "home_win_probability": 0.43497787415095773,
       "qb_probability_match": true
     },
     {
@@ -18,7 +18,7 @@
       "game_id": "2026_09_CIN_ATL",
       "home_qb_name": "Michael Penix Jr.",
       "home_team": "ATL",
-      "home_win_probability": 0.2879351664839116,
+      "home_win_probability": 0.29158320809216914,
       "qb_probability_match": true
     },
     {
@@ -28,7 +28,7 @@
       "game_id": "2026_09_CLE_NO",
       "home_qb_name": "Tyler Shough",
       "home_team": "NO",
-      "home_win_probability": 0.6255116970576478,
+      "home_win_probability": 0.6238161213350439,
       "qb_probability_match": true
     },
     {
@@ -38,7 +38,7 @@
       "game_id": "2026_09_DAL_IND",
       "home_qb_name": "Daniel Jones",
       "home_team": "IND",
-      "home_win_probability": 0.38117254108411325,
+      "home_win_probability": 0.38699052102378473,
       "qb_probability_match": true
     },
     {
@@ -48,7 +48,7 @@
       "game_id": "2026_09_DEN_CAR",
       "home_qb_name": "Bryce Young",
       "home_team": "CAR",
-      "home_win_probability": 0.4962725270203995,
+      "home_win_probability": 0.5006745896201634,
       "qb_probability_match": true
     },
     {
@@ -58,7 +58,7 @@
       "game_id": "2026_09_DET_MIA",
       "home_qb_name": "Malik Willis",
       "home_team": "MIA",
-      "home_win_probability": 0.40462225596769075,
+      "home_win_probability": 0.4049074013478183,
       "qb_probability_match": true
     },
     {
@@ -68,7 +68,7 @@
       "game_id": "2026_09_LA_WAS",
       "home_qb_name": "Jayden Daniels",
       "home_team": "WAS",
-      "home_win_probability": 0.5359378402966645,
+      "home_win_probability": 0.5351768435444096,
       "qb_probability_match": true
     },
     {
@@ -78,7 +78,7 @@
       "game_id": "2026_09_NYG_PHI",
       "home_qb_name": "Tanner McKee",
       "home_team": "PHI",
-      "home_win_probability": 0.48825325926813373,
+      "home_win_probability": 0.49271024957523357,
       "qb_probability_match": true
     },
     {
@@ -88,7 +88,7 @@
       "game_id": "2026_09_NYJ_KC",
       "home_qb_name": "Patrick Mahomes",
       "home_team": "KC",
-      "home_win_probability": 0.5657059076625726,
+      "home_win_probability": 0.5661689364312295,
       "qb_probability_match": true
     },
     {
@@ -98,7 +98,7 @@
       "game_id": "2026_09_HOU_LAC",
       "home_qb_name": "Justin Herbert",
       "home_team": "LAC",
-      "home_win_probability": 0.4675445595027181,
+      "home_win_probability": 0.46986923498335476,
       "qb_probability_match": true
     },
     {
@@ -108,7 +108,7 @@
       "game_id": "2026_09_LV_SF",
       "home_qb_name": "Brock Purdy",
       "home_team": "SF",
-      "home_win_probability": 0.6418461155119463,
+      "home_win_probability": 0.6442281988649082,
       "qb_probability_match": true
     },
     {
@@ -118,7 +118,7 @@
       "game_id": "2026_09_ARI_SEA",
       "home_qb_name": "Sam Darnold",
       "home_team": "SEA",
-      "home_win_probability": 0.6447224232799739,
+      "home_win_probability": 0.5795472548665824,
       "qb_probability_match": true
     },
     {
@@ -128,7 +128,7 @@
       "game_id": "2026_09_GB_NE",
       "home_qb_name": "Drake Maye",
       "home_team": "NE",
-      "home_win_probability": 0.5722878786486039,
+      "home_win_probability": 0.5713801984236292,
       "qb_probability_match": true
     },
     {
@@ -138,7 +138,7 @@
       "game_id": "2026_09_TB_CHI",
       "home_qb_name": "Caleb Williams",
       "home_team": "CHI",
-      "home_win_probability": 0.46323964975776144,
+      "home_win_probability": 0.5263626832499022,
       "qb_probability_match": true
     },
     {
@@ -148,11 +148,11 @@
       "game_id": "2026_09_BUF_MIN",
       "home_qb_name": "Kyler Murray",
       "home_team": "MIN",
-      "home_win_probability": 0.41008870745793335,
+      "home_win_probability": 0.4138340801753476,
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-11-03T18:30:25.724876+00:00",
+  "generated_at": "2026-11-04T18:42:56.986210+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 9,
