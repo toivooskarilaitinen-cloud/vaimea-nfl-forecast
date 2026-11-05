@@ -6,9 +6,9 @@
       "away_team": "JAX",
       "final_lock_at": "2026-11-05T23:45:00+00:00",
       "game_id": "2026_09_JAX_BAL",
-      "home_qb_name": "Tyler Huntley",
+      "home_qb_name": "Joe Fagnano",
       "home_team": "BAL",
-      "home_win_probability": 0.43497787415095773,
+      "home_win_probability": 0.37568793046464644,
       "qb_probability_match": true
     },
     {
@@ -22,13 +22,13 @@
       "qb_probability_match": true
     },
     {
-      "away_qb_name": "Deshaun Watson",
+      "away_qb_name": "Shedeur Sanders",
       "away_team": "CLE",
       "final_lock_at": "2026-11-08T16:30:00+00:00",
       "game_id": "2026_09_CLE_NO",
       "home_qb_name": "Tyler Shough",
       "home_team": "NO",
-      "home_win_probability": 0.6238161213350439,
+      "home_win_probability": 0.7098058366627356,
       "qb_probability_match": true
     },
     {
@@ -76,9 +76,9 @@
       "away_team": "NYG",
       "final_lock_at": "2026-11-08T16:30:00+00:00",
       "game_id": "2026_09_NYG_PHI",
-      "home_qb_name": "Tanner McKee",
+      "home_qb_name": "Joe Milton III",
       "home_team": "PHI",
-      "home_win_probability": 0.49271024957523357,
+      "home_win_probability": 0.5769845026005047,
       "qb_probability_match": true
     },
     {
@@ -98,7 +98,7 @@
       "game_id": "2026_09_HOU_LAC",
       "home_qb_name": "Justin Herbert",
       "home_team": "LAC",
-      "home_win_probability": 0.46986923498335476,
+      "home_win_probability": 0.46986923498335464,
       "qb_probability_match": true
     },
     {
@@ -116,9 +116,9 @@
       "away_team": "ARI",
       "final_lock_at": "2026-11-08T19:55:00+00:00",
       "game_id": "2026_09_ARI_SEA",
-      "home_qb_name": "Sam Darnold",
+      "home_qb_name": "Drew Lock",
       "home_team": "SEA",
-      "home_win_probability": 0.5795472548665824,
+      "home_win_probability": 0.47933899631064436,
       "qb_probability_match": true
     },
     {
@@ -152,7 +152,7 @@
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-11-04T18:42:56.986210+00:00",
+  "generated_at": "2026-11-05T18:47:52.205621+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 9,

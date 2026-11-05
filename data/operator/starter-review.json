@@ -1,14 +1,14 @@
 {
-  "cutoff": "2026-11-04T18:42:56.986210+00:00",
-  "draft_sha256": "4e9ce1ddca4bd57fede606bfb322372f062021e4349263cbac27b573cee53ea4",
+  "cutoff": "2026-11-05T18:47:52.205621+00:00",
+  "draft_sha256": "c465439babe699080f1a906c263452a27b5d6d994404a4abd701b2ac9bf086fc",
   "games": {
     "2026_09_ARI_SEA": {
       "approved": false,
       "away_qb_id": "00-0035289",
       "away_qb_name": "Gardner Minshew",
       "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0034869",
-      "home_qb_name": "Sam Darnold",
+      "home_qb_id": "00-0035704",
+      "home_qb_name": "Drew Lock",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
@@ -34,8 +34,8 @@
     },
     "2026_09_CLE_NO": {
       "approved": false,
-      "away_qb_id": "00-0033537",
-      "away_qb_name": "Deshaun Watson",
+      "away_qb_id": "00-0040668",
+      "away_qb_name": "Shedeur Sanders",
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0040743",
       "home_qb_name": "Tyler Shough",
@@ -97,8 +97,8 @@
       "away_qb_id": "00-0036971",
       "away_qb_name": "Trevor Lawrence",
       "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0035993",
-      "home_qb_name": "Tyler Huntley",
+      "home_qb_id": "00-0040981",
+      "home_qb_name": "Joe Fagnano",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
@@ -127,8 +127,8 @@
       "away_qb_id": "00-0039923",
       "away_qb_name": "J.J. McCarthy",
       "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0038400",
-      "home_qb_name": "Tanner McKee",
+      "home_qb_id": "00-0039398",
+      "home_qb_name": "Joe Milton III",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },

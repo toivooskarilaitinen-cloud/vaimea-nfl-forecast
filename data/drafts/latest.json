@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-11-04T18:42:56.986210+00:00",
-  "data_fetched_at": "2026-11-04T18:37:48.856539+00:00",
+  "cutoff": "2026-11-05T18:47:52.205621+00:00",
+  "data_fetched_at": "2026-11-05T18:42:39.563938+00:00",
   "data_quality": {
     "games": 2348,
     "mature_results_missing": 0,
@@ -19,14 +19,14 @@
       "final_lock_at": "2026-11-05T23:45:00+00:00",
       "game_id": "2026_09_JAX_BAL",
       "gameday": "2026-11-05",
-      "home_qb_id": "00-0035993",
-      "home_qb_name": "Tyler Huntley",
+      "home_qb_id": "00-0040981",
+      "home_qb_name": "Joe Fagnano",
       "home_team": "BAL",
-      "home_win_probability": 0.43497787415095773,
+      "home_win_probability": 0.37568793046464644,
       "kickoff": "2026-11-06T01:15:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0036971",
-      "probability_home_qb_id": "00-0035993",
+      "probability_home_qb_id": "00-0040981",
       "week": 9
     },
     {
@@ -49,8 +49,8 @@
       "week": 9
     },
     {
-      "away_qb_id": "00-0033537",
-      "away_qb_name": "Deshaun Watson",
+      "away_qb_id": "00-0040668",
+      "away_qb_name": "Shedeur Sanders",
       "away_team": "CLE",
       "change_reason": "scheduled_production_snapshot",
       "completed": false,
@@ -60,10 +60,10 @@
       "home_qb_id": "00-0040743",
       "home_qb_name": "Tyler Shough",
       "home_team": "NO",
-      "home_win_probability": 0.6238161213350439,
+      "home_win_probability": 0.7098058366627356,
       "kickoff": "2026-11-08T18:00:00+00:00",
       "neutral_site": false,
-      "probability_away_qb_id": "00-0033537",
+      "probability_away_qb_id": "00-0040668",
       "probability_home_qb_id": "00-0040743",
       "week": 9
     },
@@ -152,14 +152,14 @@
       "final_lock_at": "2026-11-08T16:30:00+00:00",
       "game_id": "2026_09_NYG_PHI",
       "gameday": "2026-11-08",
-      "home_qb_id": "00-0038400",
-      "home_qb_name": "Tanner McKee",
+      "home_qb_id": "00-0039398",
+      "home_qb_name": "Joe Milton III",
       "home_team": "PHI",
-      "home_win_probability": 0.49271024957523357,
+      "home_win_probability": 0.5769845026005047,
       "kickoff": "2026-11-08T18:00:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0039923",
-      "probability_home_qb_id": "00-0038400",
+      "probability_home_qb_id": "00-0039398",
       "week": 9
     },
     {
@@ -193,7 +193,7 @@
       "home_qb_id": "00-0036355",
       "home_qb_name": "Justin Herbert",
       "home_team": "LAC",
-      "home_win_probability": 0.46986923498335476,
+      "home_win_probability": 0.46986923498335464,
       "kickoff": "2026-11-08T21:05:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0039163",
@@ -228,14 +228,14 @@
       "final_lock_at": "2026-11-08T19:55:00+00:00",
       "game_id": "2026_09_ARI_SEA",
       "gameday": "2026-11-08",
-      "home_qb_id": "00-0034869",
-      "home_qb_name": "Sam Darnold",
+      "home_qb_id": "00-0035704",
+      "home_qb_name": "Drew Lock",
       "home_team": "SEA",
-      "home_win_probability": 0.5795472548665824,
+      "home_win_probability": 0.47933899631064436,
       "kickoff": "2026-11-08T21:25:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0035289",
-      "probability_home_qb_id": "00-0034869",
+      "probability_home_qb_id": "00-0035704",
       "week": 9
     },
     {
@@ -297,9 +297,9 @@
     }
   ],
   "input_hashes": {
-    "schedule_rows": "2c4d9f4eb4cd37b053ade50885474780ac291dce36ffeef3df07512710f82833",
+    "schedule_rows": "2c68e7d84533010e45394016d8115d44781c33535f4d9da186c0e76c93aebb03",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "8745777a7ea18895ce08f2acb8ee5809f5cb96d3e51de12f5978383b20c7f803"
+    "season_forecast_input": "01b5b1359c7905e2ed2c1cae4b9e102801280088eedc1eff23eae793921f8fee"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",

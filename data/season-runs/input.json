@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-04T18:37:49+00:00",
+  "as_of": "2026-11-05T18:42:40+00:00",
   "model_version": "0.1.1",
   "playoff_format": "NFL_14_team_reseed_v1",
   "playoff_matchups": [
@@ -3781,7 +3781,7 @@
       "bye_home_win_probability": 0.5438183704548597,
       "home_team": "LAC",
       "home_win_probability": 0.5068814407938482,
-      "neutral_win_probability": 0.4653149720711684
+      "neutral_win_probability": 0.4653149720711683
     },
     {
       "away_team": "IND",
@@ -6599,7 +6599,7 @@
     },
     {
       "away_team": "HOU",
-      "bye_home_win_probability": 0.5017618818758115,
+      "bye_home_win_probability": 0.5017618818758114,
       "home_team": "TEN",
       "home_win_probability": 0.46477116589161993,
       "neutral_win_probability": 0.42369088722485826
@@ -6949,7 +6949,7 @@
     }
   ],
   "provenance": {
-    "available_at_cutoff": "2026-11-04T18:37:49+00:00",
+    "available_at_cutoff": "2026-11-05T18:42:40+00:00",
     "current_season_updates": true,
     "feature_history_seasons": [
       2018,
@@ -8314,9 +8314,9 @@
       "game_id": "2026_09_JAX_BAL",
       "gameday": "2026-11-05",
       "home_team": "BAL",
-      "home_win_probability": 0.43497787415095773,
+      "home_win_probability": 0.37568793046464644,
       "probability_away_qb_id": "00-0036971",
-      "probability_home_qb_id": "00-0035993",
+      "probability_home_qb_id": "00-0040981",
       "week": 9
     },
     {
@@ -8336,8 +8336,8 @@
       "game_id": "2026_09_CLE_NO",
       "gameday": "2026-11-08",
       "home_team": "NO",
-      "home_win_probability": 0.6238161213350439,
-      "probability_away_qb_id": "00-0033537",
+      "home_win_probability": 0.7098058366627356,
+      "probability_away_qb_id": "00-0040668",
       "probability_home_qb_id": "00-0040743",
       "week": 9
     },
@@ -8391,9 +8391,9 @@
       "game_id": "2026_09_NYG_PHI",
       "gameday": "2026-11-08",
       "home_team": "PHI",
-      "home_win_probability": 0.49271024957523357,
+      "home_win_probability": 0.5769845026005047,
       "probability_away_qb_id": "00-0039923",
-      "probability_home_qb_id": "00-0038400",
+      "probability_home_qb_id": "00-0039398",
       "week": 9
     },
     {
@@ -8413,7 +8413,7 @@
       "game_id": "2026_09_HOU_LAC",
       "gameday": "2026-11-08",
       "home_team": "LAC",
-      "home_win_probability": 0.46986923498335476,
+      "home_win_probability": 0.46986923498335464,
       "probability_away_qb_id": "00-0039163",
       "probability_home_qb_id": "00-0036355",
       "week": 9
@@ -8435,9 +8435,9 @@
       "game_id": "2026_09_ARI_SEA",
       "gameday": "2026-11-08",
       "home_team": "SEA",
-      "home_win_probability": 0.5795472548665824,
+      "home_win_probability": 0.47933899631064436,
       "probability_away_qb_id": "00-0035289",
-      "probability_home_qb_id": "00-0034869",
+      "probability_home_qb_id": "00-0035704",
       "week": 9
     },
     {
@@ -8479,9 +8479,9 @@
       "game_id": "2026_10_WAS_NYG",
       "gameday": "2026-11-12",
       "home_team": "NYG",
-      "home_win_probability": 0.4896546088665858,
+      "home_win_probability": 0.40094356683517396,
       "probability_away_qb_id": "00-0039910",
-      "probability_home_qb_id": "00-0040691",
+      "probability_home_qb_id": "00-0039923",
       "week": 10
     },
     {
@@ -8545,9 +8545,9 @@
       "game_id": "2026_10_KC_ATL",
       "gameday": "2026-11-15",
       "home_team": "ATL",
-      "home_win_probability": 0.5537560025213043,
+      "home_win_probability": 0.4325263839890801,
       "probability_away_qb_id": "00-0033873",
-      "probability_home_qb_id": "00-0036212",
+      "probability_home_qb_id": "00-0039917",
       "week": 10
     },
     {
@@ -8578,9 +8578,9 @@
       "game_id": "2026_10_LA_ARI",
       "gameday": "2026-11-15",
       "home_team": "ARI",
-      "home_win_probability": 0.4348707680116444,
+      "home_win_probability": 0.4222590034473514,
       "probability_away_qb_id": "00-0026498",
-      "probability_home_qb_id": "00-0033119",
+      "probability_home_qb_id": "00-0035289",
       "week": 10
     },
     {
@@ -8622,9 +8622,9 @@
       "game_id": "2026_10_LAC_BAL",
       "gameday": "2026-11-16",
       "home_team": "BAL",
-      "home_win_probability": 0.6903577056012379,
+      "home_win_probability": 0.5800081816903168,
       "probability_away_qb_id": "00-0036355",
-      "probability_home_qb_id": "00-0034796",
+      "probability_home_qb_id": "00-0035993",
       "week": 10
     },
     {
@@ -10135,5 +10135,5 @@
     }
   ],
   "tiebreaker_mode": "approximation_v0.1",
-  "week": 8
+  "week": 9
 }
