@@ -1,34 +1,15 @@
 {
-  "cutoff": "2026-11-05T18:47:52.205621+00:00",
-  "data_fetched_at": "2026-11-05T18:42:39.563938+00:00",
+  "cutoff": "2026-11-06T18:01:39.652939+00:00",
+  "data_fetched_at": "2026-11-06T17:56:31.985188+00:00",
   "data_quality": {
-    "games": 2348,
+    "games": 2349,
     "mature_results_missing": 0,
-    "pbp_rows": 410549,
+    "pbp_rows": 410705,
     "qb_coverage": 1.0,
     "source_week": 22,
     "teams": 32
   },
   "forecasts": [
-    {
-      "away_qb_id": "00-0036971",
-      "away_qb_name": "Trevor Lawrence",
-      "away_team": "JAX",
-      "change_reason": "scheduled_production_snapshot",
-      "completed": false,
-      "final_lock_at": "2026-11-05T23:45:00+00:00",
-      "game_id": "2026_09_JAX_BAL",
-      "gameday": "2026-11-05",
-      "home_qb_id": "00-0040981",
-      "home_qb_name": "Joe Fagnano",
-      "home_team": "BAL",
-      "home_win_probability": 0.37568793046464644,
-      "kickoff": "2026-11-06T01:15:00+00:00",
-      "neutral_site": false,
-      "probability_away_qb_id": "00-0036971",
-      "probability_home_qb_id": "00-0040981",
-      "week": 9
-    },
     {
       "away_qb_id": "00-0036442",
       "away_qb_name": "Joe Burrow",
@@ -193,7 +174,7 @@
       "home_qb_id": "00-0036355",
       "home_qb_name": "Justin Herbert",
       "home_team": "LAC",
-      "home_win_probability": 0.46986923498335464,
+      "home_win_probability": 0.46986923498335476,
       "kickoff": "2026-11-08T21:05:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0039163",
@@ -299,7 +280,7 @@
   "input_hashes": {
     "schedule_rows": "2c68e7d84533010e45394016d8115d44781c33535f4d9da186c0e76c93aebb03",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "01b5b1359c7905e2ed2c1cae4b9e102801280088eedc1eff23eae793921f8fee"
+    "season_forecast_input": "622f3193ebb6eda919f9c5cda03254549b0a0c8f76ffe44c41e7a74066b8ebf8"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",

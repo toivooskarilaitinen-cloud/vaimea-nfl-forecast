@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-11-05T18:47:52.205621+00:00",
-  "draft_sha256": "c465439babe699080f1a906c263452a27b5d6d994404a4abd701b2ac9bf086fc",
+  "cutoff": "2026-11-06T18:01:39.652939+00:00",
+  "draft_sha256": "c08c17fcda011899aedcc7f489b2e136fd717ede8e3bd8a1dfa04e10ba2627e8",
   "games": {
     "2026_09_ARI_SEA": {
       "approved": false,
@@ -89,16 +89,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0036355",
       "home_qb_name": "Justin Herbert",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_09_JAX_BAL": {
-      "approved": false,
-      "away_qb_id": "00-0036971",
-      "away_qb_name": "Trevor Lawrence",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0040981",
-      "home_qb_name": "Joe Fagnano",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },

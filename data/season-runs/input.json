@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-11-05T18:42:40+00:00",
+  "as_of": "2026-11-06T17:56:33+00:00",
   "model_version": "0.1.1",
   "playoff_format": "NFL_14_team_reseed_v1",
   "playoff_matchups": [
@@ -3781,7 +3781,7 @@
       "bye_home_win_probability": 0.5438183704548597,
       "home_team": "LAC",
       "home_win_probability": 0.5068814407938482,
-      "neutral_win_probability": 0.4653149720711683
+      "neutral_win_probability": 0.4653149720711684
     },
     {
       "away_team": "IND",
@@ -6599,7 +6599,7 @@
     },
     {
       "away_team": "HOU",
-      "bye_home_win_probability": 0.5017618818758114,
+      "bye_home_win_probability": 0.5017618818758115,
       "home_team": "TEN",
       "home_win_probability": 0.46477116589161993,
       "neutral_win_probability": 0.42369088722485826
@@ -6949,7 +6949,7 @@
     }
   ],
   "provenance": {
-    "available_at_cutoff": "2026-11-05T18:42:40+00:00",
+    "available_at_cutoff": "2026-11-06T17:56:33+00:00",
     "current_season_updates": true,
     "feature_history_seasons": [
       2018,
@@ -8310,11 +8310,11 @@
     },
     {
       "away_team": "JAX",
-      "completed": false,
+      "completed": true,
       "game_id": "2026_09_JAX_BAL",
       "gameday": "2026-11-05",
       "home_team": "BAL",
-      "home_win_probability": 0.37568793046464644,
+      "home_win_probability": 0.0,
       "probability_away_qb_id": "00-0036971",
       "probability_home_qb_id": "00-0040981",
       "week": 9
@@ -8413,7 +8413,7 @@
       "game_id": "2026_09_HOU_LAC",
       "gameday": "2026-11-08",
       "home_team": "LAC",
-      "home_win_probability": 0.46986923498335464,
+      "home_win_probability": 0.46986923498335476,
       "probability_away_qb_id": "00-0039163",
       "probability_home_qb_id": "00-0036355",
       "week": 9
