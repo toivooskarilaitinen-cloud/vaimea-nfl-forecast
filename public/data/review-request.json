@@ -1,56 +1,6 @@
 {
-  "approval_deadline": "2026-11-08T19:35:00+00:00",
+  "approval_deadline": "2026-11-09T23:45:00+00:00",
   "games": [
-    {
-      "away_qb_name": "C.J. Stroud",
-      "away_team": "HOU",
-      "final_lock_at": "2026-11-08T19:35:00+00:00",
-      "game_id": "2026_09_HOU_LAC",
-      "home_qb_name": "Justin Herbert",
-      "home_team": "LAC",
-      "home_win_probability": 0.47228256385078754,
-      "qb_probability_match": true
-    },
-    {
-      "away_qb_name": "Kirk Cousins",
-      "away_team": "LV",
-      "final_lock_at": "2026-11-08T19:35:00+00:00",
-      "game_id": "2026_09_LV_SF",
-      "home_qb_name": "Brock Purdy",
-      "home_team": "SF",
-      "home_win_probability": 0.646161664801775,
-      "qb_probability_match": true
-    },
-    {
-      "away_qb_name": "Gardner Minshew",
-      "away_team": "ARI",
-      "final_lock_at": "2026-11-08T19:55:00+00:00",
-      "game_id": "2026_09_ARI_SEA",
-      "home_qb_name": "Drew Lock",
-      "home_team": "SEA",
-      "home_win_probability": 0.46588441990314927,
-      "qb_probability_match": true
-    },
-    {
-      "away_qb_name": "Jordan Love",
-      "away_team": "GB",
-      "final_lock_at": "2026-11-08T19:55:00+00:00",
-      "game_id": "2026_09_GB_NE",
-      "home_qb_name": "Drake Maye",
-      "home_team": "NE",
-      "home_win_probability": 0.5704537115523053,
-      "qb_probability_match": true
-    },
-    {
-      "away_qb_name": "Baker Mayfield",
-      "away_team": "TB",
-      "final_lock_at": "2026-11-08T23:50:00+00:00",
-      "game_id": "2026_09_TB_CHI",
-      "home_qb_name": "Caleb Williams",
-      "home_team": "CHI",
-      "home_win_probability": 0.5260728676806964,
-      "qb_probability_match": true
-    },
     {
       "away_qb_name": "Josh Allen",
       "away_team": "BUF",
@@ -62,7 +12,7 @@
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-11-08T17:04:24.926344+00:00",
+  "generated_at": "2026-11-09T21:30:25.374248+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 9,
