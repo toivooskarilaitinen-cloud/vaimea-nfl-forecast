@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-11-10T18:43:37.448936+00:00",
-  "draft_sha256": "1ff056cc7e93ad67e5a3953cbece4cea826af568e5b135e9a4272d602695cb2f",
+  "cutoff": "2026-11-11T18:44:04.153160+00:00",
+  "draft_sha256": "db35cebaca4a5b3c2b3a53d3c31edbd4c6b06594b1ded3a2b7275cb54a184b5e",
   "games": {
     "2026_10_BUF_NYJ": {
       "approved": false,
@@ -84,8 +84,8 @@
     },
     "2026_10_MIN_GB": {
       "approved": false,
-      "away_qb_id": "00-0035228",
-      "away_qb_name": "Kyler Murray",
+      "away_qb_id": "00-0029604",
+      "away_qb_name": "Kirk Cousins",
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0036264",
       "home_qb_name": "Jordan Love",
@@ -117,8 +117,8 @@
       "away_qb_id": "00-0034869",
       "away_qb_name": "Sam Darnold",
       "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0029604",
-      "home_qb_name": "Kirk Cousins",
+      "home_qb_id": "00-0041562",
+      "home_qb_name": "Fernando Mendoza",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
