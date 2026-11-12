@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-11-11T18:44:04.153160+00:00",
-  "data_fetched_at": "2026-11-11T18:39:52.272721+00:00",
+  "cutoff": "2026-11-12T18:58:08.066509+00:00",
+  "data_fetched_at": "2026-11-12T18:52:57.719088+00:00",
   "data_quality": {
     "games": 2363,
     "mature_results_missing": 0,
@@ -136,7 +136,7 @@
       "home_qb_id": "00-0039917",
       "home_qb_name": "Michael Penix Jr.",
       "home_team": "ATL",
-      "home_win_probability": 0.364295304092731,
+      "home_win_probability": 0.3642953040927309,
       "kickoff": "2026-11-15T18:00:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0033873",
@@ -269,7 +269,7 @@
       "home_qb_id": "00-0035993",
       "home_qb_name": "Tyler Huntley",
       "home_team": "BAL",
-      "home_win_probability": 0.6139028350057765,
+      "home_win_probability": 0.6139028350057766,
       "kickoff": "2026-11-17T01:15:00+00:00",
       "neutral_site": false,
       "probability_away_qb_id": "00-0036355",
@@ -280,7 +280,7 @@
   "input_hashes": {
     "schedule_rows": "f3f31dd0134c518f2f9fce51ce3d0129b66e9d95fc28a90462448636adb923da",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "ed90c55c8cdf55a5572d62954a7ab6d40354f691626a838bf79632145cb11626"
+    "season_forecast_input": "2b698566305e7ce04bbeff74b108429a67e13a014e32dacecea8fb73205565d0"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",

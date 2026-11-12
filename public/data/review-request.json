@@ -68,7 +68,7 @@
       "game_id": "2026_10_KC_ATL",
       "home_qb_name": "Michael Penix Jr.",
       "home_team": "ATL",
-      "home_win_probability": 0.364295304092731,
+      "home_win_probability": 0.3642953040927309,
       "qb_probability_match": true
     },
     {
@@ -138,11 +138,11 @@
       "game_id": "2026_10_LAC_BAL",
       "home_qb_name": "Tyler Huntley",
       "home_team": "BAL",
-      "home_win_probability": 0.6139028350057765,
+      "home_win_probability": 0.6139028350057766,
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-11-11T18:44:04.153160+00:00",
+  "generated_at": "2026-11-12T18:58:08.066509+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 10,
