@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-11-12T18:58:08.066509+00:00",
-  "draft_sha256": "13ac282ea9b3067915b4fba2ac029335342e5f09ac119ddcd53f9e92469b0c58",
+  "cutoff": "2026-11-13T18:32:59.529875+00:00",
+  "draft_sha256": "564514545812127e585e76b2dcdc21116bb73a7585c8ffeef9127872431fc1e0",
   "games": {
     "2026_10_BUF_NYJ": {
       "approved": false,
@@ -129,16 +129,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0033077",
       "home_qb_name": "Dak Prescott",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_10_WAS_NYG": {
-      "approved": false,
-      "away_qb_id": "00-0039910",
-      "away_qb_name": "Jayden Daniels",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0039923",
-      "home_qb_name": "J.J. McCarthy",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     }

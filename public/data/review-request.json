@@ -1,16 +1,6 @@
 {
-  "approval_deadline": "2026-11-12T23:45:00+00:00",
+  "approval_deadline": "2026-11-15T13:00:00+00:00",
   "games": [
-    {
-      "away_qb_name": "Jayden Daniels",
-      "away_team": "WAS",
-      "final_lock_at": "2026-11-12T23:45:00+00:00",
-      "game_id": "2026_10_WAS_NYG",
-      "home_qb_name": "J.J. McCarthy",
-      "home_team": "NYG",
-      "home_win_probability": 0.48532568456046693,
-      "qb_probability_match": true
-    },
     {
       "away_qb_name": "Drake Maye",
       "away_team": "NE",
@@ -68,7 +58,7 @@
       "game_id": "2026_10_KC_ATL",
       "home_qb_name": "Michael Penix Jr.",
       "home_team": "ATL",
-      "home_win_probability": 0.3642953040927309,
+      "home_win_probability": 0.364295304092731,
       "qb_probability_match": true
     },
     {
@@ -138,11 +128,11 @@
       "game_id": "2026_10_LAC_BAL",
       "home_qb_name": "Tyler Huntley",
       "home_team": "BAL",
-      "home_win_probability": 0.6139028350057766,
+      "home_win_probability": 0.6139028350057765,
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-11-12T18:58:08.066509+00:00",
+  "generated_at": "2026-11-13T18:32:59.529875+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 10,
