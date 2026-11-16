@@ -1,46 +1,6 @@
 {
-  "approval_deadline": "2026-11-15T19:35:00+00:00",
+  "approval_deadline": "2026-11-16T23:45:00+00:00",
   "games": [
-    {
-      "away_qb_name": "Matthew Stafford",
-      "away_team": "LA",
-      "final_lock_at": "2026-11-15T19:35:00+00:00",
-      "game_id": "2026_10_LA_ARI",
-      "home_qb_name": "Gardner Minshew",
-      "home_team": "ARI",
-      "home_win_probability": 0.4279781992377614,
-      "qb_probability_match": true
-    },
-    {
-      "away_qb_name": "Sam Darnold",
-      "away_team": "SEA",
-      "final_lock_at": "2026-11-15T19:35:00+00:00",
-      "game_id": "2026_10_SEA_LV",
-      "home_qb_name": "Fernando Mendoza",
-      "home_team": "LV",
-      "home_win_probability": 0.4794842751861384,
-      "qb_probability_match": true
-    },
-    {
-      "away_qb_name": "Brock Purdy",
-      "away_team": "SF",
-      "final_lock_at": "2026-11-15T19:55:00+00:00",
-      "game_id": "2026_10_SF_DAL",
-      "home_qb_name": "Dak Prescott",
-      "home_team": "DAL",
-      "home_win_probability": 0.45638742233076796,
-      "qb_probability_match": true
-    },
-    {
-      "away_qb_name": "Aaron Rodgers",
-      "away_team": "PIT",
-      "final_lock_at": "2026-11-15T23:50:00+00:00",
-      "game_id": "2026_10_PIT_CIN",
-      "home_qb_name": "Joe Burrow",
-      "home_team": "CIN",
-      "home_win_probability": 0.6928977619595887,
-      "qb_probability_match": true
-    },
     {
       "away_qb_name": "Justin Herbert",
       "away_team": "LAC",
@@ -52,7 +12,7 @@
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-11-15T17:45:29.621970+00:00",
+  "generated_at": "2026-11-16T21:05:03.629658+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 10,
