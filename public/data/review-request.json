@@ -118,7 +118,7 @@
       "game_id": "2026_11_MIN_SF",
       "home_qb_name": "Brock Purdy",
       "home_team": "SF",
-      "home_win_probability": 0.6473456796650194,
+      "home_win_probability": 0.6473456796650195,
       "qb_probability_match": true
     },
     {
@@ -132,7 +132,7 @@
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-11-18T19:27:43.743804+00:00",
+  "generated_at": "2026-11-19T19:33:36.991152+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 11,

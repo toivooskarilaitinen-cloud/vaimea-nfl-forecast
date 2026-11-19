@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-11-18T19:27:43.743804+00:00",
-  "data_fetched_at": "2026-11-18T19:23:40.779883+00:00",
+  "cutoff": "2026-11-19T19:33:36.991152+00:00",
+  "data_fetched_at": "2026-11-19T19:28:38.623221+00:00",
   "data_quality": {
     "games": 2377,
     "mature_results_missing": 0,
@@ -231,7 +231,7 @@
       "home_qb_id": "00-0037834",
       "home_qb_name": "Brock Purdy",
       "home_team": "SF",
-      "home_win_probability": 0.6473456796650194,
+      "home_win_probability": 0.6473456796650195,
       "kickoff": "2026-11-23T01:20:00+00:00",
       "neutral_site": true,
       "probability_away_qb_id": "00-0029604",
@@ -261,7 +261,7 @@
   "input_hashes": {
     "schedule_rows": "dc2f75f0afec3ba31cdf183378bc760c121497dfd92a85b1fd14ac988349e97d",
     "schedule_source": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
-    "season_forecast_input": "516a7298997bf42e58f562ab4f66c94bfc081e115b8ef14f7f4186cad1ac7649"
+    "season_forecast_input": "ebdf1c47e1bb37c777cdff370e1d30c8bb542c9f8c8e17657ef1f71d5e9b1cee"
   },
   "kind": "forecast_draft",
   "model_version": "0.1.1",
