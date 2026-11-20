@@ -1,16 +1,6 @@
 {
-  "approval_deadline": "2026-11-19T23:45:00+00:00",
+  "approval_deadline": "2026-11-22T16:30:00+00:00",
   "games": [
-    {
-      "away_qb_name": "Daniel Jones",
-      "away_team": "IND",
-      "final_lock_at": "2026-11-19T23:45:00+00:00",
-      "game_id": "2026_11_IND_HOU",
-      "home_qb_name": "C.J. Stroud",
-      "home_team": "HOU",
-      "home_win_probability": 0.5862659088344829,
-      "qb_probability_match": true
-    },
     {
       "away_qb_name": "Gardner Minshew",
       "away_team": "ARI",
@@ -118,7 +108,7 @@
       "game_id": "2026_11_MIN_SF",
       "home_qb_name": "Brock Purdy",
       "home_team": "SF",
-      "home_win_probability": 0.6473456796650195,
+      "home_win_probability": 0.6473456796650194,
       "qb_probability_match": true
     },
     {
@@ -132,7 +122,7 @@
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-11-19T19:33:36.991152+00:00",
+  "generated_at": "2026-11-20T19:09:22.733089+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 11,

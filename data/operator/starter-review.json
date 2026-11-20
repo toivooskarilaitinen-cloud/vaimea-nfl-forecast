@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-11-19T19:33:36.991152+00:00",
-  "draft_sha256": "712c50bbdefc30b3e07945c783ef608406ec8569d00706dac63ad17a20a3bc46",
+  "cutoff": "2026-11-20T19:09:22.733089+00:00",
+  "draft_sha256": "bdde82beecbb5aa345ef68ca9b73bed84fa25426204315075364efeb36d75ba8",
   "games": {
     "2026_11_ARI_KC": {
       "approved": false,
@@ -29,16 +29,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0039910",
       "home_qb_name": "Jayden Daniels",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_11_IND_HOU": {
-      "approved": false,
-      "away_qb_id": "00-0035710",
-      "away_qb_name": "Daniel Jones",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0039163",
-      "home_qb_name": "C.J. Stroud",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
