@@ -8,7 +8,7 @@
       "game_id": "2026_11_ARI_KC",
       "home_qb_name": "Patrick Mahomes",
       "home_team": "KC",
-      "home_win_probability": 0.7180291110018912,
+      "home_win_probability": 0.7117991754172608,
       "qb_probability_match": true
     },
     {
@@ -18,7 +18,7 @@
       "game_id": "2026_11_BAL_CAR",
       "home_qb_name": "Bryce Young",
       "home_team": "CAR",
-      "home_win_probability": 0.5291781166392818,
+      "home_win_probability": 0.5269083635325175,
       "qb_probability_match": true
     },
     {
@@ -28,7 +28,7 @@
       "game_id": "2026_11_JAX_NYG",
       "home_qb_name": "J.J. McCarthy",
       "home_team": "NYG",
-      "home_win_probability": 0.4113883948380759,
+      "home_win_probability": 0.41479359216319134,
       "qb_probability_match": true
     },
     {
@@ -38,7 +38,7 @@
       "game_id": "2026_11_MIA_BUF",
       "home_qb_name": "Josh Allen",
       "home_team": "BUF",
-      "home_win_probability": 0.7357828381451964,
+      "home_win_probability": 0.7359855686172305,
       "qb_probability_match": true
     },
     {
@@ -48,7 +48,7 @@
       "game_id": "2026_11_NO_CHI",
       "home_qb_name": "Caleb Williams",
       "home_team": "CHI",
-      "home_win_probability": 0.5868642758618743,
+      "home_win_probability": 0.5858920614318306,
       "qb_probability_match": true
     },
     {
@@ -58,7 +58,7 @@
       "game_id": "2026_11_TB_DET",
       "home_qb_name": "Jared Goff",
       "home_team": "DET",
-      "home_win_probability": 0.6569541448073467,
+      "home_win_probability": 0.6534543618026802,
       "qb_probability_match": true
     },
     {
@@ -68,7 +68,7 @@
       "game_id": "2026_11_TEN_DAL",
       "home_qb_name": "Dak Prescott",
       "home_team": "DAL",
-      "home_win_probability": 0.6972951257600023,
+      "home_win_probability": 0.6949215550983286,
       "qb_probability_match": true
     },
     {
@@ -78,7 +78,7 @@
       "game_id": "2026_11_NYJ_LAC",
       "home_qb_name": "Justin Herbert",
       "home_team": "LAC",
-      "home_win_probability": 0.5282074246349774,
+      "home_win_probability": 0.5240874114712605,
       "qb_probability_match": true
     },
     {
@@ -88,7 +88,7 @@
       "game_id": "2026_11_LV_DEN",
       "home_qb_name": "Bo Nix",
       "home_team": "DEN",
-      "home_win_probability": 0.6530590728800565,
+      "home_win_probability": 0.6503469815668974,
       "qb_probability_match": true
     },
     {
@@ -98,7 +98,7 @@
       "game_id": "2026_11_PIT_PHI",
       "home_qb_name": "Joe Milton III",
       "home_team": "PHI",
-      "home_win_probability": 0.634237673791426,
+      "home_win_probability": 0.6334790971219518,
       "qb_probability_match": true
     },
     {
@@ -108,7 +108,7 @@
       "game_id": "2026_11_MIN_SF",
       "home_qb_name": "Brock Purdy",
       "home_team": "SF",
-      "home_win_probability": 0.6473456796650194,
+      "home_win_probability": 0.6468244534845273,
       "qb_probability_match": true
     },
     {
@@ -118,11 +118,11 @@
       "game_id": "2026_11_CIN_WAS",
       "home_qb_name": "Jayden Daniels",
       "home_team": "WAS",
-      "home_win_probability": 0.36595431936915984,
+      "home_win_probability": 0.370178822948792,
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-11-20T19:09:22.733089+00:00",
+  "generated_at": "2026-11-21T18:02:20.208201+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 11,
