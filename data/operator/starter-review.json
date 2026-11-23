@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-11-22T18:34:24.729137+00:00",
-  "draft_sha256": "806f37fa8a163548c718db870d0fab76216a6dbd9171cde0dcd52e01a8a70514",
+  "cutoff": "2026-11-23T22:40:04.552913+00:00",
+  "draft_sha256": "7323cf8ec0c5c2dfdb2c5db88b76bd8933d172609b69155c3af6f374dee5cd34",
   "games": {
     "2026_11_CIN_WAS": {
       "approved": false,
@@ -9,46 +9,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0039910",
       "home_qb_name": "Jayden Daniels",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_11_JAX_NYG": {
-      "approved": false,
-      "away_qb_id": "00-0036971",
-      "away_qb_name": "Trevor Lawrence",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0039923",
-      "home_qb_name": "J.J. McCarthy",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_11_LV_DEN": {
-      "approved": false,
-      "away_qb_id": "00-0041562",
-      "away_qb_name": "Fernando Mendoza",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0039732",
-      "home_qb_name": "Bo Nix",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_11_MIN_SF": {
-      "approved": false,
-      "away_qb_id": "00-0029604",
-      "away_qb_name": "Kirk Cousins",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0037834",
-      "home_qb_name": "Brock Purdy",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_11_NYJ_LAC": {
-      "approved": false,
-      "away_qb_id": "00-0030565",
-      "away_qb_name": "Geno Smith",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0036355",
-      "home_qb_name": "Justin Herbert",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     }
