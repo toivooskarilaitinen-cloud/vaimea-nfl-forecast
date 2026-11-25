@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-11-24T21:14:59.264816+00:00",
-  "draft_sha256": "3525cf241aa481777c705fafa813c80e815efa1b076794b06290614e5e027732",
+  "cutoff": "2026-11-25T20:31:40.501114+00:00",
+  "draft_sha256": "98e924c7b5636d45bc2cc849fddfec16059594923766f0d3b8deb78c898beddd",
   "games": {
     "2026_12_ATL_MIN": {
       "approved": false,
@@ -47,8 +47,8 @@
       "away_qb_id": "00-0039732",
       "away_qb_name": "Bo Nix",
       "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0023459",
-      "home_qb_name": "Aaron Rodgers",
+      "home_qb_id": "00-0034771",
+      "home_qb_name": "Mason Rudolph",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },

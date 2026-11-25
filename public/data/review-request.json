@@ -8,7 +8,7 @@
       "game_id": "2026_12_GB_LA",
       "home_qb_name": "Matthew Stafford",
       "home_team": "LA",
-      "home_win_probability": 0.5431567287070721,
+      "home_win_probability": 0.543178485636836,
       "qb_probability_match": true
     },
     {
@@ -18,7 +18,7 @@
       "game_id": "2026_12_CHI_DET",
       "home_qb_name": "Jared Goff",
       "home_team": "DET",
-      "home_win_probability": 0.6981538411445335,
+      "home_win_probability": 0.6963084169451904,
       "qb_probability_match": true
     },
     {
@@ -28,7 +28,7 @@
       "game_id": "2026_12_PHI_DAL",
       "home_qb_name": "Dak Prescott",
       "home_team": "DAL",
-      "home_win_probability": 0.7100050349140279,
+      "home_win_probability": 0.7049091263687897,
       "qb_probability_match": true
     },
     {
@@ -38,7 +38,7 @@
       "game_id": "2026_12_KC_BUF",
       "home_qb_name": "Josh Allen",
       "home_team": "BUF",
-      "home_win_probability": 0.5482414651053087,
+      "home_win_probability": 0.5505061575344462,
       "qb_probability_match": true
     },
     {
@@ -46,9 +46,9 @@
       "away_team": "DEN",
       "final_lock_at": "2026-11-27T18:30:00+00:00",
       "game_id": "2026_12_DEN_PIT",
-      "home_qb_name": "Aaron Rodgers",
+      "home_qb_name": "Mason Rudolph",
       "home_team": "PIT",
-      "home_win_probability": 0.4379855858373205,
+      "home_win_probability": 0.481298808915747,
       "qb_probability_match": true
     },
     {
@@ -58,7 +58,7 @@
       "game_id": "2026_12_ATL_MIN",
       "home_qb_name": "Kirk Cousins",
       "home_team": "MIN",
-      "home_win_probability": 0.5443042303767875,
+      "home_win_probability": 0.5474201854969425,
       "qb_probability_match": true
     },
     {
@@ -68,7 +68,7 @@
       "game_id": "2026_12_BAL_HOU",
       "home_qb_name": "C.J. Stroud",
       "home_team": "HOU",
-      "home_win_probability": 0.5848709009145506,
+      "home_win_probability": 0.5791609244050695,
       "qb_probability_match": true
     },
     {
@@ -78,7 +78,7 @@
       "game_id": "2026_12_NO_CIN",
       "home_qb_name": "Joe Burrow",
       "home_team": "CIN",
-      "home_win_probability": 0.7237278267071218,
+      "home_win_probability": 0.718806499903785,
       "qb_probability_match": true
     },
     {
@@ -88,7 +88,7 @@
       "game_id": "2026_12_NYG_IND",
       "home_qb_name": "Anthony Richardson",
       "home_team": "IND",
-      "home_win_probability": 0.4657750002917437,
+      "home_win_probability": 0.46099555115163854,
       "qb_probability_match": true
     },
     {
@@ -98,7 +98,7 @@
       "game_id": "2026_12_NYJ_MIA",
       "home_qb_name": "Kyle McCord",
       "home_team": "MIA",
-      "home_win_probability": 0.3370854218915086,
+      "home_win_probability": 0.33606438786118686,
       "qb_probability_match": true
     },
     {
@@ -108,7 +108,7 @@
       "game_id": "2026_12_TEN_JAX",
       "home_qb_name": "Trevor Lawrence",
       "home_team": "JAX",
-      "home_win_probability": 0.6935318516829585,
+      "home_win_probability": 0.6908315131158027,
       "qb_probability_match": true
     },
     {
@@ -118,7 +118,7 @@
       "game_id": "2026_12_NE_LAC",
       "home_qb_name": "Justin Herbert",
       "home_team": "LAC",
-      "home_win_probability": 0.38387724867491224,
+      "home_win_probability": 0.38370960879540356,
       "qb_probability_match": true
     },
     {
@@ -128,7 +128,7 @@
       "game_id": "2026_12_SEA_SF",
       "home_qb_name": "Brock Purdy",
       "home_team": "SF",
-      "home_win_probability": 0.6436913715293394,
+      "home_win_probability": 0.6365951656852338,
       "qb_probability_match": true
     },
     {
@@ -138,7 +138,7 @@
       "game_id": "2026_12_WAS_ARI",
       "home_qb_name": "Gardner Minshew",
       "home_team": "ARI",
-      "home_win_probability": 0.4571161534372453,
+      "home_win_probability": 0.45401195897236934,
       "qb_probability_match": true
     },
     {
@@ -148,7 +148,7 @@
       "game_id": "2026_12_LV_CLE",
       "home_qb_name": "Deshaun Watson",
       "home_team": "CLE",
-      "home_win_probability": 0.649605588306177,
+      "home_win_probability": 0.6484572236455063,
       "qb_probability_match": true
     },
     {
@@ -158,11 +158,11 @@
       "game_id": "2026_12_CAR_TB",
       "home_qb_name": "Baker Mayfield",
       "home_team": "TB",
-      "home_win_probability": 0.5340401988996994,
+      "home_win_probability": 0.5322992391621818,
       "qb_probability_match": true
     }
   ],
-  "generated_at": "2026-11-24T21:14:59.264816+00:00",
+  "generated_at": "2026-11-25T20:31:40.501114+00:00",
   "kind": "qb_review_request",
   "review_needed": true,
   "source_week": 12,
