@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-11-25T20:31:40.501114+00:00",
-  "draft_sha256": "98e924c7b5636d45bc2cc849fddfec16059594923766f0d3b8deb78c898beddd",
+  "cutoff": "2026-11-26T20:13:23.662457+00:00",
+  "draft_sha256": "50413d53c6de1519345ed37c1828d8dc8fc6dd9770a7a62ba537796d33bac882",
   "games": {
     "2026_12_ATL_MIN": {
       "approved": false,
@@ -32,16 +32,6 @@
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
-    "2026_12_CHI_DET": {
-      "approved": false,
-      "away_qb_id": "00-0039918",
-      "away_qb_name": "Caleb Williams",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0033106",
-      "home_qb_name": "Jared Goff",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
     "2026_12_DEN_PIT": {
       "approved": false,
       "away_qb_id": "00-0039732",
@@ -49,16 +39,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0034771",
       "home_qb_name": "Mason Rudolph",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_12_GB_LA": {
-      "approved": false,
-      "away_qb_id": "00-0036264",
-      "away_qb_name": "Jordan Love",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0026498",
-      "home_qb_name": "Matthew Stafford",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
@@ -119,16 +99,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0040014",
       "home_qb_name": "Kyle McCord",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_12_PHI_DAL": {
-      "approved": false,
-      "away_qb_id": "00-0039398",
-      "away_qb_name": "Joe Milton III",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0033077",
-      "home_qb_name": "Dak Prescott",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
