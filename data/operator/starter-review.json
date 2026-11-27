@@ -1,6 +1,6 @@
 {
-  "cutoff": "2026-11-26T20:13:23.662457+00:00",
-  "draft_sha256": "50413d53c6de1519345ed37c1828d8dc8fc6dd9770a7a62ba537796d33bac882",
+  "cutoff": "2026-11-27T19:58:29.750320+00:00",
+  "draft_sha256": "79a27b9cede34341ad8e8a71222878a05f60e6d5e6a1226520fe27e27fa3f91c",
   "games": {
     "2026_12_ATL_MIN": {
       "approved": false,
@@ -29,26 +29,6 @@
       "away_source": "nflverse_nfldata_games",
       "home_qb_id": "00-0034855",
       "home_qb_name": "Baker Mayfield",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_12_DEN_PIT": {
-      "approved": false,
-      "away_qb_id": "00-0039732",
-      "away_qb_name": "Bo Nix",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0034771",
-      "home_qb_name": "Mason Rudolph",
-      "home_source": "nflverse_nfldata_games",
-      "status": "needs_review"
-    },
-    "2026_12_KC_BUF": {
-      "approved": false,
-      "away_qb_id": "00-0033873",
-      "away_qb_name": "Patrick Mahomes",
-      "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0034857",
-      "home_qb_name": "Josh Allen",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     },
@@ -127,8 +107,8 @@
       "away_qb_id": "00-0039910",
       "away_qb_name": "Jayden Daniels",
       "away_source": "nflverse_nfldata_games",
-      "home_qb_id": "00-0035289",
-      "home_qb_name": "Gardner Minshew",
+      "home_qb_id": "00-0026300",
+      "home_qb_name": "Josh Johnson",
       "home_source": "nflverse_nfldata_games",
       "status": "needs_review"
     }
